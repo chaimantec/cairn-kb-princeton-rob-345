@@ -4,6 +4,8 @@ lecture: 1
 slides: 57
 source_pdf: https://www.dropbox.com/scl/fi/oltefsy9ihq4efgxvtyn9/Lecture1.pdf?rlkey=4kc7a1r2pja5z932phyakcq73&dl=0
 numbering: PDF page 1 = Slide 1 (title, unnumbered); PDF pages 2–56 = Slides 3–57 (slide = page + 1; printed "2" does not exist); PDF page 57 = Slide 58 (unnumbered, inferred).
+figure_audit: An independent reader checked six figure-heavy slides (6, 8, 15, 32, 33, 53) against the PDF. Four agreed; slide 8's gripper lettering, called illegible, reads "ROBOTIQ", and slide 15's Waymo/Lyft crossing and two Uber values were corrected. Renders of slides 15 and 32 were also checked against this file.
+images: 24 slides are rendered and shown under their headings (6–8, 10, 11, 15, 20–22, 25–30, 32, 33, 36–41, 52). Not rendered — the title page and section dividers (1, 5, 34, 44); text-only slides; slide 9, an embedded video that does not render in the PDF; the news-article screenshots 12–14, 16 and 17, whose content is their headline text, transcribed below; slide 35, a road sign bearing the one word "Uncertainty"; slides 42 and 58, which repeat the images of slides 40 and 33; slides 45 and 46, photographs of course staff; and slide 53, a screenshot of text transcribed in full.
 ---
 
 # Lecture 1 — Introduction to Robotics: slide-by-slide
@@ -63,6 +65,8 @@ Section divider: the single text "A snapshot of robotics today" in blue in a gre
 
 ## Slide 6 — IRoM Lab: generalist robots that are helpful, safe, and trustworthy
 
+![Slide 6 — IRoM Lab: generalist robots that are helpful, safe, and trustworthy](../images/01-intro-to-robotics/slide-6.jpg)
+
 No printed title and no printed number (label inferred). A collage of five panels around a centre white box. In the centre box: the "IRoM Lab" logo (a small drone icon over the "M", text "IRoM Lab") and "Intelligent Robot Motion Lab". A white banner across the middle reads "Generalist robots that are helpful, safe, and trustworthy" (the last three words in dark red).
 
 - Top left: a chat-bubble panel with a small user avatar and the text "Hey robot, could you put the bowl on the small counter in the microwave?"; the rest of the panel is empty white.
@@ -73,9 +77,13 @@ No printed title and no printed number (label inferred). A collage of five panel
 
 ## Slide 7 — Google DeepMind: Gemini Robotics
 
+![Slide 7 — Google DeepMind: Gemini Robotics](../images/01-intro-to-robotics/slide-7.jpg)
+
 No printed title and no printed number (label inferred). Google DeepMind logo at the top. A full-width still of a robotic hand with silver and gold-coloured finger joints (a glowing ring light on the back of the hand at left) touching a green-grey desk lamp with brass fittings and a small brass toggle switch. A pill-shaped label at top right reads "Autonomous 1x". Caption at the bottom: "https://deepmind.google/models/gemini-robotics/". Appears to be a frame from an embedded video.
 
 ## Slide 8 — Four robot-manipulation demos (GEN-1.5 and others)
+
+![Slide 8 — Four robot-manipulation demos (GEN-1.5 and others)](../images/01-intro-to-robotics/slide-8.jpg)
 
 No printed title and no printed number (label inferred). Four equal panels in a 2×2 grid under a grey header bar.
 
@@ -90,9 +98,13 @@ No printed title. A large black rectangle (an embedded video that did not render
 
 ## Slide 10 — Beijing Humanoid Robot Games
 
+![Slide 10 — Beijing Humanoid Robot Games](../images/01-intro-to-robotics/slide-10.jpg)
+
 No printed title. A still of a blue running track with lanes and numbered start blocks "4", "3", "2", "1"; four humanoid biped robots stand on the line: two white ones with blue head lights and chest numbers (left) and two red ones (right). Spectators' hands holding phones are in the foreground. Overlaid caption text: "Beijing's Humanoid Robot Games have come to a close, where the robots showed how capable they are at running - but not at stopping...". Appears to be a news video frame. Printed number 10.
 
 ## Slide 11 — Waymo self-driving car (CNBC video)
+
+![Slide 11 — Waymo self-driving car (CNBC video)](../images/01-intro-to-robotics/slide-11.jpg)
 
 No printed title. A still of a white Waymo robotaxi (the word "WAYMO" on the roof sensor housing, a roof lidar dome, California-style licence plate) driving down a sunny residential street lined with palm trees, parked cars and buildings on a hillside. "CNBC" logo at top right. Caption: "https://youtu.be/RQaW3iMue3M?si=bV-8qWo015mLgFhT". Appears to be a frame from an embedded video. Printed number 11.
 
@@ -113,6 +125,8 @@ Same as 13, with the earlier two articles faded and overlapping. New article ove
 Adds: the WSJ article about the 1X Neo humanoid.
 
 ## Slide 15 — From labs to the real world (Waymo market share chart)
+
+![Slide 15 — From labs to the real world (Waymo market share chart)](../images/01-intro-to-robotics/slide-15.jpg)
 
 Left: a product-style side-view photo of a white Waymo robotaxi SUV (roof sensor pod with a "W" logo, "WAYMO" on the door) on a white background.
 
@@ -144,6 +158,8 @@ Below: "Side note: asking this question is a good way to start a fight at a robo
 
 ## Slide 20 — A brief (pre-)history of robotics
 
+![Slide 20 — A brief (pre-)history of robotics](../images/01-intro-to-robotics/slide-20.jpg)
+
 List (dates in grey); the first eight items sit in a grey rounded box:
 
 - Greek mythology (Talos): ~1000BC
@@ -161,11 +177,15 @@ Right: two images. Top: a sepia sketch of a mechanical device with jointed arms,
 
 ## Slide 21 — A brief (pre-)history of robotics (build: highlights Karel Capek)
 
+![Slide 21 — A brief (pre-)history of robotics (build: highlights Karel Capek)](../images/01-intro-to-robotics/slide-21.jpg)
+
 Same list as slide 20; the box highlight moves to "Karel Capek: 1920" (blue text, grey rounded box). Right: a yellow, black and red theatre poster showing a stylised black-and-red robot figure with a gear/blade form; text on the poster: "FEDERAL THEATRE", "USA WORK WPA", "MARIONETTE THEATRE PRESENTS", "RUR", "REMO BUFANO DIRECTOR". Caption (blue): "Rossum's Universal Robots"; then "This is where the word "robot" comes from. In Czech: "work", "labor"".
 
 Adds: the RUR poster and the caption; removes the two images of slide 20.
 
 ## Slide 22 — A brief (pre-)history of robotics (build: highlights Unimate)
+
+![Slide 22 — A brief (pre-)history of robotics (build: highlights Unimate)](../images/01-intro-to-robotics/slide-22.jpg)
 
 Same list as slide 20 (the grey box now surrounds only "Unimate (George Devol, Joe Engelberger): ~1950s", in blue). Right: a black-and-white television-style still of two men in dark suits standing on a studio stage (one holds a microphone) next to a large industrial robot arm on a base whose long thin arm points toward them. No caption printed.
 
@@ -185,27 +205,39 @@ Boxed sentence: "An embodied agent that can be programmed to perform physical ta
 
 ## Slide 25 — What is a robot? (Is this a robot? Atlas)
 
+![Slide 25 — What is a robot? (Is this a robot? Atlas)](../images/01-intro-to-robotics/slide-25.jpg)
+
 "Ultimately, all proposed definitions have some issues" / "Is this a robot?"
 
 Photo: a silver-grey humanoid robot with a round head and a dark face visor walking in a lab/warehouse-like space, carrying a dark moulded plastic part toward a tall metal cart with numbered fabric slots (numbers 01–30 visible). Caption: "Boston Dynamics: Atlas".
 
 ## Slide 26 — What is a robot? (Is this a robot? small drone)
 
+![Slide 26 — What is a robot? (Is this a robot? small drone)](../images/01-intro-to-robotics/slide-26.jpg)
+
 Same two lines. Photo: a small four-propeller quadrotor on a grey table, with a camera module on a vertical board, an upright black antenna and an orange-brown circuit board (same vehicle as in the title-page image). No caption.
 
 ## Slide 27 — What is a robot? (Is this a robot? dishwasher)
+
+![Slide 27 — What is a robot? (Is this a robot? dishwasher)](../images/01-intro-to-robotics/slide-27.jpg)
 
 Same two lines. Photo: an open dishwasher in a kitchen with wooden cabinets, both racks loaded with plates, cups and dishes. No caption.
 
 ## Slide 28 — What is a robot? (Is this a robot? automatic door)
 
+![Slide 28 — What is a robot? (Is this a robot? automatic door)](../images/01-intro-to-robotics/slide-28.jpg)
+
 Same two lines. Photo: a glass automatic sliding door at a building entrance, with a sensor housing above the door and small stickers on the glass. No caption.
 
 ## Slide 29 — What is a robot? (Is this a robot? smart speaker)
 
+![Slide 29 — What is a robot? (Is this a robot? smart speaker)](../images/01-intro-to-robotics/slide-29.jpg)
+
 Same two lines. Product photo: a white cylindrical smart speaker with a slanted top showing four small coloured lights and a grey fabric base, on a white background (resembles a Google Home speaker; no caption printed).
 
 ## Slide 30 — What is a robot? (Is this a robot? Da Vinci)
+
+![Slide 30 — What is a robot? (Is this a robot? Da Vinci)](../images/01-intro-to-robotics/slide-30.jpg)
 
 Same two lines. Photo: a surgical robot system: a surgeon in blue scrubs seated at a console with head against the viewer, a standing person in a gown and cap touching a monitor showing a surgical view (a yellow circle on the screen), and a multi-arm patient-side cart over a blue-draped operating table. Caption: "Intuitive Surgical, Da Vinci".
 
@@ -217,9 +249,13 @@ Same two lines. Photo: a surgical robot system: a surgeon in blue scrubs seated 
 
 ## Slide 32 — Anatomy of a robotic system
 
+![Slide 32 — Anatomy of a robotic system](../images/01-intro-to-robotics/slide-32.jpg)
+
 Diagram: a photo of a small four-propeller quadrotor (Crazyflie-style, with a battery and stacked boards on top) at the centre, surrounded by three thick black curved arrows forming a clockwise loop. Three labels with grey arrows pointing at the drone: "Actuators" (top, arrow pointing at a propeller/motor), "Sensors (Inertial Measurement Unit, Optical Flow camera)" (bottom right, arrow pointing at the underside of the board), and "Computation" (bottom left, arrow pointing at the central board). The loop arrows run Actuators → (right side, down) → Sensors → (bottom, leftwards) → Computation → (left side, up) → Actuators. Bold blue caption at the bottom: ""Sense-Think-Act"".
 
 ## Slide 33 — Planning and control / Localization, mapping / Robot learning (topic map)
+
+![Slide 33 — Planning and control / Localization, mapping / Robot learning (topic map)](../images/01-intro-to-robotics/slide-33.jpg)
 
 No printed title and no printed number (label inferred). Three side-by-side rounded cards, each with a blue heading, a thumbnail and a list:
 
@@ -237,17 +273,25 @@ Photo of a green road sign against a blue sky with clouds, with the single word 
 
 ## Slide 36 — What makes robotics hard? (drone delivery news clip)
 
+![Slide 36 — What makes robotics hard? (drone delivery news clip)](../images/01-intro-to-robotics/slide-36.jpg)
+
 A tall portrait-format still of a news clip on a white slide: mostly blue sky with the corner of a roof or dark object at top left, hedges and a backyard with an outdoor seating area and a small swimming pool at the bottom. Overlaid text: "Lindsey Austen via Storyful"; the "abc7" logo with "Aug. 17, 2026"; caption "Amazon drone delivery drops woman's package into swimming pool". Appears to be a frame from an embedded video.
 
 ## Slide 37 — What makes robotics hard? (humanoid weightlifting)
+
+![Slide 37 — What makes robotics hard? (humanoid weightlifting)](../images/01-intro-to-robotics/slide-37.jpg)
 
 A still of a large indoor arena with spectators in tiered stands and a blue floor, with officials and robot handlers in black and white shirts standing around a blue square platform. On the platform, a white humanoid robot with black patches bends over a loaded barbell mid-lift. Two seated people in black clothes in the foreground at right; judges' tables at left; other humanoid robots with handlers standing at right. Logo "news.com.au" at top right; sponsor banners (partly legible, Chinese text) around the arena. Appears to be a video frame; no caption.
 
 ## Slide 38 — What makes robotics hard? (dashcam clip)
 
+![Slide 38 — What makes robotics hard? (dashcam clip)](../images/01-intro-to-robotics/slide-38.jpg)
+
 A tall portrait-format dashcam still looking forward over a car bonnet at a two-lane road with double yellow centre lines; a black sedan ahead at right, a truck with a "COSTCO" sign further ahead, utility poles and trees. Overlays: the "abc7" logo, faint text "Anonymous via Storyful" (a date beneath it is illegible), and at the bottom a GPS/speed stamp reading approximately "48:17 N37.37321 W121.99599 000mph" (the beginning of the timestamp is cut off). Appears to be a frame from an embedded news video; no caption states what the clip shows.
 
 ## Slide 39 — Uncertainty in each topic area (topic map)
+
+![Slide 39 — Uncertainty in each topic area (topic map)](../images/01-intro-to-robotics/slide-39.jpg)
 
 No printed title and no printed number (label inferred). Same three cards and thumbnails as slide 33, each now with a blue "Uncertainty in:" list in place of the topic list:
 
@@ -258,6 +302,8 @@ No printed title and no printed number (label inferred). Same three cards and th
 Adds relative to slide 33: the "Uncertainty in:" lists replace the topic lists.
 
 ## Slide 40 — Course plan: hardware implementation
+
+![Slide 40 — Course plan: hardware implementation](../images/01-intro-to-robotics/slide-40.jpg)
 
 Hardware implementation:
 
@@ -271,6 +317,8 @@ Crazyflie 2.1 brushless drone
 Photo: a small quadrotor with green propellers, black propeller guards around each rotor, and stacked circuit boards and a battery at the centre, on a white background. Callout box in the lower right: "**New drones** this year!" (the words "New drones" in green bold, "this year!" in light green).
 
 ## Slide 41 — Course plan: hardware implementation (goal)
+
+![Slide 41 — Course plan: hardware implementation (goal)](../images/01-intro-to-robotics/slide-41.jpg)
 
 Boxed text: "Goal: make the drone navigate autonomously" (blue highlights on "Goal:" and "navigate autonomously").
 
@@ -360,6 +408,8 @@ Boxed text:
 (Text only; the next slide continues the point.)
 
 ## Slide 52 — Course logistics: Generative AI (build: adds spectrum)
+
+![Slide 52 — Course logistics: Generative AI (build: adds spectrum)](../images/01-intro-to-robotics/slide-52.png)
 
 Same three lines as slide 51, plus a grey box with a double-headed horizontal arrow. Above the left end: "Luddism"; above the right end: "Nihilism"; a large "?" above the middle of the arrow. Below the left end: ""Never use AI for anything!""; below the right end: ""AGI is inevitable. No need to learn anything!"".
 

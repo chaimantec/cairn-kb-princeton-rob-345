@@ -1,51 +1,116 @@
 # How this knowledge base is organized
 
-This repo is the knowledge base for **Princeton ROB 345 — Introduction to Robotics (Fall 2026)**. It is read
-by Cairn's in-extension AI chat, which starts at `INDEX.md`, fetches files over
-raw.githubusercontent.com and follows relative markdown links.
+This repo is the knowledge base for **Princeton ROB 345/549 — Introduction to Robotics (Fall
+2026)**. It is read by Cairn's in-extension AI chat, which starts at `INDEX.md`, fetches files
+over raw.githubusercontent.com and follows relative markdown links.
 
 The chat never reads this file. It is for whoever builds the KB, and Claude Code
 loads it into every step of every build agent, so keep it to the rules every
 lecture's build follows. The per-lecture record (licence notices, audit findings,
 printed slips, which slides were rendered and why) goes in
-[`BUILD_LOG.md`](BUILD_LOG.md); anything the chat needs goes in `INDEX.md`.
+[`BUILD_LOG.md`](BUILD_LOG.md); anything the chat needs goes in `INDEX.md`;
+attribution goes in [`LICENSE.md`](LICENSE.md).
 
 ## Layout
 
 | Path                | Contents                                                      |
 | ------------------- | ------------------------------------------------------------- |
 | `INDEX.md`          | Entry point. Course summary + annotated table of contents.    |
-| `wiki/`             | Durable pages: one per lecture, plus cross-lecture topics.    |
-| `raw/slides/`       | Full text of every slide, numbered. Slide N = PDF page N.     |
-| `raw/transcripts/`  | Lecture transcripts with `[MM:SS]` paragraph marks.           |
-| `raw/pdfs/`         | Slides and handouts downloaded from the course website.       |
-| `raw/images/`       | Rendered figure slides, if any. Linked from the pages using them. |
-| `sources.md`        | Crawl inventory: source URL → local file, fetch date.         |
-| `TODO.md`           | Open work only. Finished runs move to `BUILD_LOG.md`.       |
+| `wiki/`             | Durable pages: one per lecture, plus course and concept pages. |
+| `raw/slides/`       | Full text of every slide, headed `## Slide N` with the **printed** number. |
+| `raw/transcripts/`  | Copy-edited transcripts with `[MM:SS]` paragraph marks.       |
+| `raw/transcripts/original/` | Verbatim auto-captions. **Gitignored**, local reference only. |
+| `raw/pdfs/`         | Downloaded decks. **Gitignored**; cite the canonical URL.     |
+| `raw/images/`       | Rendered figure slides, `NN-<slug>/slide-N.jpg`. Linked from the pages using them. |
+| `sources.md`        | Every course document by lecture, with canonical URLs.        |
+| `LICENSE.md`        | Three-layer licence and image attribution.                    |
+| `kb.json`           | Machine-readable coverage and provenance.                     |
+| `TODO.md`           | Open work only. Finished runs move to `BUILD_LOG.md`.         |
 | `BUILD_LOG.md`      | Finished runs, one section each. Not needed to answer questions. |
 
 ## Conventions
 
 - **INDEX.md is the front door.** The chat reads it first on every conversation.
   Every wiki page must appear there with a one-line description of what it holds.
-  An unindexed page is effectively invisible.
-- **Relative links only** (`[gradient descent](gradient-descent.md)`,
-  `[slides](../raw/pdfs/lecture03.pdf)`). Absolute GitHub URLs break when the
-  repo is renamed or forked.
-- **Cite everything.** Claims trace back to a transcript timestamp or a slide.
+  An unindexed page is effectively invisible. Keep its coverage paragraph true
+  whenever a lecture is added.
+- **Relative links only**, including images. Absolute GitHub URLs break when the
+  repo is renamed or forked. Slide decks link to their canonical Dropbox URL,
+  never to `raw/pdfs/`, which is gitignored.
+- **Cite everything.** Written material as "slide N" (the printed number),
+  spoken material as (≈M:SS). Claims trace back to one or the other.
 - **Never invent course content.** If the transcript is unclear at some point,
   say so on the page. Do not fill the gap from outside knowledge — the chat
   presents these pages as authoritative material from this course.
 - **Prose over fragments.** The chat quotes these pages to learners; bullet
   fragments quote badly.
-- **Math in LaTeX**: `$...$` inline, `$$...$$` displayed. Renders both in
-  Cairn's chat and on github.com. Never inside a code fence — that shows the
-  source instead of the formula. Define each symbol on first use, and follow the
-  course's own notation rather than a tidier one, since the learner is comparing
-  the page against the lecturer's board.
-- **Transcripts stay verbatim.** Captions spell notation out as speech ("theta
-  sub j"); reconstructing it as $\theta_j$ belongs in `wiki/`, not in
-  `raw/transcripts/`.
+- **Never rank lectures against each other** in prose; state the measurement for
+  the lecture in hand.
+- **Math in LaTeX**: `$...$` inline, `$$...$$` displayed, never inside a code
+  fence. Define each symbol on first use, and follow the course's own notation.
+  A literal dollar sign in prose opens a math span: write "20,000 dollars".
+  Run `check_math.mjs` (the `cairn-kb` skill) before pushing.
+
+## Course materials
+
+- The course site is a single page (GitHub Pages). **Every deck, set of notes and
+  assignment is hosted on Dropbox**, so the crawler records them as external links
+  and downloads nothing. Download a deck directly by changing the link's `dl=0` to
+  `dl=1`. Cite the `dl=0` link. Assignment 2 is a notebook on GitHub
+  (`Princeton-Introduction-to-Robotics/F2026`).
+- `inventory_to_sources.py` mislabels these Dropbox decks as third-party papers,
+  so `sources.md` is maintained by hand as a per-lecture table. Update its "In this
+  KB" column when a lecture lands.
+- From Lecture 4 on, the site posts **notes** alongside slides. They are prose
+  documents, not decks; decide per lecture whether to transcribe them.
+- No licence is stated anywhere on the site or in the decks. See `LICENSE.md`.
+
+## Transcripts
+
+- `raw/transcripts/NN-<slug>.md` is the copy-edited transcript the chat reads. It is
+  edited by a Sonnet subagent and checked in the parent with three checks: an
+  identical `[MM:SS]` sequence, the number inventory, and per-paragraph word-count
+  ratios in 0.72–1.10. Every restored proper noun is grepped against the slide file.
+- The verbatim captions stay on disk in `raw/transcripts/original/` and are
+  **not committed**. The course has no licence, and a full caption copy is the
+  weakest thing to publish on every fair-use factor. Each edited file says how to
+  regenerate them.
+- Notation stays spoken in transcripts ("x equals f of x"). Reconstructing it, e.g.
+  $\dot{x} = f(x)$, belongs in `wiki/`, with a note when the captions dropped a symbol.
+
+## Slides
+
+- Always run `slide_number_map.py` before transcribing. **Printed numbers are not
+  PDF pages**: Lecture 1's deck hid slide 2, so every later page prints its page
+  number + 1. Headings use the printed number; each slide file states its mapping.
+- A number printed inside the slide body instead of the corner (Lecture 1, slide 5)
+  is missed by the text-layer scan and reported as unnumbered. The labels still come
+  out right, but confirm the "inferred" list by eye before writing it into a header.
+- Transcription is delegated to a Sonnet subagent with the number map handed over.
+  A Sonnet audit of six figure-heavy pages follows, returning discrepancies as text.
+
+## Images
+
+- One image per rendered slide at `raw/images/NN-<slug>/slide-N.jpg` (or `.png`),
+  1400px wide, rendered by `extract_slide_images.py` and placed by
+  `embed_slide_images.py`. The script puts each image under `## Slide N` in the slide file
+  and after the first block that cites slide N in a wiki page. Run it once per wiki page.
+  Give each figure its own citing paragraph: a block citing several slides stacks their
+  images under it.
+- Render every figure-bearing slide except title and divider slides, text-only
+  slides, unrendered video frames, screenshots whose content is headline text
+  already transcribed, decorative stock photos, repeats and build steps of a
+  rendered slide, and **photographs of course staff or students**.
+- Hand-write captions that say what to look at for the figures that carry the
+  argument (architecture-like diagrams, charts, the examples discussed at length).
+- `grep -o 'raw/images/[^)]*' wiki/NN-*.md` lists a lecture's wiki images. The
+  slide file's `images:` header lists every rendered slide and why the rest were not.
+- When a lecture adds images, update `INDEX.md`'s "Only Lecture … has images"
+  sentence, the table below, `kb.json` `materials.images`, and `LICENSE.md`.
+
+| Lecture | Images | Notes |
+| --- | --- | --- |
+| 1 Intro to Robotics | 24 of 57 pages | photos, video stills, one chart, two diagrams |
 
 ## Rebuilding
 

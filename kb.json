@@ -1,0 +1,53 @@
+{
+  "kbVersion": 1,
+  "course": {
+    "code": "Princeton ROB 345",
+    "title": "Introduction to Robotics (Fall 2026)",
+    "instructor": "Anirudha Majumdar",
+    "term": "Fall 2026",
+    "catalogId": "0a58a86a-204c-4f0a-b8a2-c2708299865c",
+    "courseUrl": "https://irom-lab.princeton.edu/intro-to-robotics/"
+  },
+  "coverage": {
+    "lecturesCovered": 1,
+    "lecturesTotal": 9,
+    "transcripts": 1,
+    "wikiLecturePages": 1,
+    "wikiTopicPages": 5,
+    "byLecture": {
+      "1": "Intro to Robotics: transcript, slides, wiki page, 24 images"
+    },
+    "note": "lecturesTotal is the 9 recorded lectures in the Cairn catalog on 2026-10-20; the course site schedules 24, of which 1-9 had videos and slides. Only lecture 1 (the introduction, no technical derivations) is covered."
+  },
+  "materials": {
+    "primary": "slides",
+    "slideDecks": { "available": 9, "transcribed": 1 },
+    "notes": { "available": 6, "transcribed": 0 },
+    "method": "page-images",
+    "figuresAudited": true,
+    "figureAudit": {
+      "decksAudited": 1,
+      "decksTotal": 1,
+      "unaudited": [],
+      "note": "Six figure-heavy slides of the Lecture 1 deck were checked against the PDF by an independent reader; two small corrections applied. Renders of slides 15 and 32 were also checked."
+    },
+    "images": {
+      "lecturesWithImages": 1,
+      "files": 24,
+      "format": "1400px whole-slide renders (JPEG, one PNG)",
+      "discovery": "inline in wiki/ and raw/slides/; no index file",
+      "note": "Lecture 1 only: 24 of its 57 slides, every figure-bearing slide except title and divider slides, an unrendered video frame, news-headline screenshots, a decorative road sign, repeats, and photographs of course staff. No other lecture has images."
+    }
+  },
+  "provenance": {
+    "builtBy": ["claude-opus-5-5", "claude-sonnet-5-5"],
+    "caveats": [
+      "Covers lecture 1 of 9 recorded lectures; it cannot answer questions about the technical content of lectures 2 onward.",
+      "Transcripts are copy-edited from YouTube auto-captions; a few passages in lecture 1 were too garbled to restore and are marked [Ed: unclear]. The verbatim captions are not committed.",
+      "Lecture 1's deck has no slide 2 (hidden before export): slide N is PDF page N-1 from slide 3 on. Citations use the printed numbers.",
+      "No licence is stated for the course material; images and transcriptions are reproduced for study under fair use (see LICENSE.md)."
+    ]
+  },
+  "entryPoint": "INDEX.md",
+  "updated": "2026-10-20"
+}

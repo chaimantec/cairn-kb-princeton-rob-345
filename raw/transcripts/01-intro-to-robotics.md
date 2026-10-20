@@ -1,5 +1,5 @@
 ---
-title: Lecture 1: Intro to Robotics
+title: "Lecture 1: Intro to Robotics"
 lecture: 1
 video: https://www.youtube.com/watch?v=cMhFAq53v1c
 source: copy-edited from the YouTube auto-captions

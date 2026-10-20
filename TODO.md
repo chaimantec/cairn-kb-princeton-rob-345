@@ -25,18 +25,56 @@ images opted in; PDFs link-only. Commit as chaimantec <nantapon@chaimantec.com>.
 - [x] Figure audit of six figure-heavy pages (Sonnet): 4 agree; fixed slide 8 (ROBOTIQ legible) and slide 15 (Waymo/Lyft crossing, two Uber values)
 
 ### Wiki
-- [ ] wiki/01-intro-to-robotics.md
-- [ ] Topic pages (cross-lecture concepts the lecture introduces)
-- [ ] INDEX.md table of contents
+- [x] wiki/01-intro-to-robotics.md
+- [x] Topic pages: course-map, course-logistics, crazyflie, sense-think-act, uncertainty
+- [x] INDEX.md table of contents
 
 ### Images
-- [ ] raw/images/01-intro-to-robotics/ — pick from slide file + raster test, render, embed in the wiki and slide files
-- [ ] INDEX.md — the chat's image rules; AGENTS.md — the Images conventions and table row; BUILD_LOG.md — what was rendered and why; LICENSE.md — attribution
+- [x] raw/images/01-intro-to-robotics/ — 24 slides rendered (3.3MB), embedded in the slide file, the lecture page and four topic pages; 16 hand-written captions
+- [x] INDEX.md — the chat's image rules; AGENTS.md — the Images conventions and table row; BUILD_LOG.md — what was rendered and why (below); LICENSE.md — attribution
 
 ### Publish
-- [ ] kb.json — coverage, materials.method, provenance caveats
-- [ ] BUILD_LOG.md — the lecture's record: notices, audit findings, printed slips, transcript edits
-- [ ] verify_kb.py clean, and its review section read
+- [x] kb.json — coverage, materials.method, provenance caveats
+- [x] BUILD_LOG.md — the lecture's record: notices, audit findings, printed slips, transcript edits (below)
+- [x] verify_kb.py clean (all hard checks, 5 formulas in chat and on github.com), and its review section read
 - [ ] Commit and push
 - [ ] PATCH kbUrl onto the catalog entry
 - [ ] Move this run's finished sections to BUILD_LOG.md; TODO.md keeps only open work
+
+### Lecture 1 record
+
+- **Deck.** `Lecture1.pdf` from Dropbox, 57 pages, 75MB. No licence or copyright notice on any
+  page, and none on the course site. Third-party images carry no credit lines; LICENSE.md
+  attributes them from visible logos, captions and URLs.
+- **Numbering.** Printed "2" is absent (a hidden slide), so pages 2–56 print page+1 and the last
+  page, which prints nothing, is labelled 58. `slide_number_map.py` reported page 4 as unnumbered.
+  The "5" is printed inside the slide body, not in the corner, which the text-layer scan misses.
+  The label was right either way.
+- **Transcription.** Sonnet, in about 2 minutes; `--verify` was clean first time. The agent flagged
+  slides 15, 6, 8, 32, 33/39/58 and 53 for a second reader.
+- **Figure audit.** Sonnet, on slides 6, 8, 15, 32, 33 and 53. Four agreed, with no invented
+  elements. Slide 8's gripper lettering, called "illegible", reads "ROBOTIQ" at 600 dpi (the
+  "illegible" claim was false again), and the file had also omitted a pipette and a bowl of caps.
+  On slide 15, two Uber values were off by about 1 point, and the sentence "Waymo crosses above
+  Lyft around 11-12/24" hid a double crossing. Checking the render of slide 15 in the parent
+  caught that too. The render of slide 32 agreed.
+- **Transcript edit.** Sonnet, 74/74 timestamps identical, no number lost, no word-ratio outlier
+  (10,770 → 9,022 words). It made 41 restorations and left 10 `[Ed: unclear]` marks. All 3
+  "gained" numbers are slide references inside `[Ed:]` notes. Parent adjudication: Sunnyvale
+  confirmed by the slide 38 GPS stamp; the "skilled" startup at 3:14 left unclear (not printed on
+  the slides); "x equals f of x" left spoken in the transcript and written as $\dot{x} = f(x)$ in
+  the wiki with a note. The agent tagged student turns `*[Student answer]*`; the header says so.
+- **Verbatim captions not committed.** The course has no licence, so the CS336 precedent applies.
+  `raw/transcripts/original/` is gitignored; the first local commit was amended before any push
+  so the captions never entered history.
+- **Images rendered (24):** 6, 7, 8, 10, 11, 15, 20, 21, 22, 25–30, 32, 33, 36–41, 52. **Figure-bearing
+  slides not rendered:** 1 (title), 9 (embedded video, black in the PDF), 12–14, 16 and 17 (news
+  screenshots whose content is the headline, transcribed), 35 (road sign reading "Uncertainty"),
+  42 and 58 (repeat the images of 40 and 33), 45 (TA photo grid), 46 (staff member in the lab),
+  53 (chat screenshot, transcribed in full). The raster test flagged 39 pages, and its extra
+  flags (3, 4, 23 and others) are logos and backgrounds.
+- **sources.md** is hand-written. `inventory_to_sources.py` put the course's own Dropbox decks
+  under "papers ... usually all-rights-reserved".
+- **Wiki.** `$` in prose (20,000 dollars; 18 billion dollars) would open a math span, so amounts
+  are written out in words. The case-study table on uncertainty.md became three paragraphs so
+  that each image sits beside its case rather than stacked under the table.
