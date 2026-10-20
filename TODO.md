@@ -17,7 +17,7 @@ chaimantec <nantapon@chaimantec.com>. Catalog re-fetched 2026-10-21: still 9 lec
 
 ### Transcripts
 - [x] 03 Lecture 3: Rapidly Exploring Randomized Trees (RRTs) — video KDIe1094FMo — verbatim captions in raw/transcripts/original/ (92 paragraphs, 12,152 words incl. header)
-- [ ] 03 copy-edit (Sonnet), checked: timestamps, numbers, ratios, proper nouns
+- [x] 03 copy-edit (Sonnet): 92/92 timestamps identical; ratios all in 0.72–1.10 (lowest 0.72 at 1:09:11; 12,019 → 9,719 words); number diffs C3 → C free and "00 0" → 0, 0, 0; 39 restorations, 2 inline unclear + 6 noted; proper nouns not in the deck all traced to captions (Keerthi from "Kery", Minkowski, Voronoi, Stata Center, LaValle, Hugging Face)
 
 ### Slides
 - [x] Download Lecture3.pdf (Dropbox dl=1, 9.4MB, 62 pages) into raw/pdfs/ (gitignored)
