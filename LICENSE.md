@@ -55,7 +55,7 @@ course staff (Princeton University, Fall 2026). They are published through the c
 the lecture videos on YouTube (recorded by the Princeton Broadcast Center).
 
 As checked on 2026-10-20, no licence, copyright or reuse statement appears on the course
-website, and none is printed on any page of the Lecture 1 deck. Publicly downloadable is not the
+website, and none is printed on any page of the Lecture 1 or Lecture 2 deck. Publicly downloadable is not the
 same as licensed. Absent an express grant the default applies: copyright arises automatically,
 and no reuse rights pass to anyone.
 
@@ -75,7 +75,7 @@ removed, it will be deleted along with every link to it.
 
 ## Layer 3 — third-party images reproduced inside the decks
 
-The Lecture 1 deck reproduces many images that are not Princeton's: video frames, news
+The decks reproduce many images that are not Princeton's: video frames, news
 photographs and screenshots, product photos and historical images. **None carries a credit line
 on the slide.** They belong to their respective owners, Princeton could not license them to
 anyone, and nothing here does either. The attributions below are inferred from logos, captions
@@ -112,3 +112,20 @@ Rendered: 24 slides, in `raw/images/01-intro-to-robotics/`.
 | 40 | Product photograph of the Crazyflie 2.1 brushless (Bitcraze). |
 | 41 | Photograph of a netted drone-flight arena. Not credited; apparently the course's own lab. |
 | 52 | No third-party content: the deck's own diagram. |
+
+### Lecture 2 — Discrete Motion Planning
+
+Deck: [Lecture2.pdf](https://www.dropbox.com/scl/fi/pnwucnirlwgviqwaj67hl/Lecture2.pdf?rlkey=6s2et2apw9rtnvr8x2ke243sp&dl=0).
+Rendered: 22 slides, in `raw/images/02-discrete-motion-planning/`.
+
+| Slide | Third-party content (as identifiable from the slide) |
+| --- | --- |
+| 2 | Frame of a video of a past final project in the course's flight arena. Not credited; apparently the course's own. |
+| 5 | Street-level point-cloud image. Not credited. |
+| 7 | Frame of a piano-mover animation (youtube.com/watch?v=cXm3WW-geD8). |
+| 9 | Frames of a Zoox video ("Source: Zoox"). |
+| 10 | Protein-folding renderings ("Source: parasollab.web.illinois.edu/research/protein-folding/"). |
+| 11 | Frame of a robotic Rubik's cube solver video (youtube.com/watch?v=OZu9gjQJUQs). |
+| 19 | Frame of a configuration-space obstacles video (youtube.com/watch?v=SBFwgR4K1Gk). |
+| 76 | Frame of a BFS-versus-A\* animation. Not credited. |
+| 15, 17, 18, 22, 24, 27, 31, 32, 34, 41, 46, 59, 72, 74 | No third-party content identified: the deck's own diagrams and worked-example grids. |

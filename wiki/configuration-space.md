@@ -1,0 +1,95 @@
+# Configuration space
+
+The configuration space is the setting in which the course states its motion planning problems.
+It is introduced in [Lecture 2](02-discrete-motion-planning.md#configuration-space-free-space-and-obstacle-space),
+where Majumdar presents it, for the moment, as "a mathematical device that helps us state the
+problem formally". He promises that the next lecture uses it "in a deeper way" (≈31:17). This
+page collects the definitions and examples. Slide numbers and timestamps refer to Lecture 2 unless
+stated otherwise.
+
+## Degrees of freedom
+
+The **degrees of freedom (DoFs)** of a system are "the number of independent ways a system can
+move" (slide 14). Equivalently, they are the minimal number of coordinates needed to specify the
+system's configuration (≈12:26–13:14). The word that does the work is *independent*. A planar
+pendulum's mass has an $x$ and a $y$, but the rod constrains $\sqrt{x^2 + y^2}$ to equal its
+length, so changing one forces a change in the other, and the pendulum has one degree of freedom
+(≈14:52–15:39).
+
+## Configuration space and its examples
+
+The **configuration space** $C$ is the set of possible configurations a system can be in, so each
+point of $C$ is one configuration (slide 16, ≈21:53–22:40). The system is usually a robot, but the
+idea applies to anything being planned for, such as a protein.
+
+| System | Degrees of freedom | Configuration space $C$ |
+| --- | --- | --- |
+| a point in $d$-dimensional space | $d$ | $\mathbb{R}^d$ |
+| $N$ points in $d$-dimensional space | $N \cdot d$ | $\mathbb{R}^{N \cdot d}$ |
+| a planar pendulum | 1 (the angle $\theta$) | $S^1$, the circle |
+| a planar quadrotor | 3 ($x$, $y$, $\theta$) | $\mathbb{R}^2 \times S^1$ |
+| a planar snake robot with $n$ links and a free base | $n + 2$ | $\mathbb{R}^2$ crossed with $n$ copies of $S^1$ |
+
+The first four rows are on slides 14 and 16. The snake robot was worked out with the class on the
+blackboard. It needs two numbers for the position of its base point and one angle for each link,
+and a snake with zero links is just a point in the plane (≈15:39–21:53). $S^1$ is the space of a
+single angle, running from 0 to $2\pi$ with 0 equal to $2\pi$ (≈22:40–23:31). A student called the
+planar quadrotor's space SE2 (≈23:31).
+
+## Free space and obstacle space
+
+**Free space** $C_{free} \subseteq C$ is the set of configurations in which the system is not in
+collision with any obstacle (slide 17, ≈25:07–26:39). For the planar quadrotor it is the set of
+$(x, y, \theta)$ for which the drone touches nothing. A configuration can leave free space by
+rotation alone: tilt the drone far enough and a propeller hits an obstacle.
+
+![Slide 17 — Free space](../raw/images/02-discrete-motion-planning/slide-17.jpg)
+
+*Slide 17 — a configuration in free space: the planar quadrotor clear of both obstacles. [Deck](https://www.dropbox.com/scl/fi/pnwucnirlwgviqwaj67hl/Lecture2.pdf?rlkey=6s2et2apw9rtnvr8x2ke243sp&dl=0)*
+
+**Obstacle space** $C_{obs} = C \setminus C_{free}$ is its complement, the configurations in which
+the system is in collision (slide 18, ≈26:39).
+
+![Slide 18 — Obstacle space](../raw/images/02-discrete-motion-planning/slide-18.jpg)
+
+*Slide 18 — a configuration in obstacle space: moved up and to the left, the quadrotor's propeller overlaps an obstacle. [Deck](https://www.dropbox.com/scl/fi/pnwucnirlwgviqwaj67hl/Lecture2.pdf?rlkey=6s2et2apw9rtnvr8x2ke243sp&dl=0)*
+
+Obstacles look very different in configuration space from how they look in the world. Lecture 2's
+video does this for a triangle in the plane, which has the planar quadrotor's three degrees of
+freedom. Its configuration space is drawn as a 3D space with orientation on the vertical axis and
+the top plane identified with the bottom one. A triangle that moves around a circle while
+rotating traces a helix there, and a single obstacle in the plane becomes a complicated solid,
+every point of which is a colliding configuration (≈27:26–30:30).
+
+## The geometric motion planning problem
+
+With these definitions, **geometric motion planning** is: find a path in $C_{free}$ from
+configuration $q_A$ to configuration $q_B$ (slide 20, ≈30:30). It comes with three assumptions
+that the course relaxes later (slide 12, ≈10:07–11:38):
+
+1. **Any path is feasible to follow.** Dynamics are ignored, so any continuous path is assumed
+   executable, though a real car cannot move sideways. This is relaxed a few lectures later.
+2. **The robot's state is perfectly known.** This is relaxed in the localization and mapping module.
+3. **The map of the environment is provided**, as a geometric model such as a point cloud, a
+   voxel grid or a neural surface (≈3:13–3:59).
+
+The problem is old and hard. Known as the **piano mover's problem**, it has been studied in
+robotics since the 1980s, and was shown to be PSPACE-complete (slide 8). These assumptions
+deliberately set aside the [uncertainty](uncertainty.md) that Lecture 1 named as what makes
+robotics hard.
+
+## Two ways to solve it
+
+**Discretize, then search a graph.** Lecture 2 lays a grid over a two-dimensional configuration
+space, treats each free cell as a vertex, and searches the resulting graph with BFS, DFS or A\*.
+See [graph search](graph-search.md). Some problems are discrete to begin with, like the Rubik's
+cube, which has a finite set of states (≈9:21).
+
+**Plan in the continuous space.** The next lecture covers continuous motion planning (≈33:36).
+The course map lists it as randomized planning with RRTs (rapidly exploring random trees). It is
+not yet in this knowledge base; see [the course map](course-map.md).
+
+## Where it appears
+
+- [Lecture 2 — Discrete Motion Planning](02-discrete-motion-planning.md): degrees of freedom,
+  configuration space, free and obstacle space, and the formal planning problem.

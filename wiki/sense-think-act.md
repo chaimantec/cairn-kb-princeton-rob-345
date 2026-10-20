@@ -49,7 +49,9 @@ in terms that line up with parts of the loop:
 - **Localization and mapping** turns sensor measurements into estimates: "how do we get the
   drone to estimate its own state … and then also the state of the world" (≈21:43).
 - **Planning and control** decides and executes actions: planning a collision-free path, then
-  making the drone hover or follow a trajectory despite its dynamics (≈20:56–21:43).
+  making the drone hover or follow a trajectory despite its dynamics (≈20:56–21:43). Lecture 2
+  starts the path-planning part with [graph search](graph-search.md) over a discretized
+  [configuration space](configuration-space.md).
 - **Robot learning** is one way to build the computation itself, learning dynamics or behaviour
   from data instead of hand-engineering it (≈21:43–22:29).
 

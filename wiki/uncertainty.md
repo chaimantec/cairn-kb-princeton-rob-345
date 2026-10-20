@@ -29,6 +29,12 @@ Lecture 1 lists the forms each of the course's three areas has to deal with (sli
 | Localization and mapping | the state of the robot; the state and geometry of the world; the semantics of the environment |
 | Robot learning | the quality of the data (e.g. demonstrations in imitation learning); human intent; the rewards from the world, or estimated in reinforcement learning |
 
+The course's first planning lectures set this uncertainty aside on purpose. Geometric motion
+planning, as [Lecture 2](02-discrete-motion-planning.md#geometric-motion-planning) states it,
+assumes that any path is feasible to follow, that the robot's state is perfectly known and that
+the map is given. The course then removes these assumptions one at a time (Lecture 2, ≈2:28–3:13
+and ≈10:07–11:38).
+
 ## Three case studies from Lecture 1
 
 Each is a real failure from the month or two before the lecture. The class proposed sources of
@@ -90,5 +96,7 @@ upgrade comes with a caveat: "There's always some uncertainty anytime you upgrad
 
 - [Lecture 1 — Introduction to Robotics](01-intro-to-robotics.md#what-makes-robotics-hard-uncertainty):
   the theme, Moravec's paradox, the three case studies, and the uncertainty in each area.
+- [Lecture 2 — Discrete Motion Planning](02-discrete-motion-planning.md#geometric-motion-planning):
+  the planning assumptions that set uncertainty aside to begin with.
 - The state-estimation lectures (10–12: nondeterministic filter, Bayes filtering, Kalman and
   particle filtering) are scheduled next in this thread. They are not yet in this knowledge base.

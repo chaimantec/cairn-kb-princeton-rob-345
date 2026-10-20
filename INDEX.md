@@ -9,14 +9,15 @@ work hands-on with the Crazyflie quadrotor, and the final project trains a visio
 navigation policy with imitation learning. ROB 345 is the undergraduate course; ROB 549 is the
 graduate track.
 
-> **Coverage: Lecture 1 only, of the 9 recorded lectures in the catalog.** The course site
+> **Coverage: Lectures 1 and 2, of the 9 recorded lectures in the catalog.** The course site
 > schedules 24 lectures, of which lectures 1–9 had videos and slides when this was built
-> (2026-10-20). This knowledge base holds the first lecture, the introduction: its edited
-> transcript, its full slide deck as text, 24 of its slides as images, and the concept pages
-> it starts. **It cannot answer questions about the technical content of lectures 2 onward**
-> (graph search, RRTs, quadrotor dynamics, differential flatness, trajectory optimization, PD
-> control, LQR, optical flow and later). For those, point the learner to the lecture's slides
-> and notes in [`sources.md`](sources.md). Build progress is in [TODO.md](TODO.md).
+> (2026-10-20). This knowledge base holds the introduction (Lecture 1) and discrete motion
+> planning (Lecture 2): their edited transcripts, their full slide decks as text, 46 of their
+> slides as images, and the course and concept pages they start. **It cannot answer questions
+> about the technical content of lectures 3 onward** (RRTs, quadrotor dynamics, differential
+> flatness, trajectory optimization, PD control, LQR, optical flow and later). For those, point
+> the learner to the lecture's slides and notes in [`sources.md`](sources.md). Build progress
+> is in [TODO.md](TODO.md).
 
 ## Lecture pages
 
@@ -28,6 +29,13 @@ graduate track.
   door, a smart speaker, the da Vinci surgical robot). The sense–think–act anatomy. The three
   technical areas. Uncertainty as what makes robotics hard, with three failure case studies.
   The Crazyflie hardware, and the course logistics and generative-AI policy.
+- [Lecture 2 — Discrete Motion Planning](wiki/02-discrete-motion-planning.md): geometric
+  motion planning and its three assumptions; the piano mover's problem; degrees of freedom
+  (point, pendulum, n-link snake, planar quadrotor); configuration space, free space and obstacle
+  space; discretizing a grid into a graph; the forward search template; BFS and DFS worked step by
+  step on a 5-by-5 grid; the cost of a plan; A\* with cost-to-come, an underestimating heuristic,
+  alive and dead vertices, and a worked example; Dijkstra's algorithm; learned heuristics (Tesla
+  AI Day); and the full A\* pseudocode.
 
 ## Course pages
 
@@ -51,6 +59,13 @@ graduate track.
   (Moravec's paradox), the sources of uncertainty in planning and control, localization and
   mapping, and robot learning, the three failure case studies, and sim-to-real with domain
   randomization.
+- [Configuration space](wiki/configuration-space.md): degrees of freedom, the configuration
+  space $C$ with a table of examples, free space $C_{free}$ and obstacle space $C_{obs}$, the
+  geometric motion planning problem with its assumptions, and the two ways the course solves it.
+- [Graph search](wiki/graph-search.md): turning a grid into a graph, the forward search
+  template, how BFS, DFS, Dijkstra's algorithm and A\* differ (only in which vertex they take out
+  of the queue), edge costs and optimality, heuristics and why they must underestimate, and A\*
+  bookkeeping.
 
 ## Raw materials
 
@@ -63,12 +78,14 @@ graduate track.
 - [`raw/slides/`](raw/slides/): every slide of each deck as text, headed `## Slide N` with
   the number printed on the slide, and every figure described in prose. **Lecture 1's deck has
   no slide 2**: a slide was hidden before export, so slide *N* is PDF page *N*−1 from slide 3
-  on. Each file's header says how its numbers map to PDF pages.
+  on. Lecture 2's deck is numbered one-to-one: slide *N* is PDF page *N*. Each file's header says
+  how its numbers map to PDF pages.
 - [`raw/images/`](raw/images/): whole-slide images of figure slides, embedded under the
-  matching `## Slide N` heading and in the wiki passage that cites that slide. **Only Lecture 1
-  has images**, and only some of its slides (24 of 57). Title and divider slides, text-only
-  slides, news-headline screenshots, repeats, and photographs of course staff were deliberately
-  not rendered. The slide file's header lists which slides have images.
+  matching `## Slide N` heading and in the wiki passage that cites that slide. **Only Lectures 1
+  and 2 have images**, and only some of their slides: 24 of Lecture 1's 57 and 22 of Lecture 2's
+  79. Title and divider slides, text-only slides, pseudocode, news-headline screenshots, repeats
+  and build steps, and photographs of course staff were deliberately not rendered. Each slide
+  file's header lists which slides have images.
 - [`sources.md`](sources.md): every lecture video, slide deck, set of notes and assignment
   the course website links to, with canonical URLs. The PDFs are not committed; cite those
   URLs.

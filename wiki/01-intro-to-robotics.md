@@ -517,7 +517,8 @@ If you think of another valuable use, he asks you to tell him.
 
 The deck ends with the three-area topic map, with "Planning and control" highlighted and
 "Geometric planning" in bold. The next lecture starts the technical content with geometric
-motion planning (≈56:42). See [the course map](course-map.md).
+motion planning (≈56:42): see [Lecture 2 — Discrete Motion Planning](02-discrete-motion-planning.md)
+and [the course map](course-map.md).
 
 ## Gaps in the record
 

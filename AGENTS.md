@@ -88,6 +88,9 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
   out right, but confirm the "inferred" list by eye before writing it into a header.
 - Transcription is delegated to a Sonnet subagent with the number map handed over.
   A Sonnet audit of six figure-heavy pages follows, returning discrepancies as text.
+- A slide that plays a video or animation holds a single frame in the PDF. The transcript
+  shows it ("let me play it again"); say so in the slide entry, so that a counter or partial
+  search state in that frame is not read as the result.
 
 ## Images
 
@@ -96,7 +99,10 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
   `embed_slide_images.py`. The script puts each image under `## Slide N` in the slide file
   and after the first block that cites slide N in a wiki page. Run it once per wiki page.
   Give each figure its own citing paragraph: a block citing several slides stacks their
-  images under it.
+  images under it. A range such as "slides 39–49" cites every slide in it, so cite a range
+  only where no rendered slide falls inside, and cite one slide where its figure should sit.
+- Choose figure slides from the slide file's descriptions. The raster test misses
+  vector-drawn figures such as graphs and worked-example grids.
 - Render every figure-bearing slide except title and divider slides, text-only
   slides, unrendered video frames, screenshots whose content is headline text
   already transcribed, decorative stock photos, repeats and build steps of a
@@ -111,6 +117,7 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
 | Lecture | Images | Notes |
 | --- | --- | --- |
 | 1 Intro to Robotics | 24 of 57 pages | photos, video stills, one chart, two diagrams |
+| 2 Discrete Motion Planning | 22 of 79 pages | video stills, C-space diagrams, worked-example grids |
 
 ## Rebuilding
 
