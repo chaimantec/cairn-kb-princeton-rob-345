@@ -128,8 +128,23 @@ distance used 400,000 nodes and one guided by a navigation route used 22,000 (sl
   updates a neighbour's parent, $C$ and $F$ whenever it finds a cheaper path to it (slide 79,
   reproduced on the [lecture page](02-discrete-motion-planning.md#the-full-a-algorithm)).
 
+## Completeness, and where graph search stops
+
+BFS, DFS, Dijkstra's algorithm and A\* are **complete** for discrete problems. On a discretized
+problem they find a path in finite time if one exists, and otherwise terminate with failure. A
+proof is in *Planning Algorithms* (Lecture 3, slide 61, ≈1:05:20–1:06:07).
+
+Their weakness is the discretization. A grid over a $d$-dimensional configuration space with $B$
+bins per dimension has $B^d$ cells, so graph search is "basically out of the question" beyond
+three or four dimensions (Lecture 3, slide 21, ≈14:51–16:24, ≈45:13).
+[Lecture 3](03-rrts.md) replaces it there with a randomized planner. See
+[rapidly exploring randomized trees](rrt.md), which also compares the two.
+
 ## Where it appears
 
 - [Lecture 2 — Discrete Motion Planning](02-discrete-motion-planning.md): discretization, the
   forward search template, BFS, DFS, Dijkstra's algorithm and A\*, each worked on a 5-by-5 grid.
   Implementing A\* is part of Assignment 1 (see [`sources.md`](../sources.md)).
+- [Lecture 3 — Rapidly Exploring Randomized Trees](03-rrts.md): the recap of graph search, why it
+  does not scale with the dimension of the configuration space, and the completeness of the
+  discrete search algorithms.

@@ -3,8 +3,9 @@
 The configuration space is the setting in which the course states its motion planning problems.
 It is introduced in [Lecture 2](02-discrete-motion-planning.md#configuration-space-free-space-and-obstacle-space),
 where Majumdar presents it, for the moment, as "a mathematical device that helps us state the
-problem formally". He promises that the next lecture uses it "in a deeper way" (≈31:17). This
-page collects the definitions and examples. Slide numbers and timestamps refer to Lecture 2 unless
+problem formally". He promised that the next lecture would use it "in a deeper way" (≈31:17), and
+[Lecture 3](03-rrts.md) does: it is how the course accounts for a robot's real geometry. This page
+collects the definitions and examples. Slide numbers and timestamps refer to Lecture 2 unless
 stated otherwise.
 
 ## Degrees of freedom
@@ -78,6 +79,40 @@ robotics since the 1980s, and was shown to be PSPACE-complete (slide 8). These a
 deliberately set aside the [uncertainty](uncertainty.md) that Lecture 1 named as what makes
 robotics hard.
 
+## Why plan in configuration space: the robot's geometry
+
+Lecture 2 treated the robot as a point, and
+[Lecture 3](03-rrts.md#accounting-for-the-robots-geometry) drops that assumption. The quickest
+alternative is to enclose the robot in the smallest circle that contains it and inflate every
+obstacle by the circle's radius. That inflation is an operation called the **Minkowski sum**. The
+robot is then a point again, and any path among the inflated obstacles is safe for the real robot
+in every orientation (Lecture 3, slide 7, ≈3:14–5:35). But the circle is conservative. In a
+cluttered environment it can be too big for a gap the real robot fits through, which turns a
+feasible problem into an infeasible one (Lecture 3, slide 13, ≈6:21–7:52).
+
+![Slide 7 — Simple approach: circle approximation](../raw/images/03-rrts/slide-7.jpg)
+
+*Slide 7 — the circle approximation: each quadrotor is enclosed in the smallest circle that contains it. [Deck](https://www.dropbox.com/scl/fi/5uv2vt76nqj4b32vr4i37/Lecture3.pdf?rlkey=nx8jjqjlvmgcqqhb8r1p6okzp&dl=0)*
+
+![Slide 13 — Challenge: cluttered environments (circle approximation fails)](../raw/images/03-rrts/slide-13.jpg)
+
+*Slide 13 — where the circle fails: the quadrotor itself fits through the narrow lower gap, but the circle around it overlaps the obstacles above and below. [Deck](https://www.dropbox.com/scl/fi/5uv2vt76nqj4b32vr4i37/Lecture3.pdf?rlkey=nx8jjqjlvmgcqqhb8r1p6okzp&dl=0)*
+
+Configuration space has no such loss. A configuration records the robot's full position and
+orientation, so a path in $C_{free}$ is exactly a collision-free motion of the real robot. The
+problem is "reduced back to that of finding path for point (in configuration space)" (Lecture 3,
+slide 20, ≈10:59–11:46).
+
+The price is dimension. A 3D quadrotor has six degrees of freedom, three for the position of its
+centre of mass and three for its orientation, and a typical robot arm has seven (Lecture 3,
+≈13:19, ≈14:51). A robot with $d$ degrees of freedom has a $d$-dimensional configuration space.
+Cutting each dimension into $B$ bins gives a grid of $B^d$ cells, and even constructing $C_{obs}$
+in such a space is intractable (Lecture 3, slide 21, ≈14:51–17:11).
+
+![Slide 21 — Curse of dimensionality](../raw/images/03-rrts/slide-21.jpg)
+
+*Slide 21 — the curse of dimensionality: a robot arm with d degrees of freedom, whose discretized configuration space has B to the d cells. [Deck](https://www.dropbox.com/scl/fi/5uv2vt76nqj4b32vr4i37/Lecture3.pdf?rlkey=nx8jjqjlvmgcqqhb8r1p6okzp&dl=0)*
+
 ## Two ways to solve it
 
 **Discretize, then search a graph.** Lecture 2 lays a grid over a two-dimensional configuration
@@ -86,10 +121,15 @@ See [graph search](graph-search.md). Some problems are discrete to begin with, l
 cube, which has a finite set of states (≈9:21).
 
 **Plan in the continuous space.** The next lecture covers continuous motion planning (≈33:36).
-The course map lists it as randomized planning with RRTs (rapidly exploring random trees). It is
-not yet in this knowledge base; see [the course map](course-map.md).
+[Lecture 3](03-rrts.md) samples the configuration space at random and grows a tree from the start,
+collision-checking one configuration at a time, so it never constructs $C_{obs}$. See
+[rapidly exploring randomized trees](rrt.md). Discretization does not scale past about three
+dimensions, because the grid grows as $B^d$. The RRT does scale (Lecture 3, ≈16:24, ≈45:13).
 
 ## Where it appears
 
 - [Lecture 2 — Discrete Motion Planning](02-discrete-motion-planning.md): degrees of freedom,
   configuration space, free and obstacle space, and the formal planning problem.
+- [Lecture 3 — Rapidly Exploring Randomized Trees](03-rrts.md): why the robot's geometry calls
+  for configuration space (the circle approximation and where it fails), the curse of
+  dimensionality, and planning directly in the continuous space.

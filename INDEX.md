@@ -9,15 +9,15 @@ work hands-on with the Crazyflie quadrotor, and the final project trains a visio
 navigation policy with imitation learning. ROB 345 is the undergraduate course; ROB 549 is the
 graduate track.
 
-> **Coverage: Lectures 1 and 2, of the 9 recorded lectures in the catalog.** The course site
+> **Coverage: Lectures 1–3, of the 9 recorded lectures in the catalog.** The course site
 > schedules 24 lectures, of which lectures 1–9 had videos and slides when this was built
-> (2026-10-20). This knowledge base holds the introduction (Lecture 1) and discrete motion
-> planning (Lecture 2): their edited transcripts, their full slide decks as text, 46 of their
-> slides as images, and the course and concept pages they start. **It cannot answer questions
-> about the technical content of lectures 3 onward** (RRTs, quadrotor dynamics, differential
-> flatness, trajectory optimization, PD control, LQR, optical flow and later). For those, point
-> the learner to the lecture's slides and notes in [`sources.md`](sources.md). Build progress
-> is in [TODO.md](TODO.md).
+> (2026-10-20). This knowledge base holds the introduction (Lecture 1), discrete motion planning
+> (Lecture 2) and randomized motion planning with RRTs (Lecture 3): their edited transcripts,
+> their full slide decks as text, 63 of their slides as images, and the course and concept pages
+> they start. **It cannot answer questions about the technical content of lectures 4 onward**
+> (quadrotor dynamics, differential flatness, trajectory optimization, PD control, LQR, optical
+> flow and later). For those, point the learner to the lecture's slides and notes in
+> [`sources.md`](sources.md). Build progress is in [TODO.md](TODO.md).
 
 ## Lecture pages
 
@@ -36,6 +36,14 @@ graduate track.
   step on a 5-by-5 grid; the cost of a plan; A\* with cost-to-come, an underestimating heuristic,
   alive and dead vertices, and a worked example; Dijkstra's algorithm; learned heuristics (Tesla
   AI Day); and the full A\* pseudocode.
+- [Lecture 3 — Rapidly Exploring Randomized Trees (RRTs)](wiki/03-rrts.md): accounting for the
+  robot's geometry (the circle approximation, inflating obstacles, the Minkowski sum, and why it
+  fails in clutter); back to configuration space; the curse of dimensionality ($B^d$ cells) and
+  why $C_{obs}$ cannot be built; the RRT's three key ideas, including collision checking with
+  GJK; the RRT worked through six iterations, and its pseudocode; the goal threshold
+  $\epsilon$ and path recovery; space-filling and Voronoi bias; step size and checking the whole
+  segment; demos (a piano, a drone at MIT, a PR2 arm); RRT\* and rewiring; completeness and
+  probabilistic completeness; and choosing what to optimize.
 
 ## Course pages
 
@@ -61,11 +69,16 @@ graduate track.
   randomization.
 - [Configuration space](wiki/configuration-space.md): degrees of freedom, the configuration
   space $C$ with a table of examples, free space $C_{free}$ and obstacle space $C_{obs}$, the
-  geometric motion planning problem with its assumptions, and the two ways the course solves it.
+  geometric motion planning problem with its assumptions, why the robot's geometry calls for
+  configuration space and what dimension costs, and the two ways the course solves it.
 - [Graph search](wiki/graph-search.md): turning a grid into a graph, the forward search
   template, how BFS, DFS, Dijkstra's algorithm and A\* differ (only in which vertex they take out
-  of the queue), edge costs and optimality, heuristics and why they must underestimate, and A\*
-  bookkeeping.
+  of the queue), edge costs and optimality, heuristics and why they must underestimate, A\*
+  bookkeeping, and completeness and why graph search does not scale with dimension.
+- [Rapidly exploring randomized trees (RRTs)](wiki/rrt.md): the problem the RRT solves, its three
+  key ideas, the algorithm step by step, path recovery, practical details (segment checking, the
+  goal threshold, goal bias), its properties (space-filling, feasible but not optimal,
+  probabilistically complete), RRT\* and other variants, and a comparison with graph search.
 
 ## Raw materials
 
@@ -78,14 +91,15 @@ graduate track.
 - [`raw/slides/`](raw/slides/): every slide of each deck as text, headed `## Slide N` with
   the number printed on the slide, and every figure described in prose. **Lecture 1's deck has
   no slide 2**: a slide was hidden before export, so slide *N* is PDF page *N*−1 from slide 3
-  on. Lecture 2's deck is numbered one-to-one: slide *N* is PDF page *N*. Each file's header says
-  how its numbers map to PDF pages.
+  on. The decks of Lectures 2 and 3 are numbered one-to-one: slide *N* is PDF page *N*. Each
+  file's header says how its numbers map to PDF pages.
 - [`raw/images/`](raw/images/): whole-slide images of figure slides, embedded under the
-  matching `## Slide N` heading and in the wiki passage that cites that slide. **Only Lectures 1
-  and 2 have images**, and only some of their slides: 24 of Lecture 1's 57 and 22 of Lecture 2's
-  79. Title and divider slides, text-only slides, pseudocode, news-headline screenshots, repeats
-  and build steps, and photographs of course staff were deliberately not rendered. Each slide
-  file's header lists which slides have images.
+  matching `## Slide N` heading and in the wiki passage that cites that slide. **Only Lectures
+  1–3 have images**, and only some of their slides: 24 of Lecture 1's 57, 22 of Lecture 2's 79
+  and 17 of Lecture 3's 62. Title and divider slides, text-only slides, pseudocode, news-headline
+  screenshots, repeats (including slides repeated from an earlier lecture's deck) and build steps,
+  and photographs of course staff were deliberately not rendered. Each slide file's header lists
+  which slides have images.
 - [`sources.md`](sources.md): every lecture video, slide deck, set of notes and assignment
   the course website links to, with canonical URLs. The PDFs are not committed; cite those
   URLs.

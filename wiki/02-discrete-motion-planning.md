@@ -620,8 +620,8 @@ return FAILURE
 
 The next lecture covers **continuous** motion planning, still under the geometric assumptions
 (≈32:50–33:36). It is where configuration space is used "in a deeper way" than as a device for
-stating the problem (≈31:17). The course map lists it as randomized planning with RRTs; see
-[the course map](course-map.md). The assumptions that any path is feasible and that the state is
+stating the problem (≈31:17). That is [Lecture 3](03-rrts.md), on rapidly exploring randomized
+trees. The assumptions that any path is feasible and that the state is
 known are relaxed later in the planning module and in the localization and mapping module
 (≈10:52–11:38).
 

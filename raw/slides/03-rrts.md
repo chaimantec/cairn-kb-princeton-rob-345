@@ -4,7 +4,8 @@ lecture: 3
 slides: 62
 source_pdf: https://www.dropbox.com/scl/fi/5uv2vt76nqj4b32vr4i37/Lecture3.pdf?rlkey=nx8jjqjlvmgcqqhb8r1p6okzp&dl=0
 numbering: PDF page N = Slide N for all 62 pages (1:1). Pages 1 and 2 print no number; their labels (1, 2) are inferred from position.
-figure_audit: Two independent readers checked 24 slides against the PDF (13, 21, 36, 37, 41, 44, 46, 47, 50, 58, then 7, 9, 10, 12, 19, 24–35, 38–40, 42, 43, 45, 51), covering every step of the RRT worked example. Fixed: which point is in collision on slide 36 (the extended point, not the nearest node), the node count on slide 41, the solid edges already drawn on slides 40 and 43, the extent of the tree on slide 50, and several small positions and counts.
+figure_audit: Two independent readers checked 34 slides against the PDF (13, 21, 36, 37, 41, 44, 46, 47, 50, 58, then 7, 9, 10, 12, 19, 24–35, 38–40, 42, 43, 45, 51), covering every step of the RRT worked example. Fixed: which point is in collision on slide 36 (the extended point, not the nearest node), the node count on slide 41, the solid edges already drawn on slides 40 and 43, the extent of the tree on slide 50, and several small positions and counts.
+images: 17 slides are rendered and shown under their headings (7, 9, 10, 13, 19, 21, 24, 25, 28, 32, 36, 43, 47, 50, 51, 53, 56). Not rendered — the title page and section dividers (1, 14, 22); slides identical to ones already rendered in Lecture 1 or 2 (2 is Lecture 1's topic map, slide 33; 3 and 4 are Lecture 2's point-cloud slides 5 and 6; 15, 17 and 18 are Lecture 2's slides 15, 17 and 18); slide 5, one panel of the Lecture 2 search animation rendered there as slide 76; build steps of a rendered slide (6 of 7, 8 of 9, 11 and 12 of 13); text-only slides (16, 52, 55, 57, 60–62, and 20 and 23, whose only picture is a small repeat of slide 19's still); steps of the RRT worked example (26, 27, 29–31, 33–35, 37–42, 44–46), of which 25, 28, 32, 36, 43 and 47 are rendered; the pseudocode, transcribed in full (48); a nearly empty animation frame (49); a video title card, transcribed (54); and slides 58 and 59, whose panels repeat the frames of 50 and 56.
 ---
 
 # Lecture 3 — Rapidly Exploring Randomized Trees (RRTs): slide-by-slide
@@ -68,6 +69,8 @@ Title bar: "How do we account for robot geometry?". A diagram on white: two dark
 
 ## Slide 7 — Simple approach: circle approximation
 
+![Slide 7 — Simple approach: circle approximation](../images/03-rrts/slide-7.jpg)
+
 Title bar: "Simple approach: circle approximation". The same layout as slide 6 (two dark-red obstacle rectangles, now without the word "Obstacle"), with quadrotor A at lower left and quadrotor B at right. Each quadrotor now sits inside a pale-blue circle that encloses the whole drawing, labelled "A" and "B" inside the circles.
 
 ## Slide 8 — Equivalently: inflate obstacles
@@ -76,9 +79,13 @@ Title bar: "Equivalently: inflate obstacles". The same two dark-red rectangles, 
 
 ## Slide 9 — Equivalently: inflate obstacles (path for a point)
 
+![Slide 9 — Equivalently: inflate obstacles (path for a point)](../images/03-rrts/slide-9.jpg)
+
 Title bar: "Equivalently: inflate obstacles". The same inflated obstacles. The quadrotor drawings are replaced by blue dots at A (lower left) and B (right). A black curved line starts at A, rises, runs horizontally through the gap between the two pink inflated regions, and curves up to B.
 
 ## Slide 10 — Equivalently: inflate obstacles (path of the real robot)
+
+![Slide 10 — Equivalently: inflate obstacles (path of the real robot)](../images/03-rrts/slide-10.jpg)
 
 Title bar: "Equivalently: inflate obstacles". The pink inflated regions are removed, leaving the two dark-red rectangles. The same black curved path from A to B runs through the gap, now with a sequence of translucent quadrotor drawings along it (A at lower left in full colour, B at upper right in full colour, six faded copies in between, tilting slightly along the path), showing the real robot body moving along the path without touching the obstacles.
 
@@ -91,6 +98,8 @@ Title bar: "Challenge: cluttered environments". A diagram like slide 6 with a th
 Title bar: "Challenge: cluttered environments". The same three rectangles. A sequence of translucent quadrotor drawings runs horizontally from A (full colour, lower left) through the narrow lower gap (between the thin middle rectangle and the lowest rectangle), then rises past the right end of the thin rectangle to B at the right. The drones are drawn nearly level as they pass through the gap, and tilt as they climb toward B.
 
 ## Slide 13 — Challenge: cluttered environments (circle approximation fails)
+
+![Slide 13 — Challenge: cluttered environments (circle approximation fails)](../images/03-rrts/slide-13.jpg)
 
 Title bar: "Challenge: cluttered environments". Same as slide 12, with one pale-blue circle drawn over the middle drone in the lower gap. The circle is large enough to overlap both the thin middle rectangle above it and the lowest rectangle below it, showing that a circle enclosing the robot would collide with the obstacles even though the real robot fits through the gap.
 
@@ -116,6 +125,8 @@ No title in the bar. Text in a rounded box: "**Obstacle space** $C_{\text{obs}} 
 
 ## Slide 19 — Configuration space obstacles
 
+![Slide 19 — Configuration space obstacles](../images/03-rrts/slide-19.jpg)
+
 Title bar: "Configuration space obstacles". A video still (first frame of a video; the link is printed below). Left: a 3D scene on black with a white wireframe box and a light-blue floor, containing a twisted column made of red and green faces with yellow and blue edges, with a small white arrow pointing right at its middle. Right, on white: a red quadrilateral with a small green triangle on top, with a black dot inside the triangle. Yellow-and-black text at lower right: "An Obstacle". Printed link: https://www.youtube.com/watch?v=SBFwgR4K1Gk
 
 ## Slide 20 — Geometric motion planning in configuration space
@@ -124,7 +135,9 @@ No title in the bar. Text in a rounded box: "Geometric motion planning: Find pat
 
 ## Slide 21 — Curse of dimensionality
 
-Title bar: "Curse of dimensionality". Top left: a black line drawing of a robot arm (base on a ground line, two links, a gripper at the end) with two dark-red filled circles near it, one near the arm's elbow and one near the gripper. Top centre-right: a rounded box with "$d$ DOFs". Lower left, a rounded box: "Bad news: graph is intractably large: $B^d$" ("Bad news:" in blue). Below it: "How do we even construct $C_{\text{free}}$ or $C_{\text{obs}}$?". Lower right: the twisted red and green column in a wireframe box (video still, as on slide 20). The symbols $B$ and $d$ are not defined on the slide.
+![Slide 21 — Curse of dimensionality](../images/03-rrts/slide-21.jpg)
+
+Title bar: "Curse of dimensionality". Top left: a black line drawing of a robot arm (base on a ground line, two links, a gripper at the end) with two dark-red filled circles near it, one near the arm's elbow and one near the gripper. Top centre-right: a rounded box reading "d DOFs" (with an italic $d$). Lower left, a rounded box: "Bad news: graph is intractably large: $B^d$" ("Bad news:" in blue). Below it: "How do we even construct $C_{\text{free}}$ or $C_{\text{obs}}$?". Lower right: the twisted red and green column in a wireframe box (video still, as on slide 20). The symbols $B$ and $d$ are not defined on the slide.
 
 ## Slide 22 — Rapidly exploring randomized tree (RRT) (section divider with readings)
 
@@ -136,117 +149,131 @@ Title bar: "RRT: key ideas". Two numbered items: "1. Work directly in continuous
 
 ## Slide 24 — RRT: key ideas (collision checking)
 
+![Slide 24 — RRT: key ideas (collision checking)](../images/03-rrts/slide-24.jpg)
+
 Title bar: "RRT: key ideas". The same two items as slide 23, plus "3. Leverage efficient collision checking algorithms (e.g., GJK)" ("collision checking" in blue). On the right, a still on black: on the left two faceted polyhedra (a dodecahedron-like shape in green, blue and purple above a pyramid-like shape in green, teal and purple) touching or overlapping; a rightward implication arrow (⟹); on the right a large translucent teal polyhedron with a purple tetrahedron inside it drawn with yellow edges and yellow vertex dots. Below, a rounded box: "Nice explanation of GJK:" with the link https://www.youtube.com/watch?v=ajv46BSqcK4
 
 ## Slide 25 — Rapidly-Exploring Randomized Tree (RRT): Iteration 0
 
-Title bar: "Rapidly-Exploring Randomized Tree (RRT)". Subtitle "Iteration 0". This starts a step-by-step RRT example in a 2D space. Two dark-red rectangular obstacles: a tall vertical rectangle at the left-centre, and a shorter wide horizontal rectangle in the upper centre-right, higher than the first. A blue dot labelled $\bar{q}_A$ at the lower left (start), below and left of the vertical rectangle. A green dot labelled $\bar{q}_B$ at the upper right (goal), just right of the horizontal rectangle's top right. The tree so far is only the blue dot $\bar{q}_A$. Slides 25 to 40 all use this same layout, with the same obstacles and the same $\bar{q}_A$ and $\bar{q}_B$; only the changes are listed below.
+![Slide 25 — Rapidly-Exploring Randomized Tree (RRT): Iteration 0](../images/03-rrts/slide-25.jpg)
+
+Title bar: "Rapidly-Exploring Randomized Tree (RRT)". Subtitle "Iteration 0". This starts a step-by-step RRT example in a 2D space. Two dark-red rectangular obstacles: a tall vertical rectangle at the left-centre, and a shorter wide horizontal rectangle in the upper centre-right, higher than the first. A blue dot labelled $\bar{q}_ A$ at the lower left (start), below and left of the vertical rectangle. A green dot labelled $\bar{q}_ B$ at the upper right (goal), just right of the horizontal rectangle's top right. The tree so far is only the blue dot $\bar{q}_ A$. Slides 25 to 40 all use this same layout, with the same obstacles and the same $\bar{q}_ A$ and $\bar{q}_ B$; only the changes are listed below.
 
 ## Slide 26 — RRT: Iteration 1, random sample
 
-Subtitle "Iteration 1". New: a blue dot labelled $\bar{q}_{\text{rand}}$ in free space at the bottom, right of the vertical rectangle and below the horizontal one (about the lower-middle of the plot).
+Subtitle "Iteration 1". New: a blue dot labelled $\bar{q}_ {\text{rand}}$ in free space at the bottom, right of the vertical rectangle and below the horizontal one (about the lower-middle of the plot).
 
 ## Slide 27 — RRT: Iteration 1, direction to the sample
 
-Subtitle "Iteration 1". New: a dotted line from $\bar{q}_A$ to $\bar{q}_{\text{rand}}$ (the only tree node is $\bar{q}_A$, so it is the nearest node).
+Subtitle "Iteration 1". New: a dotted line from $\bar{q}_ A$ to $\bar{q}_ {\text{rand}}$ (the only tree node is $\bar{q}_ A$, so it is the nearest node).
 
 ## Slide 28 — RRT: Iteration 1, step of distance d
 
-Subtitle "Iteration 1". New: a blue dot labelled $\bar{q}_s$ on the dotted line a short distance right of $\bar{q}_A$, and a black double-headed arrow between $\bar{q}_A$ and $\bar{q}_s$ labelled $d$ (the step size).
+![Slide 28 — RRT: Iteration 1, step of distance d](../images/03-rrts/slide-28.jpg)
+
+Subtitle "Iteration 1". New: a blue dot labelled $\bar{q}_ s$ on the dotted line a short distance right of $\bar{q}_ A$, and a black double-headed arrow between $\bar{q}_ A$ and $\bar{q}_ s$ labelled $d$ (the step size).
 
 ## Slide 29 — RRT: Iteration 1, edge added
 
-Subtitle "Iteration 1". The dotted line, the $\bar{q}_{\text{rand}}$ dot and its label are gone. A solid black edge now joins $\bar{q}_A$ and $\bar{q}_s$; both are blue tree nodes. Label $\bar{q}_s$ remains.
+Subtitle "Iteration 1". The dotted line, the $\bar{q}_ {\text{rand}}$ dot and its label are gone. A solid black edge now joins $\bar{q}_ A$ and $\bar{q}_ s$; both are blue tree nodes. Label $\bar{q}_ s$ remains.
 
 ## Slide 30 — RRT: Iteration 2, random sample
 
-Subtitle "Iteration 2". The tree is $\bar{q}_A$ with the edge to the second node (the label $\bar{q}_s$ is gone). New: $\bar{q}_{\text{rand}}$ as a blue dot in free space just right of the vertical rectangle, at about its lower-middle height.
+Subtitle "Iteration 2". The tree is $\bar{q}_ A$ with the edge to the second node (the label $\bar{q}_ s$ is gone). New: $\bar{q}_ {\text{rand}}$ as a blue dot in free space just right of the vertical rectangle, at about its lower-middle height.
 
 ## Slide 31 — RRT: Iteration 2, nearest node
 
-Subtitle "Iteration 2". New: the second tree node (the one added in iteration 1) is labelled $\bar{q}_{\text{near}}$, and a dotted line runs from it up and to the right to $\bar{q}_{\text{rand}}$ (in free space, right of the vertical rectangle); the dotted line clips the lower right corner of the vertical rectangle on its way.
+Subtitle "Iteration 2". New: the second tree node (the one added in iteration 1) is labelled $\bar{q}_ {\text{near}}$, and a dotted line runs from it up and to the right to $\bar{q}_ {\text{rand}}$ (in free space, right of the vertical rectangle); the dotted line clips the lower right corner of the vertical rectangle on its way.
 
 ## Slide 32 — RRT: Iteration 2, step toward the sample
 
-Subtitle "Iteration 2". New: a blue dot labelled $\bar{q}_s$ on the dotted line, a short distance from $\bar{q}_{\text{near}}$, just below the bottom edge of the vertical rectangle (in free space). The dotted line continues past $\bar{q}_s$, across the rectangle's corner, to $\bar{q}_{\text{rand}}$.
+![Slide 32 — RRT: Iteration 2, step toward the sample](../images/03-rrts/slide-32.jpg)
+
+Subtitle "Iteration 2". New: a blue dot labelled $\bar{q}_ s$ on the dotted line, a short distance from $\bar{q}_ {\text{near}}$, just below the bottom edge of the vertical rectangle (in free space). The dotted line continues past $\bar{q}_ s$, across the rectangle's corner, to $\bar{q}_ {\text{rand}}$.
 
 ## Slide 33 — RRT: Iteration 2, edge added
 
-Subtitle "Iteration 2". The dotted line and $\bar{q}_{\text{rand}}$ are gone. A solid black edge joins $\bar{q}_{\text{near}}$ to the new node $\bar{q}_s$, which touches the bottom edge of the vertical rectangle from below. The tree is now a chain of three nodes, $\bar{q}_A$, $\bar{q}_{\text{near}}$ and $\bar{q}_s$, joined by two edges. Labels $\bar{q}_s$ and $\bar{q}_{\text{near}}$ remain.
+Subtitle "Iteration 2". The dotted line and $\bar{q}_ {\text{rand}}$ are gone. A solid black edge joins $\bar{q}_ {\text{near}}$ to the new node $\bar{q}_ s$, which touches the bottom edge of the vertical rectangle from below. The tree is now a chain of three nodes, $\bar{q}_ A$, $\bar{q}_ {\text{near}}$ and $\bar{q}_ s$, joined by two edges. Labels $\bar{q}_ s$ and $\bar{q}_ {\text{near}}$ remain.
 
 ## Slide 34 — RRT: Iteration 3, random sample
 
-Subtitle "Iteration 3". The tree is the three-node chain (labels removed except $\bar{q}_A$). New: $\bar{q}_{\text{rand}}$ as a blue dot just left of the vertical rectangle, near its top (its label overlaps the rectangle's left edge).
+Subtitle "Iteration 3". The tree is the three-node chain (labels removed except $\bar{q}_ A$). New: $\bar{q}_ {\text{rand}}$ as a blue dot just left of the vertical rectangle, near its top (its label overlaps the rectangle's left edge).
 
 ## Slide 35 — RRT: Iteration 3, nearest node
 
-Subtitle "Iteration 3". New: the top node of the chain (the one touching the bottom of the vertical rectangle) is labelled $\bar{q}_{\text{near}}$, and a dotted line runs from it up through the vertical rectangle to $\bar{q}_{\text{rand}}$.
+Subtitle "Iteration 3". New: the top node of the chain (the one touching the bottom of the vertical rectangle) is labelled $\bar{q}_ {\text{near}}$, and a dotted line runs from it up through the vertical rectangle to $\bar{q}_ {\text{rand}}$.
 
 ## Slide 36 — RRT: Iteration 3, step toward the sample
 
-Subtitle "Iteration 3". New: a blue dot labelled $\bar{q}_s$ on the dotted line, a short distance above $\bar{q}_{\text{near}}$. $\bar{q}_s$ lies **inside** the vertical dark-red rectangle (in the obstacle); $\bar{q}_{\text{near}}$ itself is just below the rectangle's bottom edge, in free space. A short solid line joins $\bar{q}_{\text{near}}$ to $\bar{q}_s$. $\bar{q}_{\text{rand}}$ is still shown, a blue dot left of the rectangle's left edge (in free space), with the dotted line running to it through the rectangle.
+![Slide 36 — RRT: Iteration 3, step toward the sample](../images/03-rrts/slide-36.jpg)
+
+Subtitle "Iteration 3". New: a blue dot labelled $\bar{q}_ s$ on the dotted line, a short distance above $\bar{q}_ {\text{near}}$. $\bar{q}_ s$ lies **inside** the vertical dark-red rectangle (in the obstacle); $\bar{q}_ {\text{near}}$ itself is just below the rectangle's bottom edge, in free space. A short solid line joins $\bar{q}_ {\text{near}}$ to $\bar{q}_ s$. $\bar{q}_ {\text{rand}}$ is still shown, a blue dot left of the rectangle's left edge (in free space), with the dotted line running to it through the rectangle.
 
 ## Slide 37 — RRT: Iteration 3, sample rejected
 
-Subtitle "Iteration 3". The dotted line, $\bar{q}_{\text{rand}}$, the node inside the rectangle and its edge are gone. The tree is unchanged from the end of iteration 2 (three nodes, two edges, only $\bar{q}_A$ labelled): no node was added in this iteration.
+Subtitle "Iteration 3". The dotted line, $\bar{q}_ {\text{rand}}$, the node inside the rectangle and its edge are gone. The tree is unchanged from the end of iteration 2 (three nodes, two edges, only $\bar{q}_ A$ labelled): no node was added in this iteration.
 
 ## Slide 38 — RRT: Iteration 4, random sample
 
-Subtitle "Iteration 4". The tree is the three-node chain. New: $\bar{q}_{\text{rand}}$ as a blue dot in free space below and to the right of the tree, at the bottom of the plot.
+Subtitle "Iteration 4". The tree is the three-node chain. New: $\bar{q}_ {\text{rand}}$ as a blue dot in free space below and to the right of the tree, at the bottom of the plot.
 
 ## Slide 39 — RRT: Iteration 4, nearest node
 
-Subtitle "Iteration 4". New: the top node of the chain (touching the bottom of the vertical rectangle) is labelled $\bar{q}_{\text{near}}$, with a dotted line to $\bar{q}_{\text{rand}}$ running down and to the right.
+Subtitle "Iteration 4". New: the top node of the chain (touching the bottom of the vertical rectangle) is labelled $\bar{q}_ {\text{near}}$, with a dotted line to $\bar{q}_ {\text{rand}}$ running down and to the right.
 
 ## Slide 40 — RRT: Iteration 4, step toward the sample
 
-Subtitle "Iteration 4". New: a blue dot labelled $\bar{q}_s$ on the dotted line, a short distance down and to the right of $\bar{q}_{\text{near}}$, in free space, and a solid edge already joining $\bar{q}_{\text{near}}$ to it. The dotted line continues on to $\bar{q}_{\text{rand}}$. This is the last slide of iteration 4: the deck has no separate "edge added" slide for it, and slide 41 starts iteration 5 with $\bar{q}_s$ in the tree.
+Subtitle "Iteration 4". New: a blue dot labelled $\bar{q}_ s$ on the dotted line, a short distance down and to the right of $\bar{q}_ {\text{near}}$, in free space, and a solid edge already joining $\bar{q}_ {\text{near}}$ to it. The dotted line continues on to $\bar{q}_ {\text{rand}}$. This is the last slide of iteration 4: the deck has no separate "edge added" slide for it, and slide 41 starts iteration 5 with $\bar{q}_ s$ in the tree.
 
 ## Slide 41 — RRT: Iteration 5, random sample
 
-Subtitle "Iteration 5". Same layout as slides 25 to 40. The tree now has four nodes: $\bar{q}_A$ at the lower left; a second node up and right of it; a third node just below the bottom edge of the vertical rectangle; and a fourth node down and to the right of the third, joined to it by a solid edge (this fourth node was added in iteration 4; the deck has no separate "edge added" slide for iteration 4). Edges: $\bar{q}_A$ to second node, second node to third node, third node to fourth node. New: $\bar{q}_{\text{rand}}$ as a blue dot inside the horizontal rectangle, near its lower right corner (the sample lies in an obstacle). No dotted line is drawn yet.
+Subtitle "Iteration 5". Same layout as slides 25 to 40. The tree now has four nodes: $\bar{q}_ A$ at the lower left; a second node up and right of it; a third node just below the bottom edge of the vertical rectangle; and a fourth node down and to the right of the third, joined to it by a solid edge (this fourth node was added in iteration 4; the deck has no separate "edge added" slide for iteration 4). Edges: $\bar{q}_ A$ to second node, second node to third node, third node to fourth node. New: $\bar{q}_ {\text{rand}}$ as a blue dot inside the horizontal rectangle, near its lower right corner (the sample lies in an obstacle). No dotted line is drawn yet.
 
 ## Slide 42 — RRT: Iteration 5, nearest node
 
-Subtitle "Iteration 5". New: the fourth node (the rightmost node in the tree) is labelled $\bar{q}_{\text{near}}$, and a long dotted line runs from it up and to the right to $\bar{q}_{\text{rand}}$ in the horizontal rectangle.
+Subtitle "Iteration 5". New: the fourth node (the rightmost node in the tree) is labelled $\bar{q}_ {\text{near}}$, and a long dotted line runs from it up and to the right to $\bar{q}_ {\text{rand}}$ in the horizontal rectangle.
 
 ## Slide 43 — RRT: Iteration 5, step toward the sample
 
-Subtitle "Iteration 5". New: a blue dot labelled $\bar{q}_s$ on the dotted line a short distance up and to the right of $\bar{q}_{\text{near}}$, in free space (right of the vertical rectangle), although $\bar{q}_{\text{rand}}$ lies inside the horizontal rectangle. A solid edge already joins $\bar{q}_{\text{near}}$ to $\bar{q}_s$, and the dotted line still continues to $\bar{q}_{\text{rand}}$.
+![Slide 43 — RRT: Iteration 5, step toward the sample](../images/03-rrts/slide-43.jpg)
+
+Subtitle "Iteration 5". New: a blue dot labelled $\bar{q}_ s$ on the dotted line a short distance up and to the right of $\bar{q}_ {\text{near}}$, in free space (right of the vertical rectangle), although $\bar{q}_ {\text{rand}}$ lies inside the horizontal rectangle. A solid edge already joins $\bar{q}_ {\text{near}}$ to $\bar{q}_ s$, and the dotted line still continues to $\bar{q}_ {\text{rand}}$.
 
 ## Slide 44 — RRT: Iteration 5, edge added
 
-Subtitle "Iteration 5". The dotted line, $\bar{q}_{\text{rand}}$ and the labels $\bar{q}_{\text{near}}$ and $\bar{q}_s$ are gone. A solid edge joins the previous fourth node to the new fifth node $\bar{q}_s$. The tree now has five nodes in a chain that zigzags below and to the right of the vertical rectangle's bottom edge: $\bar{q}_A$, second, third (just below the rectangle), fourth (lower, to the right), fifth (up again, right of the rectangle).
+Subtitle "Iteration 5". The dotted line, $\bar{q}_ {\text{rand}}$ and the labels $\bar{q}_ {\text{near}}$ and $\bar{q}_ s$ are gone. A solid edge joins the previous fourth node to the new fifth node $\bar{q}_ s$. The tree now has five nodes in a chain that zigzags below and to the right of the vertical rectangle's bottom edge: $\bar{q}_ A$, second, third (just below the rectangle), fourth (lower, to the right), fifth (up again, right of the rectangle).
 
 ## Slide 45 — RRT: Iteration 6, random sample
 
-Subtitle "Iteration 6". The five-node tree is unchanged. New: $\bar{q}_{\text{rand}}$ as a blue dot below the tree, near the bottom edge of the plot, a bit right of the second node's x position. The label is near the bottom edge of the page.
+Subtitle "Iteration 6". The five-node tree is unchanged. New: $\bar{q}_ {\text{rand}}$ as a blue dot below the tree, near the bottom edge of the plot, a bit right of the second node's x position. The label is near the bottom edge of the page.
 
 ## Slide 46 — RRT: Iteration 6, step toward the sample
 
-Subtitle "Iteration 6". The five-node tree of slide 44 is unchanged. New: a short dotted segment from the second node (the one next to $\bar{q}_A$) down to the blue dot $\bar{q}_{\text{rand}}$, and a blue dot labelled $\bar{q}_s$ on it, a short distance below the second node and just above $\bar{q}_{\text{rand}}$; both dots are in free space below the tree. The dotted line, a solid short edge to $\bar{q}_s$ and the dots overlap closely here; the nearest node is not labelled on this slide but is the second node from which the segment starts.
+Subtitle "Iteration 6". The five-node tree of slide 44 is unchanged. New: a short dotted segment from the second node (the one next to $\bar{q}_ A$) down to the blue dot $\bar{q}_ {\text{rand}}$, and a blue dot labelled $\bar{q}_ s$ on it, a short distance below the second node and just above $\bar{q}_ {\text{rand}}$; both dots are in free space below the tree. The dotted line, a solid short edge to $\bar{q}_ s$ and the dots overlap closely here; the nearest node is not labelled on this slide but is the second node from which the segment starts.
 
 ## Slide 47 — RRT: Iteration 6, edge added
 
-Subtitle "Iteration 6". The dotted line, $\bar{q}_{\text{rand}}$ and $\bar{q}_s$ labels are gone. A solid edge joins the second node to a new sixth node just below it (down and slightly right). The tree now has six nodes: the five-node zigzag plus this branch off the second node. Only $\bar{q}_A$ and $\bar{q}_B$ are labelled.
+![Slide 47 — RRT: Iteration 6, edge added](../images/03-rrts/slide-47.jpg)
+
+Subtitle "Iteration 6". The dotted line, $\bar{q}_ {\text{rand}}$ and $\bar{q}_ s$ labels are gone. A solid edge joins the second node to a new sixth node just below it (down and slightly right). The tree now has six nodes: the five-node zigzag plus this branch off the second node. Only $\bar{q}_ A$ and $\bar{q}_ B$ are labelled.
 
 ## Slide 48 — RRT (Algorithm 1)
 
-Title bar: "RRT". Pseudocode, in a boxed algorithm environment. The text is reproduced line by line (a typo "fo" in the third step is as printed; $q_A$ is typed without a bar in the comment and $\bar{q}_s$ appears once as $\bar{q}_S$ with a capital S subscript in the collision test).
+Title bar: "RRT". Pseudocode, in a boxed algorithm environment. The text is reproduced line by line (a typo "fo" in the third step is as printed; $q_A$ is typed without a bar in the comment and $\bar{q}_ s$ appears once as $\bar{q}_ S$ with a capital S subscript in the collision test).
 
 **Algorithm 1:** Rapidly-Exploring Randomized Tree (RRT)
 
-1. Initialize graph G with vertex set $V = \{\bar{q}_A\}$ // Here, $q_A$ is the starting configuration ;
+1. Initialize graph G with vertex set $V = \lbrace \bar{q}_ A \rbrace$ // Here, $q_A$ is the starting configuration ;
 2. **while** *Goal not reached* **do**
-    1. $\bar{q}_{\text{rand}} \leftarrow$ Randomly sample a configuration (i.e., a point in configuration space) ;
-    2. $\bar{q}_{\text{near}} \leftarrow$ Find vertex in $V$ that is nearest fo $\bar{q}_{\text{rand}}$ ;
-    3. $\bar{q}_{\text{s}} \leftarrow$ **Extend**($\bar{q}_{\text{near}}$, $\bar{q}_{\text{rand}}$) ;
-    4. **if** *$\bar{q}_S$ is in collision* **then**
+    1. $\bar{q}_ {\text{rand}} \leftarrow$ Randomly sample a configuration (i.e., a point in configuration space) ;
+    2. $\bar{q}_ {\text{near}} \leftarrow$ Find vertex in $V$ that is nearest fo $\bar{q}_ {\text{rand}}$ ;
+    3. $\bar{q}_ {\text{s}} \leftarrow$ **Extend**($\bar{q}_ {\text{near}}$, $\bar{q}_ {\text{rand}}$) ;
+    4. **if** $\bar{q}_ S$ *is in collision* **then**
         1. continue ;
     5. **else**
-        1. Add $\bar{q}_{\text{s}}$ to $V$ ;
-        2. Add edge between $\bar{q}_{\text{near}}$ and $\bar{q}_{\text{s}}$ ;
-        3. **if** $\|\bar{q}_S - \bar{q}_B\| < \epsilon$ **then**
+        1. Add $\bar{q}_ {\text{s}}$ to $V$ ;
+        2. Add edge between $\bar{q}_ {\text{near}}$ and $\bar{q}_ {\text{s}}$ ;
+        3. **if** $\Vert \bar{q}_ S - \bar{q}_ B \Vert \lt \epsilon$ **then**
             1. // If we are close enough to the goal ;
             2. **Return** SUCCESS
             3. **end**
@@ -262,17 +289,23 @@ Title bar: "RRT". A single frame of an animation (a GIF). The pale white-grey sq
 
 ## Slide 50 — RRT (video frame, tree in a 2D map)
 
+![Slide 50 — RRT (video frame, tree in a 2D map)](../images/03-rrts/slide-50.jpg)
+
 Title bar: "RRT". A single frame of a video; link below: https://www.youtube.com/watch?v=FAFw8DoKvik. A square 2D plot with a thick dark-red border, both axes running from -10 to 10 with a dotted grid, and the number "25" printed above the plot (a frame or iteration counter; its meaning is not stated). Red rectangular obstacles: a wide bar at the upper left (about x from -8 to -1, y from 5.6 to 7.1); a very tall rectangle in the upper centre-right (about x from 0.7 to 5, y from -1.2 to 8.8); a shorter wide bar at the right attached to the tall rectangle's right side (about x from 5 to 8.4, y from 3.3 to 4.5); a large square at the lower left (about x from -8 to -3.2, y from -7.6 to -2.7); and a narrow tall rectangle at the lower right (about x 5.5 to 6.4, y from -8.4 to -4.7). A yellow square at the origin (0, 0) marks the start. A magenta square at about (5.8, 5.2), just above the right-hand bar, marks the goal. A thin blue-teal tree with roughly 40–45 small green nodes spreads from the yellow square through the free space to the left, above and below: left to about (-5.2, -2) and (-4.7, 0.8), up the tall rectangle's left side to about (0.8, 5.4) (well short of its top at 8.8), and from there left along the underside of the upper-left bar to about (-3.5, 5), and down and to the right to about (4.4, -2.8). The tree has not reached the goal in this frame.
 
 ## Slide 51 — RRT: the Extend() step size
 
-Title bar: "RRT". Text: "For the **Extend**() operation, we need to specify a "step-size" parameter: d". A small diagram: a blue dot labelled $\bar{q}_{\text{near}}$ at the left, a blue dot labelled $\bar{q}_s$ a short distance to its right along a dotted line that continues to a blue dot labelled $\bar{q}_{\text{rand}}$ far to the right and slightly higher; a black double-headed arrow above the first two dots labelled $d$. Below: "We ignored the fact that points along the segment joining $\bar{q}_{\text{near}}$ and $\bar{q}_s$ may be in collision even if $\bar{q}_s$ is not. We should really be checking the entire segment if collision-free. But, for small step-size, it's reasonable to just check $\bar{q}_s$ ."
+![Slide 51 — RRT: the Extend() step size](../images/03-rrts/slide-51.png)
+
+Title bar: "RRT". Text: "For the **Extend**() operation, we need to specify a "step-size" parameter: d". A small diagram: a blue dot labelled $\bar{q}_ {\text{near}}$ at the left, a blue dot labelled $\bar{q}_ s$ a short distance to its right along a dotted line that continues to a blue dot labelled $\bar{q}_ {\text{rand}}$ far to the right and slightly higher; a black double-headed arrow above the first two dots labelled $d$. Below: "We ignored the fact that points along the segment joining $\bar{q}_ {\text{near}}$ and $\bar{q}_ s$ may be in collision even if $\bar{q}_ s$ is not. We should really be checking the entire segment if collision-free. But, for small step-size, it's reasonable to just check $\bar{q}_ s$ ."
 
 ## Slide 52 — RRT: no explicit construction of the obstacle space
 
 Title bar: "RRT". Text in a rounded box: "Important: RRTs don't require an explicit construction of $C_{\text{obs}}$. We just need to check if the robot is in collision with an obstacle for some *specific* configuration." ("Important:" and "don't require an explicit construction" in blue). Two bullets: "Collision checking can be done very efficiently. Lots of software (developed for video game engines!)" and "This is the primary reason RRTs work so well."
 
 ## Slide 53 — RRT (video: piano mover's problem in a house)
+
+![Slide 53 — RRT (video: piano mover's problem in a house)](../images/03-rrts/slide-53.jpg)
 
 Title bar: "RRT". A video still (first frame; link below). An isometric, cut-away 3D view of a small building with three rooms separated by grey walls, in light grey. Furniture: bookshelves (beige), round and rectangular tables with chairs, floor lamps, and a black grand piano in the upper room. Printed link: https://www.youtube.com/watch?v=HdfAzUXvmOQ&ab_channel=RoboticsLibrary
 
@@ -285,6 +318,8 @@ Title bar: "RRT". A video still showing a title card: "Polynomial Trajectory Pla
 Title bar: "RRT". Text in a rounded box: "We can recover the actual path from A to B by keeping track of parents (similar to discrete search)" ("keeping track of parents" in blue). Below: "The path returned by RRT can be quite jagged".
 
 ## Slide 56 — RRT (video: PR2 robot arm planning)
+
+![Slide 56 — RRT (video: PR2 robot arm planning)](../images/03-rrts/slide-56.jpg)
 
 Title bar: "RRT". A video still (first frame; link below) of a laboratory room: a white and grey two-armed PR2 robot (the label "PR2" is on its chest) standing behind a wooden table. On the table are a book (left) and a black mug (centre). Behind: filing cabinets, a whiteboard with diagrams, computer monitors, yellow chairs, a side table with a basket and cups, and a white cabinet with an open door at the left; a dark-blue carpet. Printed link: https://www.youtube.com/watch?v=vW74bC-Ygb4
 
@@ -302,7 +337,7 @@ Title bar: "RRT vs RRT*". Two side-by-side video stills headed "RRT" (left) and 
 
 ## Slide 60 — Completeness
 
-Title bar: "Completeness". Text: "Suppose there exists a path from $\bar{q}_A$ to $\bar{q}_B$. Will an RRT find it?" Then a rounded box: "Completeness: A planning algorithm is complete if it finds a path from start to goal if one exists (and does so in a finite amount of time). If a path doesn't exist, the algorithm will still terminate and return "failure" (as opposed to running forever)." ("Completeness:" in blue).
+Title bar: "Completeness". Text: "Suppose there exists a path from $\bar{q}_ A$ to $\bar{q}_ B$. Will an RRT find it?" Then a rounded box: "Completeness: A planning algorithm is complete if it finds a path from start to goal if one exists (and does so in a finite amount of time). If a path doesn't exist, the algorithm will still terminate and return "failure" (as opposed to running forever)." ("Completeness:" in blue).
 
 ## Slide 61 — Completeness (RRTs are not complete)
 

@@ -55,7 +55,7 @@ course staff (Princeton University, Fall 2026). They are published through the c
 the lecture videos on YouTube (recorded by the Princeton Broadcast Center).
 
 As checked on 2026-10-20, no licence, copyright or reuse statement appears on the course
-website, and none is printed on any page of the Lecture 1 or Lecture 2 deck. Publicly downloadable is not the
+website, and none is printed on any page of the Lecture 1, 2 or 3 deck. Publicly downloadable is not the
 same as licensed. Absent an express grant the default applies: copyright arises automatically,
 and no reuse rights pass to anyone.
 
@@ -129,3 +129,17 @@ Rendered: 22 slides, in `raw/images/02-discrete-motion-planning/`.
 | 19 | Frame of a configuration-space obstacles video (youtube.com/watch?v=SBFwgR4K1Gk). |
 | 76 | Frame of a BFS-versus-A\* animation. Not credited. |
 | 15, 17, 18, 22, 24, 27, 31, 32, 34, 41, 46, 59, 72, 74 | No third-party content identified: the deck's own diagrams and worked-example grids. |
+
+### Lecture 3 — Rapidly Exploring Randomized Trees (RRTs)
+
+Deck: [Lecture3.pdf](https://www.dropbox.com/scl/fi/5uv2vt76nqj4b32vr4i37/Lecture3.pdf?rlkey=nx8jjqjlvmgcqqhb8r1p6okzp&dl=0).
+Rendered: 17 slides, in `raw/images/03-rrts/`.
+
+| Slide | Third-party content (as identifiable from the slide) |
+| --- | --- |
+| 19 | Frame of a configuration-space obstacles video (youtube.com/watch?v=SBFwgR4K1Gk). |
+| 24 | Still from a GJK explainer video (youtube.com/watch?v=ajv46BSqcK4). |
+| 50 | Frame of an RRT video (youtube.com/watch?v=FAFw8DoKvik). |
+| 53 | Frame of a piano-moving RRT video from the Robotics Library channel (youtube.com/watch?v=HdfAzUXvmOQ). |
+| 56 | Frame of a PR2 arm-planning video (youtube.com/watch?v=vW74bC-Ygb4). |
+| 7, 9, 10, 13, 21, 25, 28, 32, 36, 43, 47, 51 | No third-party content identified: the deck's own diagrams and worked-example steps. |
