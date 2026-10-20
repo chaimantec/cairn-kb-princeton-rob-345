@@ -17,11 +17,11 @@ images opted in; PDFs link-only. Commit as chaimantec <nantapon@chaimantec.com>.
 ### Crawl
 - [x] Fetch course site index: https://irom-lab.princeton.edu/intro-to-robotics/ (single page; all materials on Dropbox)
 - [x] Download Lecture1.pdf (Dropbox, 75MB, 57 pages) into raw/pdfs/ (gitignored)
-- [ ] Write sources.md
+- [x] Write sources.md (hand-written by lecture; the generated table filed course decks under "papers")
 
 ### Slides
 - [x] Slide number map: printed 2 absent (hidden slide), pages 2–56 print page+1; pages 1, 4–7, 32, 38, 57 print none
-- [ ] raw/slides/01-intro-to-robotics.md (Sonnet), --verify clean
+- [x] raw/slides/01-intro-to-robotics.md (Sonnet), --verify clean (57 headings)
 - [ ] Figure audit of six figure-heavy pages (Sonnet), fixes applied
 
 ### Wiki
