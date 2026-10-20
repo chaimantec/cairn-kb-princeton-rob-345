@@ -81,7 +81,7 @@ No printed title and no printed number (label inferred). Four equal panels in a 
 
 - Top left: a white domestic kitchen with a black robot on a stand with two arms holding black grippers and cameras; a "π" logo is in the top right corner of the panel.
 - Top right: close-up of a robot arm with a green status light and orange/black gripper fingers bending a white book or box lid on a dark carpet; large white text overlaid: "GEN-1.5".
-- Bottom left: a lab bench with a black mat holding test tubes in a rack, a blue tube rack, a syringe, an orange container and small cups; black robot grippers with small printed lettering (illegible) reach over it.
+- Bottom left: a lab bench with a black mat holding test tubes in a rack, a blue tube rack, a syringe, a pipette, an orange container, a blue bowl of caps and small cups; black robot grippers reach over it, one gripper body printed "ROBOTIQ" with a logo mark.
 - Bottom right: a white robot with the text "DYNA" on its base, arm cutting celery on a wooden board, with a tray of chopped celery and several similar robots and people blurred in the background.
 
 ## Slide 9 — Video slide (black frame)
@@ -119,7 +119,7 @@ Left: a product-style side-view photo of a white Waymo robotaxi SUV (roof sensor
 Right: line chart titled "Estimated Market Share (Gross Bookings) – 8/23-4/25, San Francisco Operating Zone, per YipitData". Y axis: "% of San Francisco Gross Bookings", ticks 0%, 25%, 50%, 75%. X axis ticks: 8/23, 12/23, 4/24, 8/24, 12/24, 4/25. Legend: Waymo (blue), Uber (black), Lyft (magenta). Three series (values approximate, read from the plot):
 
 - Waymo (blue): rises steadily from 0% at 8/23; about 7% at 12/23; about 9% at 4/24; about 14-15% at 8/24; about 22% around 11/24 then a dip to about 20% at 12/24; about 27% at 4/25.
-- Uber (black): about 66% at 8/23 falling to about 61% shortly after; about 63% at 12/23; peak of about 66% near 3/24; about 58% at 8/24; about 55% at 12/24; about 54.5% at 4/25.
+- Uber (black): about 66% at 8/23 falling to about 61% shortly after; about 63% at 12/23; peak of about 66% near 3/24; about 57% at 8/24; about 55–56% at 12/24; about 54.5% at 4/25.
 - Lyft (magenta): about 34% at 8/23 (peak about 35%); about 30% at 12/23; about 27% at 4/24; about 28% at 8/24; about 24% at 12/24; about 18.5% at 4/25. The Waymo and Lyft lines first meet at about 22% around 11/24; Lyft is back above at 12/24 (about 24% against 20%), and Waymo crosses above for good around 2/25.
 
 ## Slide 16 — From labs to the real world (Futurism article)

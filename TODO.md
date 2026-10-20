@@ -12,7 +12,7 @@ images opted in; PDFs link-only. Commit as chaimantec <nantapon@chaimantec.com>.
 
 ### Transcripts
 - [x] 01 Lecture 1: Intro to Robotics — video cMhFAq53v1c — verbatim captions in raw/transcripts/original/
-- [ ] 01 copy-edit (Sonnet), then timestamp / number / word-ratio checks and proper-noun grep against the slides
+- [x] 01 copy-edit (Sonnet): 74/74 timestamps identical, no number lost, no ratio outlier; 41 restorations, 10 [Ed: unclear]; proper nouns grepped against the slides
 
 ### Crawl
 - [x] Fetch course site index: https://irom-lab.princeton.edu/intro-to-robotics/ (single page; all materials on Dropbox)
@@ -22,7 +22,7 @@ images opted in; PDFs link-only. Commit as chaimantec <nantapon@chaimantec.com>.
 ### Slides
 - [x] Slide number map: printed 2 absent (hidden slide), pages 2–56 print page+1; pages 1, 4–7, 32, 38, 57 print none
 - [x] raw/slides/01-intro-to-robotics.md (Sonnet), --verify clean (57 headings)
-- [ ] Figure audit of six figure-heavy pages (Sonnet), fixes applied
+- [x] Figure audit of six figure-heavy pages (Sonnet): 4 agree; fixed slide 8 (ROBOTIQ legible) and slide 15 (Waymo/Lyft crossing, two Uber values)
 
 ### Wiki
 - [ ] wiki/01-intro-to-robotics.md
