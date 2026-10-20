@@ -22,8 +22,8 @@ chaimantec <nantapon@chaimantec.com>. Catalog re-fetched 2026-10-21: still 9 lec
 ### Slides
 - [x] Download Lecture3.pdf (Dropbox dl=1, 9.4MB, 62 pages) into raw/pdfs/ (gitignored)
 - [x] Slide number map: 1:1 (62 pages); pages 1 and 2 print no number
-- [ ] raw/slides/03-rrts.md (Sonnet), --verify clean
-- [ ] Figure audit of six figure-heavy pages (Sonnet)
+- [x] raw/slides/03-rrts.md (Sonnet), --verify clean (62 headings)
+- [x] Figure audit (Sonnet), two passes, 24 slides incl. every step of the RRT walk-through: first pass 4 of 10 pages wrong (36 wrong point in collision, 41 node count, 44 wording, 50 tree extent); second pass 14 pages: 40/43 omitted the solid edge already drawn, 31 line clips the corner, small counts on 10/12/24. Renders of 36 and 50 checked in the parent
 
 ### Wiki
 - [ ] wiki/03-rrts.md
