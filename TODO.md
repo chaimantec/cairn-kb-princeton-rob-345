@@ -28,7 +28,7 @@ chaimantec <nantapon@chaimantec.com>. Catalog re-fetched 2026-10-21: still 9 lec
 - [x] Figure audit (Sonnet) of the deck's photographs and the notes' three figures, at 600 dpi: notes Figure 3(b) spin directions legible (re-checked in the parent), Figure 1(b) Y arrow, small fixes to 1(a), 2, 3(a); pole counts on slides 7 and 9, pipe lettering on 10; no person in any photograph; eqs. (7), (8), (28)–(31) agree
 
 ### Wiki
-- [ ] wiki/04-quadrotor-dynamics.md
+- [x] wiki/04-quadrotor-dynamics.md (derivation cited to the notes, since the board is not in the record; 7 images, all with hand-written captions)
 - [ ] Topic pages (new: dynamics / quadrotor model; extend course-map, crazyflie)
 - [ ] INDEX.md table of contents and coverage paragraph
 
