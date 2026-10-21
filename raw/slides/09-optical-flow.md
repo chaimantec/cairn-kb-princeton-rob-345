@@ -72,6 +72,8 @@ Title bar: "Optical flow" (blue). Printed number 5. Below the image, an underlin
 
 This is a single frame of a video whose URL is printed on the slide. Two panels side by side. Left panel: a mostly white image with a small colour wheel (a circle shaded in pastel hues, black outline) in the upper left corner, and a soft-edged blob in the middle: yellow-green on its left part, green on its right part, with a fainter pale-blue-green smear above it and faint pale blue patches at the left edge and lower left. Right panel: a camera view of a motorway seen from above, the road receding from the bottom of the picture towards the upper left (its far end about 40% of the way across), with trucks and cars on it, a blue road sign in the distance and buildings along the horizon. A grid of small green arrows is overlaid on the whole picture. The arrows are tiny and mostly dot-like over the roadside vegetation and sky, and longer, pointing upward in the image, over the two trucks in the foreground (one white truck and one dark truck) and over their shadows on the road.
 
+In the lecture: the video is played while the lecturer explains it (≈4:03–5:33). The left panel plots the magnitude of the apparent motion, more green meaning a larger magnitude; the arrows on the right give its direction at each pixel as the cars pass by.
+
 ## Slide 6 — Which way is the drone's motion?
 
 ![Slide 6 — Which way is the drone's motion?](../images/09-optical-flow/slide-6.jpg)
@@ -91,6 +93,8 @@ The exact length and direction of individual arrows are only approximate in this
 
 No answer to the question is printed on the slide.
 
+In the lecture: the flow field is from a drone's forward-facing camera. After several guesses from the class, the answer given is that the drone is "mostly turning to the left": the apparent motion at these points is to the right, which is what turning towards the left produces (≈4:48–7:50).
+
 ## Slide 7 — Estimating speed (homework)
 
 ![Slide 7 — Estimating speed (homework)](../images/09-optical-flow/slide-7.png)
@@ -98,6 +102,8 @@ No answer to the question is printed on the slide.
 Title bar: "Estimating speed (homework)" (blue). Printed number 7.
 
 A side-view diagram of a quadrotor above a ground plane. At the top, a grey horizontal bar (the body) with a short vertical post at each end, each post carrying a black horizontal propeller blade pair; a short grey stem drops from the middle of the bar to a white rectangle labelled "Pin-hole camera". To the left of the rectangle, a double-headed vertical arrow spanning the height of the rectangle is labelled "Focal length: f". To the right of the rectangle, a short black horizontal arrow pointing right is labelled "Speed: v". Below the rectangle, a double-headed vertical arrow runs from the bottom of the camera rectangle down to a long blue horizontal bar (the ground), labelled "Height: h".
+
+In the lecture: this is the next homework, estimating the drone's velocity from a downward-facing pinhole camera's optical flow and the drone's height (≈7:50–8:36).
 
 ## Slide 8 — Optical flow
 
@@ -123,13 +129,17 @@ In a rounded grey box: "Apparent motion could be due to different factors:" ("di
 
 Title bar: "Optical flow: bird flight" (blue). Printed number 11. The slide body is empty white apart from one underlined URL in the middle: https://video.wyomingpbs.org/video/nova-mysteries-optic-flow/
 
-The slide shows no video frame in the PDF: the area where a video would sit is blank white. The URL is the only content. (Whether and how it was played is for the lecture transcript.)
+The slide shows no video frame in the PDF: the area where a video would sit is blank white. The URL is the only content.
+
+In the lecture: the bird-flight video is played in class (≈12:26–15:32); its narration is in the transcript.
 
 ## Slide 12 — The waggle dance (video frame)
 
 Title bar: "The waggle dance" (blue). Printed number 12. Below the picture, an underlined URL: https://www.youtube.com/watch?v=LU_KD1enR3Q
 
 This is a single frame of a video whose URL is printed on the slide. The frame is a black rectangle filling the picture area, with the "Smithsonian CHANNEL" logo (white text and a yellow sun-burst symbol) in the lower right corner. No other content is visible in the frame.
+
+In the lecture: the waggle-dance video is played in class (≈15:32–18:46); its narration is in the transcript. The PDF holds only a black frame, not what was shown.
 
 ## Slide 13 — The waggle dance (news article)
 
@@ -156,6 +166,8 @@ Grey title bar with no title text. Printed number 14. In the middle of the slide
 Title bar: "Aperture Problem" (blue). Printed number 15. Below the picture: "Source: https://www.opticalillusion.net/optical-illusions/the-barber-pole-illusion/" (the URL underlined).
 
 A dark-red rectangular picture containing two illustrations, a single frame of an animation from the source page. On the left is a barber pole: a white sphere on top of a cylinder wrapped in diagonal blue, white and red stripes, with grey octagonal bands at its top and base. The stripes run from the lower left to the upper right (rising to the right). No arrows are drawn on the barber pole. On the right are two pale-green shapes with black diagonal stripes, all running from the lower left up to the upper right at the same slope as the barber pole's stripes: an ellipse (lower left of the pair), and a large "L"-shaped band (a horizontal bar along the top whose right end turns down into a vertical bar along the right side, the elbow at the upper right). The L shape is open to the lower left, with the ellipse sitting inside the open corner. No arrows are drawn on any shape. No caption besides the source line is printed.
+
+In the lecture: this is a video, played in class (≈42:21–45:26). The class watched the stripes in the top bar of the L-shaped band (seen moving left), its vertical bar (seen moving up) and the ellipse; once the whole picture was in view, most saw the stripes in the top bar moving to the top left.
 
 ## Slide 16 — Lucas-Kanade optical flow
 
@@ -184,6 +196,8 @@ The same photograph as slide 16. A small red-outlined square (hollow) is drawn a
 Title bar: "Optical flow" (blue). Printed number 19. Below the image, an underlined URL: https://www.youtube.com/watch?v=5rR_9YIcg_s
 
 This is a single frame of the video whose URL is also printed on slide 5, at a different moment from the frame on slide 5. Two panels side by side, as on slide 5. Left panel: a mostly white image with the small colour wheel (pastel hues, black outline) in the upper left corner and a soft-edged coloured smear: pale green and pale blue-green above, yellow-green in the middle and green in the lower middle, extending to the bottom edge of the panel; a faint pale blue patch at the left edge and a faint pink patch in the lower left. Right panel: the same motorway camera view, the road again receding towards the upper left, now with more vehicles: two white trucks or vans in the upper middle, one white van lower down, one white van cut off by the bottom edge, and a few small cars farther up the road. A grid of small green arrows covers the picture; over the road and the foreground vehicles the arrows are long and point upward in the image, and over roadside vegetation and sky they are tiny.
+
+In the lecture: shown again near the end, with the remark that the estimates jitter and that one big arrow is inconsistent with its neighbours (≈1:06:04).
 
 ## Slide 20 — Sensing is imperfect
 

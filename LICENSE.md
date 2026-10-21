@@ -56,8 +56,8 @@ course staff (Princeton University, Fall 2026). They are published through the c
 the lecture videos on YouTube (recorded by the Princeton Broadcast Center).
 
 As checked on 2026-10-20, no licence, copyright or reuse statement appears on the course
-website, and none is printed on any page of the Lecture 1, 2, 3, 4, 5 or 6 deck or of the Lecture 4,
-5 or 6 notes (checked 2026-10-21). Publicly downloadable is not the
+website, and none is printed on any page of the Lecture 1–9 decks or of the Lecture 4–9
+notes (checked 2026-10-21). Publicly downloadable is not the
 same as licensed. Absent an express grant the default applies: copyright arises automatically,
 and no reuse rights pass to anyone.
 
@@ -217,3 +217,22 @@ Rendered: 4 slides and the notes' 2 drawings (cropped; the notes print no captio
 | Slide 11 | A frame of a YouTube video (<https://www.youtube.com/watch?v=8OVsJNgNfa0>) of a quadrotor in a University of Zurich lab, whose sign is in the frame. Not credited on the slide beyond the link. |
 | Slide 12 | A frame of a YouTube video (<https://www.youtube.com/watch?v=wBhS77cAJ0s>) of a fixed-wing airplane in a prop hang, work the lecturer was involved in during his PhD (≈1:12:49). Not credited on the slide beyond the link. |
 | Notes drawings 1–2 | A hand-drawn quadrotor on a vertical line with the height marked, and a typeset sketch of a diagonal matrix Q. Not credited; apparently the course's own. |
+
+### Lecture 9 — Optical Flow
+
+Deck: [Lecture9_slides.pdf](https://www.dropbox.com/scl/fi/yjkah2nhv83fdbnf6ea5a/Lecture9_slides.pdf?rlkey=d83o8wcmk8oczkogd2tpuogq3&dl=0).
+Notes: [Lecture9_notes.pdf](https://www.dropbox.com/scl/fi/az52bpcoly0ophkzc7sqj/Lecture9_notes.pdf?rlkey=ijs39xouvybcpqcv3cluaapvu&dl=0).
+Rendered: 9 slides and the notes' 4 drawings (cropped; the notes print no captions), in
+`raw/images/09-optical-flow/`.
+
+| Image | Third-party content (as identifiable from the page) |
+| --- | --- |
+| Slide 3 | A drawn path among four obstacles from Start to Goal. Not credited; apparently the course's own. |
+| Slide 4 | A photograph of a Crazyflie drone (a Bitcraze product; "bitcraze.se" is printed on its board) with the Flow deck, held in a hand. Not credited. |
+| Slide 5 | A frame of a YouTube video (<https://www.youtube.com/watch?v=5rR_9YIcg_s>) showing an optical flow field over motorway traffic. Not credited on the slide beyond the link. |
+| Slide 6 | An optical flow field plotted over a grayscale image of a corridor, with faint pink text at the top left, partly hidden, that may be a credit and is not legible in full. |
+| Slide 7 | A diagram of a drone with a pinhole camera above the ground. Not credited; apparently the course's own. |
+| Slide 8 | A diagram of four discs moving between two frames, printed "Credit: David Fouhey". |
+| Slide 15 | A frame of the barber pole illusion, printed "Source: https://www.opticalillusion.net/optical-illusions/the-barber-pole-illusion/". |
+| Slides 17–18 | A photograph of a stone building with a tower, among bare trees, marked up with boxes, arrows and magnified insets. Not credited. |
+| Notes drawings 1–4 | Hand-drawn sketches: moving objects in a frame, a displaced point, the gradient and two flow vectors, an edge with its gradients. Not credited; apparently the course's own. |

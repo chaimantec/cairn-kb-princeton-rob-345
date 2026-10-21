@@ -118,3 +118,7 @@ track it (Lecture 8, ≈1:16:38).
 - [Lecture 8 — The Linear Quadratic Regulator](08-lqr.md): the control loop at 500 hertz, the cost
   function, the Riccati equation and the optimal gain, stability, tuning $Q$ and $R$ for the lab, and LQR
   on a quadrotor, an airplane and a humanoid. See [the linear quadratic regulator](lqr.md).
+- [Lecture 9 — Optical Flow](09-optical-flow.md#how-did-the-drone-localize-itself): a feedback
+  controller needs the state. In the RRT lab a waypoint-following controller corrected deviations from
+  the planned path, which meant the drone had to localize itself with onboard sensors (slide 3,
+  ≈0:57–1:46).

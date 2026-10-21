@@ -9,17 +9,18 @@ work hands-on with the Crazyflie quadrotor, and the final project trains a visio
 navigation policy with imitation learning. ROB 345 is the undergraduate course; ROB 549 is the
 graduate track.
 
-> **Coverage: Lectures 1–8, of the 9 recorded lectures in the catalog.** The course site
+> **Coverage: Lectures 1–9, all 9 recorded lectures in the catalog.** The course site
 > schedules 24 lectures, of which lectures 1–9 had videos and slides when this was built
 > (2026-10-20). This knowledge base holds the introduction (Lecture 1), discrete motion planning
 > (Lecture 2), randomized motion planning with RRTs (Lecture 3), quadrotor dynamics (Lecture 4),
 > differential flatness (Lecture 5), trajectory optimization (Lecture 6), stability and PD
-> control (Lecture 7) and the linear quadratic regulator (Lecture 8): their edited transcripts, their
-> full slide decks as text, the written notes of Lectures 4–8 as text, 94 images (82 slides, the 3
-> figures of Lecture 4's notes and the drawings of Lecture 5's notes (4), Lecture 7's (3) and Lecture
-> 8's (2)), and the course and concept pages they start. **It cannot answer questions about the
-> technical content of lectures 9 onward** (optical flow and later). For those, point the
-> learner to the lecture's slides and notes in [`sources.md`](sources.md). Build progress is in [TODO.md](TODO.md).
+> control (Lecture 7), the linear quadratic regulator (Lecture 8) and optical flow (Lecture 9): their
+> edited transcripts, their full slide decks as text, the written notes of Lectures 4–9 as text, 107
+> images (91 slides, the 3 figures of Lecture 4's notes and the drawings of Lecture 5's notes (4),
+> Lecture 7's (3), Lecture 8's (2) and Lecture 9's (4)), and the course and concept pages they start.
+> **It cannot answer questions about the technical content of lectures 10 onward** (the
+> nondeterministic filter and later), which had not been posted. For those, point the learner to the
+> [course map](wiki/course-map.md) and [`sources.md`](sources.md). Build progress is in [TODO.md](TODO.md).
 
 ## Lecture pages
 
@@ -101,6 +102,16 @@ graduate track.
   the lab (height drift, oscillation, roll, a drone that falls); three videos (a Zurich quadrotor, a
   prop-hanging airplane, a humanoid); and combining planning with feedback. The formulation follows
   the lecture notes.
+- [Lecture 9 — Optical Flow](wiki/09-optical-flow.md): the start of the module on sensing, localization
+  and mapping. How the drone localized itself in the RRT lab (not by integrating the accelerometer, which
+  is too noisy, but with a downward-facing optical flow camera); the optical flow field; reading a flow
+  field (which way is the drone turning?); velocity from flow and height (the homework's pinhole camera);
+  optical flow as apparent motion, and examples where it and real motion differ; birds and the waggle
+  dance of bees; brightness constancy and small motion, eqs. (1)–(3) and estimating $I_x$, $I_y$, $I_t$ by
+  finite differences; one equation in two unknowns and the aperture problem (the barber pole illusion);
+  Lucas-Kanade with spatial coherence, a 5-by-5 window and least squares; when $A^T A$ is singular (low
+  texture, edges); learned flow methods, the next assignment, and why sensing is imperfect. The
+  derivation follows the lecture notes, cited by equation number.
 
 ## Course pages
 
@@ -172,6 +183,10 @@ graduate track.
   Riccati equation, the optimal cost, stability, the library sign convention, the assumptions and the
   trajectory-tracking version, tuning $Q$ and $R$ for a quadrotor, and how planning and feedback
   combine.
+- [Optical flow](wiki/optical-flow.md): the method in one place. Why the drone needs it, apparent versus
+  real motion, the constraint equation from brightness constancy and small motion, the aperture problem,
+  the Lucas-Kanade method and its least-squares solution, when it fails (low texture, edges, broken
+  assumptions), learned methods, and imperfect sensing.
 
 ## Raw materials
 
@@ -184,26 +199,27 @@ graduate track.
 - [`raw/slides/`](raw/slides/): every slide of each deck as text, headed `## Slide N` with
   the number printed on the slide, and every figure described in prose. **Lecture 1's deck has
   no slide 2**: a slide was hidden before export, so slide *N* is PDF page *N*−1 from slide 3
-  on. The decks of Lectures 2–8 are numbered one-to-one: slide *N* is PDF page *N*. Each
+  on. The decks of Lectures 2–9 are numbered one-to-one: slide *N* is PDF page *N*. Each
   file's header says how its numbers map to PDF pages. Lecture 4's deck has only 13 slides and
   Lecture 5's only 6 (a paper's first page and four videos); their technical content is in the
   notes. Lecture 6's 18 slides carry the ideas and pictures, and its derivation is in the notes.
   Lecture 7's 7 slides motivate feedback control; its definitions and PD control are in the notes.
   Lecture 8's 13 slides recap Lecture 7 (four are its slides again) and hold frames of three videos;
-  the LQR formulation is in the notes.
+  the LQR formulation is in the notes. Lecture 9's 21 slides motivate optical flow and show the aperture
+  problem and the Lucas-Kanade failure cases; its derivation is in the notes.
 - [`raw/notes/`](raw/notes/): the full text of the course's written lecture notes, headed
   `## Page N`, with every equation in LaTeX under the notes' own number and every figure
-  described in prose. **Only Lectures 4–8 have notes here** so far. Each file lists the printed
+  described in prose. **Only Lectures 4–9 have notes here** so far. Each file lists the printed
   slips in its notes.
 - [`raw/images/`](raw/images/): whole-slide images of figure slides, embedded under the
-  matching `## Slide N` heading and in the wiki passage that cites that slide. **Only Lectures
-  1–8 have images**, and only some of their slides: 24 of Lecture 1's 57, 22 of Lecture 2's 79,
-  17 of Lecture 3's 62, 4 of Lecture 4's 13, 3 of Lecture 5's 6, 6 of Lecture 6's 18, 2 of
-  Lecture 7's 7 and 4 of Lecture 8's 13. Lecture 4 also has the three figures of its notes, cropped
-  with their captions, and Lectures 5, 7 and 8 the drawings of their notes (four, three and two),
-  which have no captions; they are shown in `raw/notes/` and in the wiki. Lecture 6's notes have no
+  matching `## Slide N` heading and in the wiki passage that cites that slide. **Lectures 1–9
+  have images** (lectures 10 onward are not in this knowledge base), and only some of their slides:
+  24 of Lecture 1's 57, 22 of Lecture 2's 79, 17 of Lecture 3's 62, 4 of Lecture 4's 13, 3 of
+  Lecture 5's 6, 6 of Lecture 6's 18, 2 of Lecture 7's 7, 4 of Lecture 8's 13 and 9 of Lecture 9's 21.
+  Lecture 4 also has the three figures of its notes, cropped with their captions, and Lectures 5, 7, 8
+  and 9 the drawings of their notes (four, three, two and four), which have no captions; they are shown in `raw/notes/` and in the wiki. Lecture 6's notes have no
   figures.
-  Title and divider slides, text-only slides, pseudocode, news-headline screenshots, decorative stock photographs, blank video frames, video title cards whose text is transcribed, repeats
+  Title and divider slides, text-only slides, pseudocode, news-headline and news-article screenshots, decorative stock photographs, blank video frames, video title cards whose text is transcribed, repeats
   (including slides repeated from an earlier lecture's deck) and build steps, and photographs of
   course staff were deliberately not rendered. Each slide or notes file's header lists which of
   its slides or figures have images.
@@ -229,5 +245,5 @@ Cite slides as "Lecture 1, slide N" using the printed number, and spoken materia
 timestamp, e.g. "Lecture 1, ≈24:01". Cite the written notes as "Lecture 4 notes, eq. (N)" or
 "notes p. N"; each lecture's notes number their equations from (1). Prefer a slide or notes
 citation for anything written down, and a timestamp for what was said aloud. The derivations of
-Lectures 4–8 were done on a blackboard that is not in the record, so their equations are
+Lectures 4–9 were done on a blackboard that is not in the record, so their equations are
 cited to the notes.

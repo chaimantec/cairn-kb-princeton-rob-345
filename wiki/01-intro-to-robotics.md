@@ -278,7 +278,7 @@ Even without an agreed definition, most roboticists agree on a robot's main comp
   downward-facing camera sees everything moving this way, then it infers that the drone must be
   moving that way." Together with a **height sensor**, this gives a fairly accurate estimate of
   the drone's velocity relative to the ground. Optical flow gets its own lecture later in the
-  course (Lecture 9 in [the course map](course-map.md)).
+  course, [Lecture 9](09-optical-flow.md).
 - **Computation** takes in sensor measurements and processes them to decide which actuator
   commands to apply. It might be "some hand-engineered system that you've coded up" or "a
   gigantic neural network that you've trained using lots of data."

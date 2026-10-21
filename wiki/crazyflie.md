@@ -145,5 +145,7 @@ students to report problems early and to be patient with the new fleet (≈34:21
   out the day after the lecture. A TA measured the new drones' physical parameters (inertia values,
   thrust and moment coefficients); Python linearizes the dynamics about hover; students tune the cost
   matrices $Q$ and $R$ and upload the resulting controller to the drone (≈11:49, ≈1:03:34–1:06:41).
-- Lecture 9 (Optical flow) covers the drone's optical flow sensing. It is not yet in this
-  knowledge base; see the [course map](course-map.md).
+- [Lecture 9 — Optical Flow](09-optical-flow.md): how the drone localized itself in the RRT lab. The
+  downward-facing camera on the Flow deck measures optical flow (slide 4), and with the drone's height
+  that gives its velocity (≈3:17–4:03, ≈7:50–8:36); integrating the accelerometer twice is too noisy
+  (≈1:46–3:17). See [optical flow](optical-flow.md).

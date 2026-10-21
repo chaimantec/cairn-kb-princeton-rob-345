@@ -77,7 +77,9 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
   the board's version with its timestamp; the lecture never speaks the notes' equation numbers unless
   the transcript shows it.
   A printed slip the deck agent reports is a claim like any other: check an equation slip by substituting
-  one equation into the next before listing it, since agents flag correctly derived factors as slips.
+  one equation into the next before listing it, since agents flag correctly derived factors as slips. A slip
+  in a handwritten label is settled in the parent from a crop of that label (about 1k tokens), comparing the
+  glyph with the same letter elsewhere in the drawing: audits misread handwriting in both directions.
 - No licence is stated anywhere on the site or in the decks. See `LICENSE.md`.
 
 ## Transcripts
@@ -157,6 +159,7 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
 | 6 Trajectory Optimization | 6 of 18 pages | a plot, two diagrams, a QP contour plot, a demo frame, a video still; the notes have no drawings |
 | 7 Stability and PD Control | 5 | 2 of the deck's 7 slides (a simulation frame, the hover vector field) and the notes' 3 drawings |
 | 8 LQR | 6 | 4 of the deck's 13 slides (the control loop, a phase portrait, two video frames) and the notes' 2 drawings |
+| 9 Optical Flow | 13 | 9 of the deck's 21 slides (a path diagram, a drone photograph, two flow fields, two diagrams, an illusion frame, two marked-up photographs) and the notes' 4 drawings |
 
 ## Rebuilding
 

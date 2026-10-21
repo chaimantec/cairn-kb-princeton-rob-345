@@ -479,7 +479,7 @@ algorithm, such as an [RRT](rrt.md) or [trajectory optimization](trajectory-opti
 nominal sequence of control inputs that would make the system follow a trajectory if applied perfectly.
 Then a feedback controller corrects for deviations from that trajectory, to make the system track it as
 closely as possible. This closes the first module. The next lecture starts on sensing, mapping and
-localization (≈0:58); see the [course map](course-map.md).
+localization (≈0:58), with [optical flow](09-optical-flow.md); see the [course map](course-map.md).
 
 ## Gaps in the record
 

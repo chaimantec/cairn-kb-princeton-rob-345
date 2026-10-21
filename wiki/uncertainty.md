@@ -105,5 +105,10 @@ upgrade comes with a caveat: "There's always some uncertainty anytime you upgrad
 - [Lecture 8 — The Linear Quadratic Regulator](08-lqr.md#tuning-q-and-r-in-the-lab): why an LQR
   controller that is stable in theory still has to be tuned: the system is nonlinear, the model is
   imperfect, and the state is not sensed perfectly (notes p. 3).
+- [Lecture 9 — Optical Flow](09-optical-flow.md#sensing-is-imperfect): imperfect sensing. Integrating a
+  noisy accelerometer twice gives a very noisy position (≈3:17); optical flow is apparent motion, which
+  can differ from the real motion (slide 9); and every method of computing it is imperfect, so the
+  velocity it gives is too, and integrating that amplifies the errors. How to account for imperfect
+  sensing is the next lecture's question (slides 20–21, ≈1:08:22).
 - The state-estimation lectures (10–12: nondeterministic filter, Bayes filtering, Kalman and
   particle filtering) are scheduled next in this thread. They are not yet in this knowledge base.

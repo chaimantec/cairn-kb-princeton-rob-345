@@ -72,5 +72,6 @@ geometry and semantics of the world (slide 39).
   the loop as a feedback controller runs it (slide 6). Sense the state $\bar{x}(t)$, compare it with the
   desired state $\bar{x}_ 0$, choose the control input, and repeat, about 500 times a second for a
   hovering quadrotor (≈2:31–3:17).
-- Lecture 9 (Optical flow) covers the drone's optical-flow sensing in depth, as Lecture 1
-  promises (≈19:25). It is not yet in this knowledge base.
+- [Lecture 9 — Optical Flow](09-optical-flow.md): the drone's optical-flow sensing in depth, as Lecture 1
+  promises (≈19:25): how the downward-facing camera's apparent motion, with the drone's height, gives its
+  velocity, and why that estimate is imperfect. See [optical flow](optical-flow.md).
