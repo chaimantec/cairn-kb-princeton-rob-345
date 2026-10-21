@@ -4,6 +4,8 @@ lecture: 4
 slides: 13
 source_pdf: https://www.dropbox.com/scl/fi/v8bp2gyhpixill7c70u7q/Lecture4_slides.pdf?rlkey=h44i0kp1bpmxk3zdg65gvqu29&dl=0
 numbering: PDF page N = Slide N for all 13 pages (1:1). Pages 1, 2 and 3 print no number; their labels (1, 2, 3) are inferred from position. Pages 4–13 print 4–13.
+images: 4 slides are rendered and shown under their headings (7, 8, 9, 10). Not rendered — the title page (1); the topic maps (2, 3), which repeat Lecture 3's slide 2 apart from the bold line; text-only slides (4, 5, 6, 11, 12); and slide 13, whose photograph is a faded copy of slide 7 under transcribed text. The lecture's technical figures are in the notes, whose three figures are rendered in the notes file.
+figure_audit: An independent reader checked slides 2, 3, 7, 8, 9, 10 and 13 against the PDF at high resolution. Fixed: the number of foam poles on slides 7 and 9, and the pipe lettering on slide 10. No person is visible in any photograph apart from the small faded topic-map picture on slides 2 and 3.
 ---
 
 # Lecture 4 — Quadrotor Dynamics: slide-by-slide
@@ -69,21 +71,29 @@ Plain grey header bar with no title text. Printed number 6. A single rounded box
 
 ## Slide 7 — EQuad, G109
 
-Title bar: "EQuad, G109" (blue). Printed number 7. A full-width photograph of an indoor lab room, taken from the left side. On the right is a drone flight area enclosed by black netting hung from the ceiling on metal poles, with a lighter white net panel hanging in the middle. The flight area floor is green artificial turf. Standing on the turf are six blue foam-covered vertical poles (obstacles) on round metal bases, spread out along the back wall; two small white taped markers (one an X in a square) are visible on the turf. On the left, outside the netting, are white desks with teal office chairs, a few small boxes (dark with green labels) and a tape measure on the desk, and a whiteboard with illegible handwriting on the far left. The ceiling has acoustic tiles, fluorescent lights and a wooden beam. No person is visible. No room sign is visible; the only text is the slide title.
+![Slide 7 — EQuad, G109](../images/04-quadrotor-dynamics/slide-7.jpg)
+
+Title bar: "EQuad, G109" (blue). Printed number 7. A full-width photograph of an indoor lab room, taken from the left side. On the right is a drone flight area enclosed by black netting hung from the ceiling on metal poles, with a lighter white net panel hanging in the middle. The flight area floor is green artificial turf. Standing on the turf are about eight blue foam-covered vertical poles (obstacles) on round metal bases: one at the left, a cluster of three at the back left, and four on the right; two small white taped markers (one an X in a square) are visible on the turf. On the left, outside the netting, are white desks with teal office chairs, a few small boxes (dark with green labels) and a tape measure on the desk, and a whiteboard with illegible handwriting on the far left. The ceiling has acoustic tiles, fluorescent lights and a wooden beam. No person is visible. No room sign is visible; the only text is the slide title.
 
 ## Slide 8 — SEAS Robotics lab (F-wing, EQuad)
+
+![Slide 8 — SEAS Robotics lab (F-wing, EQuad)](../images/04-quadrotor-dynamics/slide-8.jpg)
 
 Title bar: "SEAS Robotics lab (F-wing, EQuad)" (blue). Printed number 8. A full-width photograph of a smaller netted drone area, seen through white netting that hangs in the foreground. Inside are green artificial turf, two blue foam-covered vertical poles, and a white X-in-a-square tape marker on the turf in the foreground. The back wall has a window or dark panel on the left and a lime-green wall on the right; a small dark object (possibly equipment mounted on that wall; it is too small to identify) is at the right edge. Bright green chairs are on the left outside the net, and part of a white table is at the lower right. No person is visible. No text other than the slide title is legible.
 
 ## Slide 9 — Setup
 
+![Slide 9 — Setup](../images/04-quadrotor-dynamics/slide-9.jpg)
+
 Title bar: "Setup" (blue). Printed number 9. Left side text: "Use RRT to plan trajectory" ("RRT" blue). Then: "Will assume map of environment (you'll create this by measuring obstacle locations)" ("map" and "measuring" blue).
 
-Right side: a tall photograph (not a simulation screenshot) of the corner of the netted flight area, taken from above at an angle. Green artificial turf; three blue foam-covered poles on round silver bases stand as obstacles (two in the upper part, one at the lower right); black netting and white wall behind with wall outlets. A white tape X-in-a-square marker lies on the turf at the lower left. At the upper right, white tape forms a rectangle with the word "END" in tape letters. No person is visible. There is no RRT tree or path drawn on this picture.
+Right side: a tall photograph (not a simulation screenshot) of the corner of the netted flight area, taken from above at an angle. Green artificial turf; four blue foam-covered poles on round silver bases stand as obstacles; black netting and white wall behind with wall outlets. A white tape X-in-a-square marker lies on the turf at the lower left. At the upper right, white tape forms a rectangle with the word "END" in tape letters. No person is visible. There is no RRT tree or path drawn on this picture.
 
 ## Slide 10 — RRT
 
-Title bar: "RRT" (blue). Printed number 10. A wide photograph, apparently a frame from a video (the slide shows only one still), of a small quadrotor with a white frame sitting on or just above the green turf near the bottom centre, with a blue light visible. Several white vertical pipes (one with printed vertical text of which "MANUFACTURING" is partly legible, and one teal pipe in the distance) stand as obstacles in the upper half. Small white paper or tape dots are scattered on the turf, forming a rough line from the foreground towards the pipes. White netting is on the left and right edges, and a cable loop lies at the upper right. This is a photograph, not a drawing of an RRT: no tree, nodes, edges or start/goal markers are drawn on it. No person is visible.
+![Slide 10 — RRT](../images/04-quadrotor-dynamics/slide-10.jpg)
+
+Title bar: "RRT" (blue). Printed number 10. A wide photograph, apparently a frame from a video (the slide shows only one still), of a small quadrotor with a white frame sitting on or just above the green turf near the bottom centre, with a blue light visible. Several white vertical pipes (one printed vertically with "J-M MANUFACTURING" and a few smaller characters, and one teal pipe in the distance) stand as obstacles in the upper half. Small white paper or tape dots are scattered on the turf, forming a rough line from the foreground towards the pipes. White netting is on the left and right edges, and a cable loop lies at the upper right. This is a photograph, not a drawing of an RRT: no tree, nodes, edges or start/goal markers are drawn on it. No person is visible.
 
 ## Slide 11 — What is in the lab space(s)?
 
