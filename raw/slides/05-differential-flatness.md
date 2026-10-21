@@ -5,7 +5,7 @@ slides: 6
 source_pdf: https://www.dropbox.com/scl/fi/e90rrmg0036wqix2xmv0f/Lecture5_slides.pdf?rlkey=qonzpbom400u3wozymjv3fga3&dl=0
 numbering: PDF page N = Slide N for all 6 pages (1:1). Page 1 prints no number; its label (1) is inferred from position. Pages 2–6 print 2–6.
 images: 3 slides are rendered and shown under their headings (2, 3, 4). Not rendered — the title page (1); slide 5, whose video frame is entirely black; and slide 6, a title card whose text is transcribed and which repeats the video of Lecture 3's slide 54. The lecture's drawings are in the notes, whose four figures are rendered in the notes file.
-figure_audit: An independent reader checked every slide against the PDF at 600 dpi, cropping slide 2's Fig. 1. Fixed: Fig. 1 is a photograph with overlaid arrows, not a line drawing; the directions of $x_W$ and $y_W$ and the position of the $y$ arc of $\psi$; slide 4's five gates (not four). No person is visible in any frame. The "video does not play" wording was replaced in the parent with what the lecture shows (each video was played).
+figure_audit: An independent reader checked every slide against the PDF at 600 dpi, cropping slide 2's Fig. 1. Fixed: Fig. 1 is a photograph with overlaid arrows, not a line drawing; the directions of the world-frame x and y arrows and the position of one yaw (psi) arc; slide 4's five gates (not four). No person is visible in any frame. The "video does not play" wording was replaced in the parent with what the lecture shows (each video was played).
 ---
 
 # Lecture 5 — Differential Flatness: slide-by-slide
