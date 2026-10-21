@@ -378,7 +378,8 @@ through the hoop is planned in real time and executed (≈1:03:51–1:04:36).
 
 **Drone racing** (slide 4, ≈1:04:36–1:05:22). More recent demonstrations come from a group at the
 University of Zurich, Davide Scaramuzza's group in the restored transcript, doing drone racing with
-differential flatness and some **model predictive control**, which the next lecture touches on. The
+differential flatness and some **model predictive control**, which Majumdar said the next lecture
+would touch on (it comes up in Lecture 7 instead). The
 frame on slide 4 shows the racing gates, lettered "UZH", and a subtitle: "We also further improve
 both methods to track a racing trajectory at up to 20m/s with centimeter-level tracking accuracy."
 
@@ -405,7 +406,9 @@ Planning for Quadrotor Flight" (Robust Robotics Group, MIT).
 
 Lecture 6 is trajectory optimization, the last of the lectures on planning with dynamics (see the
 [course map](course-map.md)); see [Lecture 6](06-trajectory-optimization.md). Model predictive control
-was to be touched on there (≈1:04:36), but Lecture 6 as recorded does not mention it. The
+was to be touched on there (≈1:04:36), but Lecture 6 as recorded does not mention it; Lecture 7 explains
+it, as receding horizon control, in answer to a question (see
+[Lecture 7](07-stability-and-pd-control.md#replanning-as-feedback-receding-horizon-control)). The
 next assignment is to point to a paper listing systems shown to be differentially flat (≈48:41).
 The [differential flatness](differential-flatness.md) page collects this lecture's results in one
 place.

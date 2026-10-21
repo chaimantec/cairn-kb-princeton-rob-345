@@ -105,5 +105,7 @@ this form, and uses them (notes p. 3, ≈25:48–26:34).
   then [linearizes](linearization.md) $\dot{\bar{x}} = f(\bar{x}, \bar{u})$ about a nominal state and
   input to $\dot{\bar{x}} = A(\bar{x} - \bar{x}_ 0) + B(\bar{u} - \bar{u}_ 0)$ for
   [trajectory optimization](trajectory-optimization.md).
-- Lectures 7 and 8 (stability and PD control, LQR) build on it too. They are not yet in this
-  knowledge base; see the [course map](course-map.md).
+- [Lecture 7 — Stability and PD Control](07-stability-and-pd-control.md) plugs a feedback controller
+  $\bar{u}(\bar{x})$ into $\dot{\bar{x}} = f(\bar{x}, \bar{u})$ to get the closed-loop dynamics
+  $\dot{\bar{x}} = f_{\text{cl}}(\bar{x})$, and defines fixed points and [stability](stability.md) for them.
+- Lecture 8 (LQR) is not yet in this knowledge base; see the [course map](course-map.md).

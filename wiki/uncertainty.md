@@ -98,5 +98,9 @@ upgrade comes with a caveat: "There's always some uncertainty anytime you upgrad
   the theme, Moravec's paradox, the three case studies, and the uncertainty in each area.
 - [Lecture 2 — Discrete Motion Planning](02-discrete-motion-planning.md#geometric-motion-planning):
   the planning assumptions that set uncertainty aside to begin with.
+- [Lecture 7 — Stability and PD Control](07-stability-and-pd-control.md#where-this-lecture-sits-why-a-plan-is-not-enough):
+  the three kinds of uncertainty motion planning has not yet dealt with (an imperfect dynamics model,
+  external disturbances, imperfect knowledge of the state or map; slide 4). Feedback control takes on
+  the first two; see [feedback control](feedback-control.md).
 - The state-estimation lectures (10–12: nondeterministic filter, Bayes filtering, Kalman and
   particle filtering) are scheduled next in this thread. They are not yet in this knowledge base.

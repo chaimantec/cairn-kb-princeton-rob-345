@@ -137,5 +137,9 @@ students to report problems early and to be patient with the new fleet (≈34:21
 - [Lecture 4 — Quadrotor Dynamics](04-quadrotor-dynamics.md): the drone's dynamics model, its
   axes and motor model, the two lab spaces in detail, and the first hardware lab (an RRT on the
   drone).
+- [Lecture 7 — Stability and PD Control](07-stability-and-pd-control.md): the lab announced for the
+  following week, implementing an LQR controller that makes the real drone stabilize itself
+  (≈10:06), and the sources of model error on the real drone (unmodeled aerodynamics, inertia
+  estimated with a pendulum setup, thrust that changes with the battery level; ≈5:34).
 - Lecture 9 (Optical flow) covers the drone's optical flow sensing. It is not yet in this
   knowledge base; see the [course map](course-map.md).

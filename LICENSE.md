@@ -189,3 +189,16 @@ Notes: [Lecture6_notes.pdf](https://www.dropbox.com/scl/fi/ctybyh0a1gdrvaywbcylu
 | Slide 12 | A contour plot of a two-variable quadratic program with its feasible region. Not credited. |
 | Slide 14 | A screenshot of an interactive sequential-QP demo for the planar quadrotor; the lecture says it was made with Claude (≈1:01:02). Not credited on the slide. |
 | Slide 16 | Frame of an acrobot video (youtube.com/watch?v=FeCwtvrD76I), which the lecture presents as from the lecturer's own PhD work. No person is visible. |
+
+### Lecture 7 — Stability and PD Control
+
+Deck: [Lecture7_slides.pdf](https://www.dropbox.com/scl/fi/6jzh0fey1mnfs8drq3905/Lecture7_slides.pdf?rlkey=nqo1qiqzhktzpy5klid7hyvgs&dl=0).
+Notes: [Lecture7_notes.pdf](https://www.dropbox.com/scl/fi/70lppdz21xpgitd1ohhuo/Lecture7_notes.pdf?rlkey=bkk76zdh9ep0cvryzmpr34y7x&dl=0).
+Rendered: 2 slides and the notes' 3 drawings (cropped; the notes print no captions), in
+`raw/images/07-stability-and-pd-control/`.
+
+| Image | Third-party content (as identifiable from the page) |
+| --- | --- |
+| Slide 3 | A screenshot of a planar quadrotor simulation (planned path, obstacles, legend), the trajectory-optimization demo of Lecture 6 replayed. Not credited; apparently the course's own. |
+| Slide 6 | Five copies of a drawing of the planar quadrotor with thrust arrows. Not credited; apparently the course's own (the same drone drawing appears in Lecture 6's deck). |
+| Notes drawings 1–3 | Two hand-drawn phase portraits, and a drawing of the planar quadrotor with thrusts F1, F2 and the X and Y axes. Not credited. |

@@ -84,6 +84,10 @@ the full 3D quadrotor, a few lines of Python compute $A$ and $B$, and the assign
 - [Lecture 6 — Trajectory Optimization](06-trajectory-optimization.md): the method and the planar
   quadrotor worked through, for trajectory optimization.
 - [Lecture 4 — Quadrotor Dynamics](04-quadrotor-dynamics.md): the equations of motion being linearized.
-- Lectures 7 and 8 (stability and PD control, LQR) turn to feedback control, for which, the notes say,
-  nonlinear dynamics also make things more complicated (notes p. 1). They are not yet in this knowledge base; see the
-  [course map](course-map.md).
+- [Lecture 7 — Stability and PD Control](07-stability-and-pd-control.md) turns to feedback control,
+  for which, the Lecture 6 notes say, nonlinear dynamics also make things more complicated (notes p. 1).
+  It calls the nominal hover point a **fixed point**, and states that for linear systems
+  $\dot{\bar{x}} = A(\bar{x} - \bar{x}_ 0) + B(\bar{u} - \bar{u}_ 0)$ local and global asymptotic
+  stability coincide and stabilizability can be checked by eigenvalue conditions on $A$ and $B$ (see
+  [stability](stability.md)).
+- Lecture 8 (LQR) is not yet in this knowledge base; see the [course map](course-map.md).

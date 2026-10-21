@@ -128,7 +128,12 @@ offline so that only collision checking is left at runtime.
 
 A planned trajectory is never followed exactly. The model is imperfect, there may be unmodeled
 aerodynamics or a gust of wind, and correcting for that is **feedback control**, the next topic in the
-course (≈1:10:41–1:11:27; see the [course map](course-map.md)).
+course (≈1:10:41–1:11:27). [Lecture 7](07-stability-and-pd-control.md#where-this-lecture-sits-why-a-plan-is-not-enough)
+replays Lecture 6's sequential-QP demo to show it: executed open loop, the plan drifts from numerical
+integration error alone, and with the mass changed by 10% it hits an obstacle (Lecture 7, ≈2:29–4:47).
+Run fast enough, trajectory optimization can itself provide the feedback, by replanning from the
+robot's current state over and over; this is **receding horizon control**, or **model predictive
+control** (Lecture 7, ≈10:06–11:40; see [feedback control](feedback-control.md)).
 
 ## Lectures
 
@@ -139,3 +144,5 @@ course (≈1:10:41–1:11:27; see the [course map](course-map.md)).
 - [Lecture 3 — RRTs](03-rrts.md): the RRT whose extension step trajectory optimization replaces.
 - [Lecture 4 — Quadrotor Dynamics](04-quadrotor-dynamics.md): the planar quadrotor's equations of
   motion that are linearized.
+- [Lecture 7 — Stability and PD Control](07-stability-and-pd-control.md): why an optimized plan
+  executed open loop drifts, and replanning (model predictive control) as a form of feedback.

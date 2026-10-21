@@ -73,9 +73,11 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
   copied from the text layer, which is clean for pdfTeX output; equations never. Check every
   equation number against the text layer in the parent, and read the font (`MSBM10` is
   blackboard bold) where a symbol's style matters. Cite as "notes eq. (N)", "notes p. N". Where the
-  board and the notes differ (a symbol's name, a matrix's size), the wiki follows the notes and gives
+  board and the notes differ (a symbol's name, a matrix's size, how a definition is built up), the wiki follows the notes and gives
   the board's version with its timestamp; the lecture never speaks the notes' equation numbers unless
   the transcript shows it.
+  A printed slip the deck agent reports is a claim like any other: check an equation slip by substituting
+  one equation into the next before listing it, since agents flag correctly derived factors as slips.
 - No licence is stated anywhere on the site or in the decks. See `LICENSE.md`.
 
 ## Transcripts
@@ -102,7 +104,8 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
 - Transcription is delegated to a Sonnet subagent with the number map handed over.
   A Sonnet audit of six figure-heavy pages follows, returning discrepancies as text.
   Step-by-step worked examples (search grids, growing trees) are where errors concentrate:
-  which point is in collision, how many nodes, which edge is drawn. Audit every step of one.
+  which point is in collision, how many nodes, which edge is drawn. Audit every step of one. In drawn phase portraits and trajectories, audit the direction of every arrow:
+  whether a curve runs towards or away from the fixed point is the content, and it is where readings go wrong.
 - A slide that plays a video or animation, or a screenshot of a demo run live, holds a single frame in the PDF. The transcript
   shows it ("let me play it again"); say so in the slide entry, so that a counter or partial
   search state in that frame is not read as the result. The deck agent cannot see the lecture,
@@ -152,6 +155,7 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
 | 4 Quadrotor Dynamics | 7 | 4 of the deck's 13 slides (lab photographs) and the notes' 3 figures |
 | 5 Differential Flatness | 7 | 3 of the deck's 6 slides (a paper's first page, two video frames) and the notes' 4 drawings |
 | 6 Trajectory Optimization | 6 of 18 pages | a plot, two diagrams, a QP contour plot, a demo frame, a video still; the notes have no drawings |
+| 7 Stability and PD Control | 5 | 2 of the deck's 7 slides (a simulation frame, the hover vector field) and the notes' 3 drawings |
 
 ## Rebuilding
 

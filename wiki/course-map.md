@@ -43,7 +43,7 @@ exists.
 | 4 | Quadrotor dynamics | Planning with dynamics | [wiki](04-quadrotor-dynamics.md) |
 | 5 | Differential flatness | Planning with dynamics | [wiki](05-differential-flatness.md) |
 | 6 | Trajectory optimization | Planning with dynamics | [wiki](06-trajectory-optimization.md) |
-| 7 | Stability, PD control | Feedback control | not yet |
+| 7 | Stability, PD control | Feedback control | [wiki](07-stability-and-pd-control.md) |
 | 8 | Linear Quadratic Regulator (LQR) | Feedback control | not yet |
 | 9 | Optical flow | State estimation, localization, mapping | not yet |
 | 10 | Nondeterministic filter | State estimation, localization, mapping | not posted yet |

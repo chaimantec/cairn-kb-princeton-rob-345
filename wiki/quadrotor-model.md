@@ -185,5 +185,8 @@ the other way (≈57:51–58:37).
 - [Lecture 6 — Trajectory Optimization](06-trajectory-optimization.md) plans with this model: it
   [linearizes](linearization.md) the planar quadrotor about hover (total thrust $mg$, no moment) and
   computes the matrices $A$ and $B$ entry by entry.
-- Lectures 7 and 8 (stability and PD control, LQR) turn to feedback control. They are not yet in
-  this knowledge base; see the [course map](course-map.md).
+- [Lecture 7 — Stability and PD Control](07-stability-and-pd-control.md) turns to
+  [feedback control](feedback-control.md): the hover point is its first example of a fixed point, and
+  PD control is worked out for the planar quadrotor constrained to move only up and down,
+  $\ddot{y} = u_1/m - g$.
+- Lecture 8 (LQR) is not yet in this knowledge base; see the [course map](course-map.md).

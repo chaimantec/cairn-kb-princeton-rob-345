@@ -400,7 +400,8 @@ lecture left out is **control**. A real system never follows a planned trajector
 dynamics model is imperfect, there may be unmodeled aerodynamics, and a gust of wind can push it off
 course. From the next lecture, the course turns to how to apply control inputs that correct for such
 disturbances and bring the system back (≈1:10:41–1:11:27). That is the feedback control section of the
-[course map](course-map.md): stability and PD control, then the linear quadratic regulator. The
+[course map](course-map.md): [Lecture 7](07-stability-and-pd-control.md) on stability and PD control,
+which opens by replaying this lecture's demo to show the drift, then the linear quadratic regulator. The
 assignment that goes out the day after this lecture computes linearizations in Python (≈43:56) and
 includes further examples of differentially flat systems (≈2:28); see [`sources.md`](../sources.md)
 for Assignment 3.

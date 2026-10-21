@@ -9,46 +9,47 @@
     "courseUrl": "https://irom-lab.princeton.edu/intro-to-robotics/"
   },
   "coverage": {
-    "lecturesCovered": 6,
+    "lecturesCovered": 7,
     "lecturesTotal": 9,
-    "transcripts": 6,
-    "wikiLecturePages": 6,
-    "wikiTopicPages": 13,
+    "transcripts": 7,
+    "wikiLecturePages": 7,
+    "wikiTopicPages": 15,
     "byLecture": {
       "1": "Intro to Robotics: transcript, slides, wiki page, 24 images",
       "2": "Discrete Motion Planning: transcript, slides, wiki page, 22 images",
       "3": "Rapidly Exploring Randomized Trees (RRTs): transcript, slides, wiki page, 17 images",
       "4": "Quadrotor Dynamics: transcript, slides, lecture notes, wiki page, 7 images (4 slides, 3 notes figures)",
       "5": "Differential Flatness: transcript, slides, lecture notes, wiki page, 7 images (3 slides, 4 notes drawings)",
-      "6": "Trajectory Optimization: transcript, slides, lecture notes, wiki page, 6 images (slides)"
+      "6": "Trajectory Optimization: transcript, slides, lecture notes, wiki page, 6 images (slides)",
+      "7": "Stability and PD Control: transcript, slides, lecture notes, wiki page, 5 images (2 slides, 3 notes drawings)"
     },
-    "note": "lecturesTotal is the 9 recorded lectures in the Cairn catalog on 2026-10-21; the course site schedules 24, of which 1-9 had videos and slides. Lectures 1 (the introduction), 2 (discrete motion planning), 3 (randomized motion planning with RRTs), 4 (quadrotor dynamics), 5 (differential flatness) and 6 (trajectory optimization) are covered."
+    "note": "lecturesTotal is the 9 recorded lectures in the Cairn catalog on 2026-10-21; the course site schedules 24, of which 1-9 had videos and slides. Lectures 1 (the introduction), 2 (discrete motion planning), 3 (randomized motion planning with RRTs), 4 (quadrotor dynamics), 5 (differential flatness), 6 (trajectory optimization) and 7 (stability and PD control) are covered."
   },
   "materials": {
     "primary": "slides",
     "slideDecks": {
       "available": 9,
-      "transcribed": 6
+      "transcribed": 7
     },
     "notes": {
       "available": 6,
-      "transcribed": 3,
-      "note": "The LaTeX notes of Lectures 4 (7 pages, equations (1)-(32)), 5 (4 pages, equations (1)-(4)) and 6 (3 pages, equations (1)-(10), no figures) are transcribed to raw/notes/ (full text, equations in LaTeX under the notes' own numbers, figures described), read from page images like the decks. They carry each lecture's derivation, which was done on a blackboard not visible in the video."
+      "transcribed": 4,
+      "note": "The LaTeX notes of Lectures 4 (7 pages, equations (1)-(32)), 5 (4 pages, equations (1)-(4)), 6 (3 pages, equations (1)-(10), no figures) and 7 (5 pages, equations (1)-(19), three drawings) are transcribed to raw/notes/ (full text, equations in LaTeX under the notes' own numbers, figures described), read from page images like the decks. They carry each lecture's derivation, which was done on a blackboard not visible in the video."
     },
     "method": "page-images",
     "figuresAudited": true,
     "figureAudit": {
-      "decksAudited": 6,
-      "decksTotal": 6,
+      "decksAudited": 7,
+      "decksTotal": 7,
       "unaudited": [],
-      "note": "Lecture 1: six figure-heavy slides checked against the PDF by an independent reader, two small corrections; renders of slides 15 and 32 also checked. Lecture 2: seven slides (24, 33, 45, 56, 63, 73, 76) checked, all agreeing in substance, three small fixes; renders of slides 46 and 74 also checked. Lecture 3: two passes over 34 slides, including every step of the RRT worked example; the first pass found errors on 4 of its 10 pages (which point was in collision on slide 36, a node count, the extent of a tree), the second on 6 of 24 (mostly edges already drawn and small counts); all fixed. Renders of slides 36 and 50 also checked. Lecture 4: slides 2, 3, 7-10 and 13 and all three notes figures checked at 600 dpi, with eqs. (7), (8) and (28)-(31) against the page; fixed a notes figure detail described wrongly (Figure 1(b)), the rotor spin directions in Figure 3(b) (first reported illegible; checked again in the parent), and pole counts on slides 7 and 9. Every notes equation was also compared with the PDF's text layer. Lecture 5: all 6 slides, the notes' four drawings, the definition on p. 2 and eqs. (1)-(4) checked at 600 dpi; fixed slide 2's Fig. 1 (a photograph with overlaid frames, not a drawing; two axis directions and the placement of a yaw arc), the gate count on slide 4, and the plot count of the notes' p. 2 pipeline. Every notes equation was also compared with the PDF's text layer, and renders of two notes drawings were checked in the parent. Lecture 6: slides 2, 3, 6, 8, 11, 12, 14, 16, 17 and 18 checked with crops at 300-500 dpi; nothing described was absent from the page; fixed slide 14 (10 constraint brackets, not about 13; one visible thrust line, the other hidden under it; arrows on the Start drone only) and slide 12 (the gradient arrow is perpendicular to the constraint edge, not aimed at the unconstrained minimum; one label's position). Every notes equation, (1)-(10), was compared with the PDF's text layer, including every entry of the evaluated A and B matrices; renders of slides 12 and 14 also checked in the parent."
+      "note": "Lecture 1: six figure-heavy slides checked against the PDF by an independent reader, two small corrections; renders of slides 15 and 32 also checked. Lecture 2: seven slides (24, 33, 45, 56, 63, 73, 76) checked, all agreeing in substance, three small fixes; renders of slides 46 and 74 also checked. Lecture 3: two passes over 34 slides, including every step of the RRT worked example; the first pass found errors on 4 of its 10 pages (which point was in collision on slide 36, a node count, the extent of a tree), the second on 6 of 24 (mostly edges already drawn and small counts); all fixed. Renders of slides 36 and 50 also checked. Lecture 4: slides 2, 3, 7-10 and 13 and all three notes figures checked at 600 dpi, with eqs. (7), (8) and (28)-(31) against the page; fixed a notes figure detail described wrongly (Figure 1(b)), the rotor spin directions in Figure 3(b) (first reported illegible; checked again in the parent), and pole counts on slides 7 and 9. Every notes equation was also compared with the PDF's text layer. Lecture 5: all 6 slides, the notes' four drawings, the definition on p. 2 and eqs. (1)-(4) checked at 600 dpi; fixed slide 2's Fig. 1 (a photograph with overlaid frames, not a drawing; two axis directions and the placement of a yaw arc), the gate count on slide 4, and the plot count of the notes' p. 2 pipeline. Every notes equation was also compared with the PDF's text layer, and renders of two notes drawings were checked in the parent. Lecture 6: slides 2, 3, 6, 8, 11, 12, 14, 16, 17 and 18 checked with crops at 300-500 dpi; nothing described was absent from the page; fixed slide 14 (10 constraint brackets, not about 13; one visible thrust line, the other hidden under it; arrows on the Start drone only) and slide 12 (the gradient arrow is perpendicular to the constraint edge, not aimed at the unconstrained minimum; one label's position). Every notes equation, (1)-(10), was compared with the PDF's text layer, including every entry of the evaluated A and B matrices; renders of slides 12 and 14 also checked in the parent. Lecture 7: slides 3-6 and the notes' three drawings checked at 400-600 dpi; nothing described was absent; slides 4-6 agreed; fixed the path on slide 3 (it cuts both obstacles' dashed margins), the direction of every outer trajectory in the notes' two phase portraits (all run in to the origin in the first; in the second one enters the ball and two leave), their loop counts and the dashed circle, and the vertical axis of the quadrotor drawing. Every notes equation, (1)-(19), was compared with the PDF's text layer; renders of slides 3 and 6 and of notes drawing 2 also checked in the parent."
     },
     "images": {
-      "lecturesWithImages": 6,
-      "files": 83,
-      "format": "1400px whole-slide renders (JPEG, six PNG), plus seven notes figures cropped from the page (JPEG): Lecture 4's three with their captions, Lecture 5's four uncaptioned drawings",
+      "lecturesWithImages": 7,
+      "files": 88,
+      "format": "1400px whole-slide renders (JPEG, seven PNG), plus ten notes figures cropped from the page (JPEG): Lecture 4's three with their captions, and the uncaptioned drawings of Lecture 5 (four) and Lecture 7 (three)",
       "discovery": "inline in wiki/ and raw/slides/; no index file",
-      "note": "Lectures 1-6 only. Lecture 1: 24 of its 57 slides, every figure-bearing slide except title and divider slides, an unrendered video frame, news-headline screenshots, a decorative road sign, repeats, and photographs of course staff. Lecture 2: 22 of its 79 slides; build steps of the BFS, DFS and A* walk-throughs are represented by 41, 46, 59, 72 and 74, and pseudocode, text slides and repeats are not rendered. Lecture 3: 17 of its 62 slides; slides identical to ones already rendered for Lectures 1 and 2, steps of the RRT walk-through other than 25, 28, 32, 36, 43 and 47, text slides and repeated video frames are not rendered. Lecture 4: 4 of its 13 slides (the lab photographs, 7-10) and the three figures of its notes (notes-figure-N.jpg); the title, topic maps, text slides and slide 13 (a faded repeat of 7) are not rendered. Lecture 5: 3 of its 6 slides (the first page of Mellinger and Kumar's minimum snap paper, and frames of two videos) and the four drawings of its notes (notes-figure-1 to -4, numbered in order of appearance); the title, a black video frame (slide 5) and a title card repeating the video of Lecture 3's slide 54 (slide 6) are not rendered. Lecture 6: 6 of its 18 slides (a plot of an RRT grown in state space, the extension-step diagram, a recap drawing with a black video frame, a QP contour plot, a frame of a sequential-QP demo, and an acrobot video still); the title, outline, dividers, text slides, slide 11 (a build step of 12) and two video title cards (17, 18) are not rendered, and its notes have no figures. No other lecture has images."
+      "note": "Lectures 1-7 only. Lecture 1: 24 of its 57 slides, every figure-bearing slide except title and divider slides, an unrendered video frame, news-headline screenshots, a decorative road sign, repeats, and photographs of course staff. Lecture 2: 22 of its 79 slides; build steps of the BFS, DFS and A* walk-throughs are represented by 41, 46, 59, 72 and 74, and pseudocode, text slides and repeats are not rendered. Lecture 3: 17 of its 62 slides; slides identical to ones already rendered for Lectures 1 and 2, steps of the RRT walk-through other than 25, 28, 32, 36, 43 and 47, text slides and repeated video frames are not rendered. Lecture 4: 4 of its 13 slides (the lab photographs, 7-10) and the three figures of its notes (notes-figure-N.jpg); the title, topic maps, text slides and slide 13 (a faded repeat of 7) are not rendered. Lecture 5: 3 of its 6 slides (the first page of Mellinger and Kumar's minimum snap paper, and frames of two videos) and the four drawings of its notes (notes-figure-1 to -4, numbered in order of appearance); the title, a black video frame (slide 5) and a title card repeating the video of Lecture 3's slide 54 (slide 6) are not rendered. Lecture 6: 6 of its 18 slides (a plot of an RRT grown in state space, the extension-step diagram, a recap drawing with a black video frame, a QP contour plot, a frame of a sequential-QP demo, and an acrobot video still); the title, outline, dividers, text slides, slide 11 (a build step of 12) and two video title cards (17, 18) are not rendered, and its notes have no figures. Lecture 7: 2 of its 7 slides (a frame of the planar quadrotor simulation before execution, and the hover vector field of slide 6) and the three drawings of its notes (notes-figure-1 to -3: two phase portraits and the planar quadrotor); the title, outline, a decorative stock photograph (slide 4), slide 5 (the build step before 6) and a text slide (7) are not rendered. No other lecture has images."
     }
   },
   "provenance": {
@@ -57,7 +58,7 @@
       "claude-sonnet-5-5"
     ],
     "caveats": [
-      "Covers lectures 1-6 of 9 recorded lectures; it cannot answer questions about the technical content of lectures 7 onward.",
+      "Covers lectures 1-7 of 9 recorded lectures; it cannot answer questions about the technical content of lectures 8 onward.",
       "Transcripts are copy-edited from YouTube auto-captions; a few passages in each lecture were too garbled to restore and are marked [Ed: unclear]. The verbatim captions are not committed.",
       "Lecture 1's deck has no slide 2 (hidden before export): slide N is PDF page N-1 from slide 3 on. Citations use the printed numbers.",
       "Lecture 2's slide 73 says a tie in F is 'broken by smaller H', but both tied vertices have H = 6; the lecturer notices this in class (≈1:06:47). The slide file and wiki page say so.",
@@ -68,6 +69,7 @@
       "Lecture 5's derivation was also done on the blackboard; the wiki follows the notes, whose equation numbers (1)-(4) match the ones spoken. The moment equation was first written with F1 + F2 and corrected in class to F2 - F1 (the notes print F2 - F1).",
       "Lecture 5's slides 3-6 are videos; the PDF holds one frame of each and slide 5's is black, so the wiki describes the videos as the lecture narrates them. Two research-group heads named aloud (Davide Scaramuzza, Sertac Karaman) are restored from garbled captions and printed nowhere in the course material.",
       "Lecture 6's derivation (linearization, the A and B matrices, the quadratic program) was also done on the blackboard; the wiki follows the notes, whose equation numbers (1)-(10) the lecture never speaks. On the board the velocities were v_x, v_y, omega and the constraint matrix C was k by n; the notes write x-dot, y-dot, theta-dot and give C as n by n. Slides 14 and 16-18 hold single frames of a demo and videos shown in class; slide 3's video frame is black. 'Claude', named aloud as the tool the slide 14 demo was made with, is restored from the captions' 'cloud' and printed nowhere in the course material.",
+      "Lecture 7's definitions and PD example were also done on the blackboard; the wiki follows the notes, whose equation numbers (1)-(19) the lecture never speaks. The board defines global and local attractivity and builds asymptotic stability from them plus stability in the sense of Lyapunov; the notes fold the convergence condition into their definitions of asymptotic stability. The notes' eq. (16) prints the proportional gain as k_p/m, inconsistent with eqs. (13) and (17) and with the board; the wiki uses k_p(y - y_0) and says so. Slide 3 holds the first frame of a simulation run in class; the deviations it showed are from the lecture.",
       "No licence is stated for the course material; images and transcriptions are reproduced for study under fair use (see LICENSE.md)."
     ]
   },
