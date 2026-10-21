@@ -17,7 +17,7 @@ chaimantec <nantapon@chaimantec.com>. Catalog re-fetched 2026-10-21: still 9 lec
 
 ### Transcripts
 - [x] 07 Lecture 7: Stability and PD Control — video nn022Copybg — verbatim captions in raw/transcripts/original/ (98 paragraphs, 11,198 words)
-- [ ] 07 copy-edit (Sonnet), three checks, proper nouns grepped
+- [x] 07 copy-edit (Sonnet): 98/98 timestamps identical; ratios all in 0.72–1.10 with [Ed:] notes excluded (11,100 → 10,007 words); numbers identical except two deliberate changes ("y z" → y0 at 1:09:54, a stuttered "x1" at 1:11:29); 24 restoration rows; 2 [Ed: unclear] (29:55 "N9 the speed of light", 1:02:07 a student question) and 7 notation notes; Lyapunov confirmed in the notes, Taylor in Lecture 6's; in the parent, the Names section corrected (Newton's second law is spoken)
 
 ### Slides and notes
 - [x] Download Lecture7_slides.pdf (7 pages, 4.8MB, Keynote) and Lecture7_notes.pdf (5 pages, pdfTeX, three pasted drawings) into raw/pdfs/ (gitignored)
