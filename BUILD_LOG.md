@@ -21,6 +21,7 @@ every build follows, and each lesson in general form, are in
 | 2 Discrete Motion Planning | Run 2 |
 | 3 Rapidly Exploring Randomized Trees (RRTs) | Run 3 |
 | 4 Quadrotor Dynamics | Run 4 |
+| 5 Differential Flatness | Run 5 |
 
 ## Runs
 
@@ -368,3 +369,105 @@ chaimantec <nantapon@chaimantec.com>. Catalog re-fetched 2026-10-21: still 9 lec
   Euler-rate vector. Both passed the offline check and rendered as raw text on github.com, which
   `verify_kb.py --github` caught. They were rewrapped, and the lesson is in AGENTS.md. Formulas
   inside the italic image captions were rewritten as plain text.
+
+## Run 5 — Lecture 5 (Differential Flatness), 2026-10-21
+
+Scope: lecture 5 only. Settings carried from runs 1–4: images on, PDFs link-only, commit as
+chaimantec <nantapon@chaimantec.com>. Catalog re-fetched 2026-10-21: still 9 lectures; creator check passed.
+
+### Transcripts
+- [x] 05 Lecture 5: Differential Flatness — video 64Rfzm359Xg — verbatim captions in raw/transcripts/original/ (86 paragraphs, 9,968 words)
+- [x] 05 copy-edit (Sonnet): 86/86 timestamps identical; ratios all in 0.72–1.10 (lowest 0.79 at 20:26, highest 1.05 at 30:34; 9,847 → 8,685 words); numbers identical paragraph by paragraph; ~20 restorations; in the parent, two more garbles marked unclear (21:13, 57:22), "word" → board (28:13), and the spoken names UPenn, GRASP Lab, AeroAstro (slide 6), Davide Scaramuzza and Sertac Karaman restored with the captions' form noted (not printed in the course materials)
+
+### Slides and notes
+- [x] Download Lecture5_slides.pdf (6 pages, 3MB, Keynote) and Lecture5_notes.pdf (4 pages, pdfTeX) into raw/pdfs/ (gitignored)
+- [x] Slide number map: 1:1 (6 pages); page 1 prints no number
+- [x] Pixel diff against Lectures 1–4: no repeats (slide 5 matches Lecture 1's slide 9 only because both are black video frames; slide 1 is the shared title background)
+- [x] raw/slides/05-differential-flatness.md (Sonnet), --verify clean (6 headings)
+- [x] raw/notes/05-differential-flatness.md (Sonnet); the definition on p. 2 and eqs. (1)–(4) agree with the text layer (checked in the parent); four drawings described
+- [x] Figure audit (Sonnet) at 600 dpi: slide 2's paper figure (a photograph with arrows, not a drawing; $x_W$ and $y_W$ directions and the $\psi$ arc fixed), slide 4 (five gates, not four), notes p. 2 pipeline (three plots, not four); slides 1, 3, 5, 6, the other notes drawings and the definition and eqs. (1)–(4) agree. Renders of notes figures 3 and 4 viewed in the parent: agree (arm colour fixed)
+
+### Wiki
+- [x] wiki/05-differential-flatness.md (derivation cited to the notes; 7 images, all with hand-written captions)
+- [x] Topic pages: new wiki/differential-flatness.md; rrt (extension under dynamics, Where it appears), quadrotor-model (flat outputs, Lectures), state-and-dynamics, course-map row, Lecture 3 and 4 forward links
+- [x] INDEX.md table of contents, coverage paragraph, raw/slides and raw/notes entries, citation rule for notes
+
+### Images
+- [x] raw/images/05-differential-flatness/ — slides 2, 3, 4 and the notes' 4 drawings (0.5MB), embedded in the slide file, the notes file, the lecture page (7) and differential-flatness.md (notes drawing 3); every caption hand-written
+- [x] INDEX.md image sentence; AGENTS.md table row and three lessons (video slides, uncaptioned notes drawings, black-frame and retitled-video repeats); LICENSE.md attribution
+
+### Publish
+- [x] kb.json — coverage, byLecture, notes, images, figureAudit, caveats
+- [x] sources.md "In this KB" column
+- [x] verify_kb.py clean (all hard checks; 1,380 formulas in the chat and on github.com after fixing 11 GitHub-only breaks: `$p$th`, `_` after `}`, `$` after a quote, a display block inside a list), and its review section read: no ranking claims, every numeric claim checked against the image table
+- [x] Commit and push — b357a1c, then 34249fa (the slide file's front matter, which GitHub renders as a table, had math in it); published pages re-checked: 1,376 formulas render on github.com
+- [x] Move this run's section to BUILD_LOG.md; TODO.md keeps only open work
+
+### Lecture 5 record
+
+- **Deck and notes.** `Lecture5_slides.pdf` from Dropbox, 6 pages, 3MB, exported from Keynote on
+  2026-09-17, and `Lecture5_notes.pdf`, 4 pages, pdfTeX output of the same date. Neither text layer
+  has a licence or copyright notice. The deck is a title page, the first page of Mellinger and
+  Kumar's "Minimum Snap Trajectory Generation and Control for Quadrotors" (slide 2, its bottom edge
+  cut off), and four video slides (3–6) captioned with YouTube URLs. The derivation was done on the
+  blackboard, so the notes were transcribed and the wiki cites the equations to them. Their numbers
+  (1)–(4) match the ones the lecture speaks (≈8:41, ≈33:46).
+- **Numbering.** One-to-one. Page 1 (title) prints no number.
+- **Repeats of earlier decks.** The pixel diff flagged slide 5 against Lecture 1's slide 9 at 0.0.
+  It is not a repeat: both are all-black video frames. Slide 1 shares the title background of
+  Lectures 1 and 4. The diff missed one real repeat. Slide 6 is the same video, with the same
+  title-card frame, as Lecture 3's slide 54, under a new title bar ("RRT\* + Differential
+  Flatness"). The lecture says so (≈1:06:07), and the URL ul7YboQA5OY is printed on both.
+- **Slide transcription.** Sonnet, about a minute, `--verify` clean first time (6 headings). The
+  agent wrote "the video does not play" on each video slide, which it could not know. The parent
+  replaced it with what the lecture shows: each video was played, slide 3's with its audio.
+- **Notes transcription.** Sonnet, in the same agent. The definition on p. 2 (unnumbered) and eqs.
+  (1)–(4) on p. 3 were compared with the text layer in the parent and agree. $\mathbb{R}$ is `MSBM10`.
+  Printed slips: "it turns out the at the system" (p. 3); $t \in [0, t]$ for $[0, T]$ (p. 3);
+  "control inputs require to execute" (p. 3). The four drawings have no printed number or caption.
+  They are numbered `notes-figure-1` to `-4` in order of appearance. The agent reported "a fifth
+  drawing" on p. 3, but the page has four rasters, and the one it meant is the fourth.
+- **Figure audit.** Sonnet, one pass at 600 dpi with crops, over all 6 slides, the four drawings,
+  the definition and eqs. (1)–(4). Findings:
+  - slide 2's Fig. 1 is a photograph of a quadrotor with overlaid frames; the file had called it
+    a drawing and a photograph in one sentence. Grey $x_W$ points down and slightly *right*, and
+    $y_W$ right and slightly *down*. One $\psi$ arc spans $y_W$ and $y_C$ three-quarters of the way
+    along them, not at the origin;
+  - slide 4 shows five gates, not four (two "UZH" checkered gates and three further back);
+  - the notes' p. 2 pipeline has three plots, not four, and the state curve dips below the $t$ axis;
+  - slides 1, 3, 5 (all black) and 6, the other drawings and every equation agree. No person is
+    visible in any frame.
+  The parent viewed the renders of notes drawings 3 and 4. They agree, apart from the arm colour
+  in drawing 4 (light grey, not black), which was fixed.
+- **Transcript edit.** Sonnet, about 2.5 minutes. 86/86 timestamps identical. Every paragraph ratio
+  is in 0.72–1.10 (lowest 0.79 at 20:26, highest 1.05 at 30:34; 9,847 → 8,685 words). The numbers
+  are identical paragraph by paragraph. About 20 restorations, among them "x dot" → "x double dot"
+  where the lecturer means the second derivative, and "XYZ and Y" → "x, y, z and yaw". The parent
+  made these changes:
+  - marked two more garbles unclear: "expand t oft" (21:13), whose answer shows it asked about
+    specifying theta, and "excess data" (57:22);
+  - restored "use this word" → board (28:13);
+  - restored spoken names the agent had kept as captioned: "UPEN … grass lab" → UPenn's GRASP
+    Lab; "aerastro" → AeroAstro (the logo on slide 6); "David Scaruda" → Davide Scaramuzza;
+    "Sach Carman" → Sertac Karaman. The last two are printed nowhere in the course material,
+    so each keeps the captions' form in an inline `[Ed:]` note, and the wiki and kb.json say so.
+  The moment equation is spoken with "F1 plus F2" (8:41) and corrected by a student (37:46); the
+  transcript keeps both as spoken.
+- **Images rendered (7):** slide 2 (the paper page with Fig. 1), slides 3 and 4 (video frames:
+  Mellinger and Kumar's video and the Zurich drone racing), and the notes' four drawings, cropped
+  from the page at 1400px. They weigh 0.5MB in all: 180, 193 and 132 KB for the slides, 21–49 KB
+  for the drawings. Drawing 4's crop was redone with no bottom margin, because the first one
+  caught the top of the "States" line. Not rendered: slide 1 (title), slide 5 (black frame) and
+  slide 6 (a title card whose text is transcribed, repeating Lecture 3's slide 54).
+- **Embedding.** The lecture page carries all 7 images, placed by hand with hand-written captions
+  (`embed_slide_images.py --dry-run` then added nothing to it). The script put slides 2–4 into the
+  slide file. The notes drawings were placed by hand above their descriptions in `raw/notes/`.
+  `differential-flatness.md` carries drawing 3.
+- **Math.** The offline check passed, and `--github` found 11 GitHub-only breaks:
+  - `$p$th` and `$q$th`, where an inline `$` before a letter does not close; now
+    `$p\text{th}$`;
+  - `\bar{q}_{\text{rand}}` and `\underbrace{…}_{…}`, with `_` after `}`;
+  - `$` straight after a quotation mark;
+  - a `$$` block inside a list item, which GitHub renders inline (the list became paragraphs).
+  After the push, `--github-published` found 4 more, all in the slide file's front matter, which
+  GitHub renders as a table, where math does not render. It was rewritten in plain words.
