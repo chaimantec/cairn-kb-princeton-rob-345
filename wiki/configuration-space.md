@@ -126,6 +126,16 @@ collision-checking one configuration at a time, so it never constructs $C_{obs}$
 [rapidly exploring randomized trees](rrt.md). Discretization does not scale past about three
 dimensions, because the grid grows as $B^d$. The RRT does scale (Lecture 3, ≈16:24, ≈45:13).
 
+## Configuration and state
+
+Configuration space ignores how fast the robot is moving. When [Lecture 4](04-quadrotor-dynamics.md)
+brings in the robot's dynamics, the configuration becomes one part of a larger **state**. The planar
+quadrotor's state is $\bar{x} = [x, y, \theta, \dot{x}, \dot{y}, \dot{\theta}]^T$. Its first three
+entries, $[x, y, \theta]$, are called the **configuration variables**, one per degree of freedom,
+and the rest are their time derivatives (Lecture 4 notes, p. 3; Lecture 4, ≈24:17–25:03). A system
+with $n$ degrees of freedom therefore has $2n$ states: 6 for the planar quadrotor and 12 for the 3D
+quadrotor. See [state and dynamics](state-and-dynamics.md).
+
 ## Where it appears
 
 - [Lecture 2 — Discrete Motion Planning](02-discrete-motion-planning.md): degrees of freedom,
@@ -133,3 +143,5 @@ dimensions, because the grid grows as $B^d$. The RRT does scale (Lecture 3, ≈1
 - [Lecture 3 — Rapidly Exploring Randomized Trees](03-rrts.md): why the robot's geometry calls
   for configuration space (the circle approximation and where it fails), the curse of
   dimensionality, and planning directly in the continuous space.
+- [Lecture 4 — Quadrotor Dynamics](04-quadrotor-dynamics.md): configuration variables as the part
+  of the state that gives the configuration, and the 3D quadrotor's six degrees of freedom.

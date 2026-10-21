@@ -40,7 +40,7 @@ exists.
 | 1 | Intro to Robotics | Introduction | [wiki](01-intro-to-robotics.md) |
 | 2 | Discrete planning (graph search) | Geometric motion planning | [wiki](02-discrete-motion-planning.md) |
 | 3 | Randomized planning (RRTs) | Geometric motion planning | [wiki](03-rrts.md) |
-| 4 | Quadrotor dynamics | Planning with dynamics | not yet |
+| 4 | Quadrotor dynamics | Planning with dynamics | [wiki](04-quadrotor-dynamics.md) |
 | 5 | Differential flatness | Planning with dynamics | not yet |
 | 6 | Trajectory optimization | Planning with dynamics | not yet |
 | 7 | Stability, PD control | Feedback control | not yet |

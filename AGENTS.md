@@ -18,6 +18,7 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
 | `INDEX.md`          | Entry point. Course summary + annotated table of contents.    |
 | `wiki/`             | Durable pages: one per lecture, plus course and concept pages. |
 | `raw/slides/`       | Full text of every slide, headed `## Slide N` with the **printed** number. |
+| `raw/notes/`        | Full text of the written lecture notes, headed `## Page N`, equations under the notes' own numbers. |
 | `raw/transcripts/`  | Copy-edited transcripts with `[MM:SS]` paragraph marks.       |
 | `raw/transcripts/original/` | Verbatim auto-captions. **Gitignored**, local reference only. |
 | `raw/pdfs/`         | Downloaded decks. **Gitignored**; cite the canonical URL.     |
@@ -61,8 +62,15 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
 - `inventory_to_sources.py` mislabels these Dropbox decks as third-party papers,
   so `sources.md` is maintained by hand as a per-lecture table. Update its "In this
   KB" column when a lecture lands.
-- From Lecture 4 on, the site posts **notes** alongside slides. They are prose
-  documents, not decks; decide per lecture whether to transcribe them.
+- From Lecture 4 on, the site posts **notes** alongside slides. They are LaTeX prose documents,
+  not decks. When a deck says "See notes", the notes are the written record of the derivation (the
+  board is not in the video), so transcribe them to `raw/notes/NN-<slug>.md`: front matter,
+  contents table (section, pages, equations), a "Printed slips" list, then `## Page N`, every
+  displayed equation in its own `$$` block with one `\tag{N}` carrying the notes' number, and
+  every figure described in prose. Delegate the reading to Sonnet like a deck. The prose may be
+  copied from the text layer, which is clean for pdfTeX output; equations never. Check every
+  equation number against the text layer in the parent, and read the font (`MSBM10` is
+  blackboard bold) where a symbol's style matters. Cite as "notes eq. (N)", "notes p. N".
 - No licence is stated anywhere on the site or in the decks. See `LICENSE.md`.
 
 ## Transcripts
@@ -96,6 +104,10 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
 
 ## Images
 
+- Notes figures are cropped from the page with their printed caption, 1400px wide, saved as
+  `raw/images/NN-<slug>/notes-figure-N.jpg`, and placed by hand under the caption in `raw/notes/`
+  and in the wiki: `embed_slide_images.py` handles only `slide-N` files. Count them in the table
+  below as images, not as deck pages.
 - One image per rendered slide at `raw/images/NN-<slug>/slide-N.jpg` (or `.png`),
   1400px wide, rendered by `extract_slide_images.py` and placed by
   `embed_slide_images.py`. The script puts each image under `## Slide N` in the slide file
@@ -127,6 +139,7 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
 | 1 Intro to Robotics | 24 of 57 pages | photos, video stills, one chart, two diagrams |
 | 2 Discrete Motion Planning | 22 of 79 pages | video stills, C-space diagrams, worked-example grids |
 | 3 RRTs | 17 of 62 pages | geometry diagrams, video stills, steps of the RRT worked example |
+| 4 Quadrotor Dynamics | 7 | 4 of the deck's 13 slides (lab photographs) and the notes' 3 figures |
 
 ## Rebuilding
 

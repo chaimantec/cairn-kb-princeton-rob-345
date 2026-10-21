@@ -142,3 +142,7 @@ grid, which grows exponentially with the dimension (≈49:03–50:36).
 - [Lecture 3 — Rapidly Exploring Randomized Trees](03-rrts.md): the motivation, the algorithm,
   the six-iteration example, its properties, RRT\* and completeness. Implementing the basic RRT is
   part of the assignment posted with it (see [`sources.md`](../sources.md)).
+- [Lecture 4 — Quadrotor Dynamics](04-quadrotor-dynamics.md#the-labs-and-the-first-hardware-assignment):
+  the first hardware lab runs an RRT on the Crazyflie, planning from a taped start marker to a
+  landing box around foam-pole obstacles whose positions students measure by hand. It assumes the
+  drone's built-in controller can follow whatever path the RRT returns, so the dynamics are ignored.

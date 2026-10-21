@@ -4,7 +4,7 @@ lecture: 4
 pages: 7
 source_pdf: https://www.dropbox.com/scl/fi/onuvrtpb64sytgp78towu/Lecture4_notes.pdf?rlkey=yo9dpy9jxt7730f0ex3sjdcuw&dl=0
 numbering: PDF page N = page N; page 1 prints no number. Equations keep the notes' own numbers (1)–(32).
-images: Figures 1, 2 and 3 are rendered as crops of the page, each with its printed caption, and shown under their captions (raw/images/04-quadrotor-dynamics/notes-figure-N.jpg). Figure 2 is credited in the notes to Bitcraze.io.
+images: Figures 1, 2 and 3 are rendered as crops of the page, each with its printed caption, and shown under their captions (`notes-figure-1.jpg` to `notes-figure-3.jpg` in this lecture's image folder). Figure 2 is credited in the notes to Bitcraze.io.
 figure_audit: An independent reader checked Figures 1–3 against the PDF at 600 dpi, and eqs. (7), (8) and (28)–(31) against the page; every equation was also compared with the PDF's text layer. Fixed: Figure 1(b) missed the solid Y arrow from O, and its 'faint vertical line' is the edge of the pasted drawing's border (seen on the committed render, after the auditor called it invented); Figure 3(b)'s rotor spin directions, first reported illegible, are legible and are now given (checked again on a 600 dpi render); small corrections to the L arrow in Figure 1(a), the arrowhead in Figure 3(a) and the boxes in Figure 2.
 ---
 

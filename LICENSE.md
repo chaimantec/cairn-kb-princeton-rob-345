@@ -31,9 +31,10 @@ Layer 2 or Layer 3.
 
 ### Not offered under CC BY 4.0, even though I wrote the words
 
-`raw/transcripts/` and `raw/slides/` are derivative works. The copy-editing, the `[Ed:]` notes
-and the figure descriptions are mine; the lecture being transcribed and the slides being
-described are not. I cannot license the underlying expression, so these directories are not
+`raw/transcripts/`, `raw/slides/` and `raw/notes/` are derivative works. The copy-editing, the
+`[Ed:]` notes and the figure descriptions are mine; the lecture being transcribed and the slides
+and notes being described are not. `raw/notes/` reproduces the full text of the course's written
+notes. I cannot license the underlying expression, so these directories are not
 offered under CC BY 4.0. Read them, cite them, and quote them as you would quote the lecture
 itself, but do not treat them as freely relicensable text.
 
@@ -55,13 +56,14 @@ course staff (Princeton University, Fall 2026). They are published through the c
 the lecture videos on YouTube (recorded by the Princeton Broadcast Center).
 
 As checked on 2026-10-20, no licence, copyright or reuse statement appears on the course
-website, and none is printed on any page of the Lecture 1, 2 or 3 deck. Publicly downloadable is not the
+website, and none is printed on any page of the Lecture 1, 2, 3 or 4 deck or of the Lecture 4
+notes (checked 2026-10-21). Publicly downloadable is not the
 same as licensed. Absent an express grant the default applies: copyright arises automatically,
 and no reuse rights pass to anyone.
 
 The images in `raw/images/` and the material described in `raw/slides/` are reproduced here for
 study and commentary, relying on fair use (17 U.S.C. § 107) rather than on any permission. Only
-slides that carry a figure are rendered. Title slides, text slides, news-headline screenshots
+slides that carry a figure are rendered, and from the notes only their figures, cropped. Title slides, text slides, news-headline screenshots
 and photographs of course staff are not. Every deck is linked at its canonical URL beside the
 material drawn from it. **That reliance is mine and does not transfer to you.** Fair use is a
 defence to infringement, not a licence. It can justify a particular use by a particular user for
@@ -143,3 +145,18 @@ Rendered: 17 slides, in `raw/images/03-rrts/`.
 | 53 | Frame of a piano-moving RRT video from the Robotics Library channel (youtube.com/watch?v=HdfAzUXvmOQ). |
 | 56 | Frame of a PR2 arm-planning video (youtube.com/watch?v=vW74bC-Ygb4). |
 | 7, 9, 10, 13, 21, 25, 28, 32, 36, 43, 47, 51 | No third-party content identified: the deck's own diagrams and worked-example steps. |
+
+### Lecture 4 — Quadrotor Dynamics
+
+Deck: [Lecture4_slides.pdf](https://www.dropbox.com/scl/fi/v8bp2gyhpixill7c70u7q/Lecture4_slides.pdf?rlkey=h44i0kp1bpmxk3zdg65gvqu29&dl=0).
+Notes: [Lecture4_notes.pdf](https://www.dropbox.com/scl/fi/onuvrtpb64sytgp78towu/Lecture4_notes.pdf?rlkey=yo9dpy9jxt7730f0ex3sjdcuw&dl=0).
+Rendered: 4 slides and the notes' 3 figures (cropped with their captions), in
+`raw/images/04-quadrotor-dynamics/`.
+
+| Image | Third-party content (as identifiable from the page) |
+| --- | --- |
+| Slides 7, 8, 9 | Photographs of the course's lab spaces and flight arena. Not credited; apparently the course's own. No person is visible. |
+| Slide 10 | Frame of a video of a small quadrotor among pipe obstacles. Not credited; apparently the course's own. |
+| Notes Figure 1 | Drawings of the planar quadrotor. Not credited. |
+| Notes Figure 2 | Rendering of a Crazyflie with its axes, credited in the notes' caption to Bitcraze.io. |
+| Notes Figure 3 | Hand drawings of a rotor and of the rotors' spin directions. No third-party content identified. |

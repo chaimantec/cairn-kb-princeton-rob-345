@@ -222,8 +222,8 @@ The state "defines everything we need to know in order to predict the motion of 
 (notes p. 3). The **number of states** is the dimension of this vector: 6 for the planar
 quadrotor, and 2 for the version constrained to move along $y$ ($y$ and $\dot{y}$).
 
-**Configuration variables.** The part of the state that describes the configuration, $[x, y,
-\theta]$, without the time derivatives. These are the three degrees of freedom, the same notion
+**Configuration variables.** The part of the state that describes the configuration,
+$[x, y, \theta]$, without the time derivatives. These are the three degrees of freedom, the same notion
 as in [configuration space](configuration-space.md): given these three numbers, the configuration
 of the planar quadrotor is completely determined (≈24:17–25:03, notes p. 3).
 
@@ -385,8 +385,8 @@ are (notes eq. (31)):
 $$\dot{\bar{\omega}}_ {BW} = \mathbb{I}^{-1} \left[ -\bar{\omega}_ {BW} \times (\mathbb{I}\bar{\omega}_ {BW}) + \begin{bmatrix} M_1 \cr M_2 \cr M_3 \end{bmatrix} \right] \tag{31}$$
 
 where $\times$ is the cross product and $\mathbb{I}$ is the **inertia matrix**, diagonal with
-entries $I_{xx}$, $I_{yy}$, $I_{zz}$ (eq. (32)). Eq. (30) relates $[\dot{\phi}, \dot{\theta},
-\dot{\psi}]^T$ to $[p, q, r]^T$; its first row is $\dot{\phi} = p + \sin(\phi)\tan(\theta)\thinspace q + \cos(\phi)\tan(\theta)\thinspace r$,
+entries $I_{xx}$, $I_{yy}$, $I_{zz}$ (eq. (32)). Eq. (30) relates
+$[\dot{\phi}, \dot{\theta}, \dot{\psi}]^T$ to $[p, q, r]^T$; its first row is $\dot{\phi} = p + \sin(\phi)\tan(\theta)\thinspace q + \cos(\phi)\tan(\theta)\thinspace r$,
 and the notes print the other six entries of the matrix as dots. The full equations are in the
 [notes as text](../raw/notes/04-quadrotor-dynamics.md#page-7). The notes close as the lecture did:
 "I don't expect you to derive these equations. I just want you to understand that the equations

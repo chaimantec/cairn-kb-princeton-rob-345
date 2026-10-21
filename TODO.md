@@ -29,16 +29,16 @@ chaimantec <nantapon@chaimantec.com>. Catalog re-fetched 2026-10-21: still 9 lec
 
 ### Wiki
 - [x] wiki/04-quadrotor-dynamics.md (derivation cited to the notes, since the board is not in the record; 7 images, all with hand-written captions)
-- [ ] Topic pages (new: dynamics / quadrotor model; extend course-map, crazyflie)
-- [ ] INDEX.md table of contents and coverage paragraph
+- [x] Topic pages: new wiki/quadrotor-model.md and wiki/state-and-dynamics.md; configuration-space (configuration and state), crazyflie (model facts, the labs from Lecture 4, Ed thread), rrt (the RRT lab), course-map row, Lecture 2 and 3 forward links
+- [x] INDEX.md table of contents, coverage paragraph, raw/notes/ entry, citation rule for notes
 
 ### Images
-- [ ] raw/images/04-quadrotor-dynamics/ — figure slides and notes figures, embedded
-- [ ] INDEX.md image sentence; AGENTS.md table row (and notes conventions); BUILD_LOG.md record; LICENSE.md attribution
+- [x] raw/images/04-quadrotor-dynamics/ — 4 slides (7–10) and 3 notes figures (1.5MB), embedded in the slide file, the notes file, the lecture page (7), quadrotor-model.md (3 notes figures) and crazyflie.md (slides 7, 8); every caption hand-written
+- [x] INDEX.md image sentence; AGENTS.md table row, raw/notes/ layout row and notes conventions; BUILD_LOG.md record (at the move); LICENSE.md attribution and raw/notes/ in Layer 1
 
 ### Publish
-- [ ] kb.json — coverage, byLecture, notes, images, figureAudit, caveats
-- [ ] sources.md "In this KB" column
-- [ ] verify_kb.py clean, and its review section read
+- [x] kb.json — coverage, byLecture, notes, images, figureAudit, caveats
+- [x] sources.md "In this KB" column
+- [x] verify_kb.py clean (all hard checks; 1,027 formulas in the chat and on github.com), and its review section read: no ranking claims, every numeric claim checked against the image table
 - [ ] Commit and push
 - [ ] Move this run's section to BUILD_LOG.md; TODO.md keeps only open work

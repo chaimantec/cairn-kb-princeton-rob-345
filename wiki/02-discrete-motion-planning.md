@@ -623,7 +623,8 @@ The next lecture covers **continuous** motion planning, still under the geometri
 stating the problem (≈31:17). That is [Lecture 3](03-rrts.md), on rapidly exploring randomized
 trees. The assumptions that any path is feasible and that the state is
 known are relaxed later in the planning module and in the localization and mapping module
-(≈10:52–11:38).
+(≈10:52–11:38). Feasibility is taken up from [Lecture 4](04-quadrotor-dynamics.md), on quadrotor
+dynamics.
 
 ## Gaps in the record
 

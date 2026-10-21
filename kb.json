@@ -9,42 +9,44 @@
     "courseUrl": "https://irom-lab.princeton.edu/intro-to-robotics/"
   },
   "coverage": {
-    "lecturesCovered": 3,
+    "lecturesCovered": 4,
     "lecturesTotal": 9,
-    "transcripts": 3,
-    "wikiLecturePages": 3,
-    "wikiTopicPages": 8,
+    "transcripts": 4,
+    "wikiLecturePages": 4,
+    "wikiTopicPages": 10,
     "byLecture": {
       "1": "Intro to Robotics: transcript, slides, wiki page, 24 images",
       "2": "Discrete Motion Planning: transcript, slides, wiki page, 22 images",
-      "3": "Rapidly Exploring Randomized Trees (RRTs): transcript, slides, wiki page, 17 images"
+      "3": "Rapidly Exploring Randomized Trees (RRTs): transcript, slides, wiki page, 17 images",
+      "4": "Quadrotor Dynamics: transcript, slides, lecture notes, wiki page, 7 images (4 slides, 3 notes figures)"
     },
-    "note": "lecturesTotal is the 9 recorded lectures in the Cairn catalog on 2026-10-21; the course site schedules 24, of which 1-9 had videos and slides. Lectures 1 (the introduction), 2 (discrete motion planning) and 3 (randomized motion planning with RRTs) are covered."
+    "note": "lecturesTotal is the 9 recorded lectures in the Cairn catalog on 2026-10-21; the course site schedules 24, of which 1-9 had videos and slides. Lectures 1 (the introduction), 2 (discrete motion planning), 3 (randomized motion planning with RRTs) and 4 (quadrotor dynamics) are covered."
   },
   "materials": {
     "primary": "slides",
     "slideDecks": {
       "available": 9,
-      "transcribed": 3
+      "transcribed": 4
     },
     "notes": {
       "available": 6,
-      "transcribed": 0
+      "transcribed": 1,
+      "note": "Lecture 4's 7-page LaTeX notes are transcribed to raw/notes/ (full text, equations (1)-(32) in LaTeX, figures described), read from page images like the decks. They carry the lecture's derivation, which was done on a blackboard not visible in the video."
     },
     "method": "page-images",
     "figuresAudited": true,
     "figureAudit": {
-      "decksAudited": 3,
-      "decksTotal": 3,
+      "decksAudited": 4,
+      "decksTotal": 4,
       "unaudited": [],
-      "note": "Lecture 1: six figure-heavy slides checked against the PDF by an independent reader, two small corrections; renders of slides 15 and 32 also checked. Lecture 2: seven slides (24, 33, 45, 56, 63, 73, 76) checked, all agreeing in substance, three small fixes; renders of slides 46 and 74 also checked. Lecture 3: two passes over 34 slides, including every step of the RRT worked example; the first pass found errors on 4 of its 10 pages (which point was in collision on slide 36, a node count, the extent of a tree), the second on 6 of 24 (mostly edges already drawn and small counts); all fixed. Renders of slides 36 and 50 also checked."
+      "note": "Lecture 1: six figure-heavy slides checked against the PDF by an independent reader, two small corrections; renders of slides 15 and 32 also checked. Lecture 2: seven slides (24, 33, 45, 56, 63, 73, 76) checked, all agreeing in substance, three small fixes; renders of slides 46 and 74 also checked. Lecture 3: two passes over 34 slides, including every step of the RRT worked example; the first pass found errors on 4 of its 10 pages (which point was in collision on slide 36, a node count, the extent of a tree), the second on 6 of 24 (mostly edges already drawn and small counts); all fixed. Renders of slides 36 and 50 also checked. Lecture 4: slides 2, 3, 7-10 and 13 and all three notes figures checked at 600 dpi, with eqs. (7), (8) and (28)-(31) against the page; fixed a notes figure detail described wrongly (Figure 1(b)), the rotor spin directions in Figure 3(b) (first reported illegible; checked again in the parent), and pole counts on slides 7 and 9. Every notes equation was also compared with the PDF's text layer."
     },
     "images": {
-      "lecturesWithImages": 3,
-      "files": 63,
-      "format": "1400px whole-slide renders (JPEG, six PNG)",
+      "lecturesWithImages": 4,
+      "files": 70,
+      "format": "1400px whole-slide renders (JPEG, six PNG), plus three notes figures cropped with their captions (JPEG)",
       "discovery": "inline in wiki/ and raw/slides/; no index file",
-      "note": "Lectures 1-3 only. Lecture 1: 24 of its 57 slides, every figure-bearing slide except title and divider slides, an unrendered video frame, news-headline screenshots, a decorative road sign, repeats, and photographs of course staff. Lecture 2: 22 of its 79 slides; build steps of the BFS, DFS and A* walk-throughs are represented by 41, 46, 59, 72 and 74, and pseudocode, text slides and repeats are not rendered. Lecture 3: 17 of its 62 slides; slides identical to ones already rendered for Lectures 1 and 2, steps of the RRT walk-through other than 25, 28, 32, 36, 43 and 47, text slides and repeated video frames are not rendered. No other lecture has images."
+      "note": "Lectures 1-3 only. Lecture 1: 24 of its 57 slides, every figure-bearing slide except title and divider slides, an unrendered video frame, news-headline screenshots, a decorative road sign, repeats, and photographs of course staff. Lecture 2: 22 of its 79 slides; build steps of the BFS, DFS and A* walk-throughs are represented by 41, 46, 59, 72 and 74, and pseudocode, text slides and repeats are not rendered. Lecture 3: 17 of its 62 slides; slides identical to ones already rendered for Lectures 1 and 2, steps of the RRT walk-through other than 25, 28, 32, 36, 43 and 47, text slides and repeated video frames are not rendered. Lecture 4: 4 of its 13 slides (the lab photographs, 7-10) and the three figures of its notes (notes-figure-N.jpg); the title, topic maps, text slides and slide 13 (a faded repeat of 7) are not rendered. No other lecture has images."
     }
   },
   "provenance": {
@@ -53,12 +55,14 @@
       "claude-sonnet-5-5"
     ],
     "caveats": [
-      "Covers lectures 1-3 of 9 recorded lectures; it cannot answer questions about the technical content of lectures 4 onward.",
+      "Covers lectures 1-4 of 9 recorded lectures; it cannot answer questions about the technical content of lectures 5 onward.",
       "Transcripts are copy-edited from YouTube auto-captions; a few passages in each lecture were too garbled to restore and are marked [Ed: unclear]. The verbatim captions are not committed.",
       "Lecture 1's deck has no slide 2 (hidden before export): slide N is PDF page N-1 from slide 3 on. Citations use the printed numbers.",
       "Lecture 2's slide 73 says a tie in F is 'broken by smaller H', but both tied vertices have H = 6; the lecturer notices this in class (≈1:06:47). The slide file and wiki page say so.",
       "Lecture 2's slides 62 and 76 are animations in the lecture; the PDF, and the image of slide 76, hold a single early frame.",
       "Lecture 3's slides 49, 50, 58 and 59 are animations or videos; the PDF holds single frames (50 part-grown, 58 and 59 identical opening frames), so the wiki describes them as the lecture narrates them.",
+      "Lecture 4's derivation was written on a blackboard that the video does not show; the wiki reconstructs the equations from the lecture notes, cited by the notes' own equation numbers, and says where the lecture's pointing cannot be resolved.",
+      "Lecture 4's notes contain printed slips (a wrong figure reference, ≜ in eq. (28), a stray parenthesis) and elide most of eq. (30); raw/notes/ keeps them as printed and lists them.",
       "No licence is stated for the course material; images and transcriptions are reproduced for study under fair use (see LICENSE.md)."
     ]
   },
