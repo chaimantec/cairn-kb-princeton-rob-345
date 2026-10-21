@@ -17,7 +17,7 @@ chaimantec <nantapon@chaimantec.com>. Catalog re-fetched 2026-10-21: still 9 lec
 
 ### Transcripts
 - [x] 05 Lecture 5: Differential Flatness — video 64Rfzm359Xg — verbatim captions in raw/transcripts/original/ (86 paragraphs, 9,968 words)
-- [ ] 05 copy-edit (Sonnet), then the timestamp, number and ratio checks in the parent
+- [x] 05 copy-edit (Sonnet): 86/86 timestamps identical; ratios all in 0.72–1.10 (lowest 0.79 at 20:26, highest 1.05 at 30:34; 9,847 → 8,685 words); numbers identical paragraph by paragraph; ~20 restorations; in the parent, two more garbles marked unclear (21:13, 57:22), "word" → board (28:13), and the spoken names UPenn, GRASP Lab, AeroAstro (slide 6), Davide Scaramuzza and Sertac Karaman restored with the captions' form noted (not printed in the course materials)
 
 ### Slides and notes
 - [x] Download Lecture5_slides.pdf (6 pages, 3MB, Keynote) and Lecture5_notes.pdf (4 pages, pdfTeX) into raw/pdfs/ (gitignored)

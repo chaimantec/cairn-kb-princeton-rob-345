@@ -59,22 +59,22 @@ Every label above is legible. The arrow directions are as read from the picture;
 
 ## Slide 3 — Real-time planning using differential flatness (video)
 
-Title bar: "Real-time planning using differential flatness" (blue). Printed number 3. Video slide: the PDF holds a single frame and the video does not play. Below the frame, a link: "https://www.youtube.com/watch?v=geqip_0Vjec".
+Title bar: "Real-time planning using differential flatness" (blue). Printed number 3. Video slide: the PDF holds a single frame. In the lecture this is the video released with Mellinger and Kumar's work, played with its audio (≈1:01:16–1:04:36). Below the frame, a link: "https://www.youtube.com/watch?v=geqip_0Vjec".
 
 The frame is a full-width still from an indoor flight video, tinted pink-red. A single quadrotor with a dark X-shaped frame and red parts is in the lower right of the picture, close to the floor with blurred spinning propellers (hovering or just above the floor). The floor is dark tiled. The room is a cluttered lab: black netting hangs in front of the walls, a white board covered in illegible handwriting on the back wall, cardboard boxes, a round white table and a fan, a vacuum cleaner and coiled orange and green cables on the left, a desk with equipment at the right edge, and small white tape markers on the floor. No people are visible. The frame shows no trajectory or overlay text.
 
 ## Slide 4 — Video (drone racing)
 
-Plain grey header bar with no title text. Printed number 4. Video slide: the PDF holds a single frame and the video does not play. Below the frame, a link: "https://www.youtube.com/watch?v=XpuRpKHp_Bk".
+Plain grey header bar with no title text. Printed number 4. Video slide: the PDF holds a single frame. In the lecture this is drone racing from a group at the University of Zurich (≈1:04:36–1:05:22). Below the frame, a link: "https://www.youtube.com/watch?v=XpuRpKHp_Bk".
 
 The frame is a high-angle view of a large indoor hall with a pale grey floor and corrugated metal walls. Five racing gates stand on the floor. Two are black-and-white checkered square frames marked with the letters "UZH": one at the left, with blue side panels, and one at the bottom centre. Three more stand further back: a thin white gate seen edge-on at centre-left, a gate at centre-right, and one at the far right. Two black foam mats lie in the middle of the floor. A very small drone is visible near the bottom centre (just right of the lower gate) and its shadow can be seen at the bottom right. White subtitle text overlaid at the bottom reads: "We also further improve both methods to track a racing trajectory at up to 20m/s with centimeter-level tracking accuracy." No people are visible.
 
 ## Slide 5 — Video (not rendered)
 
-Plain grey header bar with no title text. Printed number 5. Video slide: the PDF holds a single frame, and here the frame is entirely black, so the video did not render and nothing of its content is known from the deck. Below it, a link: "https://www.youtube.com/watch?v=PLjN2UNz8Mg". Read what this video shows from the transcript, not from the slide.
+Plain grey header bar with no title text. Printed number 5. Video slide: the PDF holds a single frame, and here the frame is entirely black, so the video did not render and nothing of its content is known from the deck. Below it, a link: "https://www.youtube.com/watch?v=PLjN2UNz8Mg". In the lecture this is a tail-sitter drone from a group in MIT's AeroAstro department (≈1:05:22–1:06:07); read what the video shows from the transcript, not from the slide.
 
 ## Slide 6 — RRT* + Differential Flatness (video)
 
-Title bar: "RRT* + Differential Flatness" (blue). Printed number 6. Video slide: the PDF holds a single frame and the video does not play. Below the frame, a link: "https://www.youtube.com/watch?v=ul7YboQA5OY".
+Title bar: "RRT* + Differential Flatness" (blue). Printed number 6. Video slide: the PDF holds a single frame. It is the same video, and the same title-card frame, as Lecture 3's slide 54 ("RRT"); here the lecture adds that the RRT was built in the flat output space (≈1:06:07–1:06:53). Below the frame, a link: "https://www.youtube.com/watch?v=ul7YboQA5OY".
 
 The frame is the title card of a recorded presentation: a white 4:3 panel with black bars at left and right. Text: "Polynomial Trajectory Planning for Quadrotor Flight" (two lines, large), then "Charles Richter, Adam Bry, Nicholas Roy" and "Robust Robotics Group". At the bottom are three logos: the "MIT" logo in black and red on the left, a blue circular logo with the text "AEROASTRO" and a small "MIT" on the centre, and an outline logo with the word "CSAIL" on the right. This frame shows no drone or trajectory.
