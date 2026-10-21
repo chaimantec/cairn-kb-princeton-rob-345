@@ -90,14 +90,14 @@ Why is this useful?
 
 So, here is how things work in practice:
 
-**Figure (p. 2, drawing):** a pipeline of four plots and one labelled arrow, left to right, all drawn with orange curves ending in an orange dot.
+**Figure (p. 2, drawing):** a pipeline of three plots and one labelled arrow, left to right, each plot an orange curve ending in an orange dot.
 
 1. Left plot: axes with the vertical axis labelled $\bar{z}$ and the horizontal axis labelled $t$. A smooth S-shaped orange curve rises from a low starting value, steepens, then flattens near the top, ending in an orange dot. Beneath the plot is a brace and the caption "We specify this desired trajectory of flat outputs: i.e., we specify $\bar{z}(t)$".
-2. Between the first and third plots: a horizontal black arrow pointing right. Above it the words "Differential Flatness" (on two lines), below it "(via $\beta$, $\gamma$)".
+2. Between the first plot and the other two: a horizontal black arrow pointing right. Above it the words "Differential Flatness" (on two lines), below it "(via $\beta$, $\gamma$)".
 3. Middle plot: axes with the vertical axis labelled $\bar{u}$ and the horizontal axis $t$. An orange curve starts at a positive value, falls below the horizontal axis, reaches a minimum, then rises back above the axis and ends in an orange dot. Beneath it, a brace and the caption "Control inputs we need to apply to achieve desired flat output trajectory".
-4. Right plot, immediately to the right of the third and sharing the same style: axes with vertical axis labelled $\bar{x}$ and horizontal axis $t$. The orange curve rises to a peak, falls steeply to a deep trough below the starting level, rises again and ends in an orange dot at the upper right. Beneath it, a brace and the caption "Resulting state trajectory".
+4. Right plot, immediately to the right of the middle plot and in the same style: axes with vertical axis labelled $\bar{x}$ and horizontal axis $t$. The orange curve rises to a peak, falls steeply to a deep trough below the $t$ axis (and below its starting value), rises again and ends in an orange dot at the upper right. Beneath it, a brace and the caption "Resulting state trajectory".
 
-There are no arrows drawn between the second plot and the third besides the one labelled "Differential Flatness (via $\beta$, $\gamma$)", which points from the first plot to the pair of plots on the right.
+The only arrow is the one labelled "Differential Flatness (via $\beta$, $\gamma$)", which points from the $\bar{z}$ plot to the pair of plots on the right; none is drawn between the $\bar{u}$ and $\bar{x}$ plots.
 
 ---
 
@@ -130,7 +130,7 @@ $$
 \tag{3}
 $$
 
-**Figure (p. 3, drawing):** to the right of the equations, a side view of the planar quadrotor, tilted: a black arm running up to the right, with a black motor block with a grey propeller disc at each end (the left one lower, the right one higher), and a red dome on the black central body (with a tiny red dot on it). A horizontal dotted line runs to the right from the central body; a second dashed line, a dotted extension of the arm, rises from the body to the right; between them is a curved angle marked $\theta$ (bold italic) at the right end. Below the drawing, the label "$(x, y, \theta)$" in bold. No force arrows, $L$ or frame axes are drawn in this figure.
+**Figure (p. 3, drawing):** to the right of the equations, a side view of the planar quadrotor, tilted: a light-grey arm outlined in black running up to the right, with a black motor block and a grey propeller disc at each end (the left one lower, the right one higher), and a red dome on the black central body (with a tiny red dot on it). A horizontal dashed line runs to the right from the central body; a second dashed line, an extension of the arm, rises from the body to the right; the angle between them is marked $\theta$ near their right-hand ends. Below the drawing, the label "$(x, y, \theta)$" in bold. No force arrows, $L$ or frame axes are drawn in this figure.
 
 Under the figure: States: $[x, y, \theta, \dot{x}, \dot{y}, \dot{\theta}]^T$
 

@@ -25,7 +25,7 @@ chaimantec <nantapon@chaimantec.com>. Catalog re-fetched 2026-10-21: still 9 lec
 - [x] Pixel diff against Lectures 1–4: no repeats (slide 5 matches Lecture 1's slide 9 only because both are black video frames; slide 1 is the shared title background)
 - [x] raw/slides/05-differential-flatness.md (Sonnet), --verify clean (6 headings)
 - [x] raw/notes/05-differential-flatness.md (Sonnet); the definition on p. 2 and eqs. (1)–(4) agree with the text layer (checked in the parent); four drawings described
-- [ ] Figure audit (Sonnet) at 600 dpi: slide 2's paper figure, the video poster frames, the notes' four drawings, eqs. (1)–(4)
+- [x] Figure audit (Sonnet) at 600 dpi: slide 2's paper figure (a photograph with arrows, not a drawing; $x_W$ and $y_W$ directions and the $\psi$ arc fixed), slide 4 (five gates, not four), notes p. 2 pipeline (three plots, not four); slides 1, 3, 5, 6, the other notes drawings and the definition and eqs. (1)–(4) agree. Renders of notes figures 3 and 4 viewed in the parent: agree (arm colour fixed)
 
 ### Wiki
 - [ ] wiki/05-differential-flatness.md

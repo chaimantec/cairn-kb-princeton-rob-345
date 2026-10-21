@@ -46,14 +46,14 @@ Abstract: "Abstract— We address the controller design and the trajectory gener
 
 The page is cropped at the bottom: below the abstract, a sliver of the next heading and body text is cut through and unreadable.
 
-Fig. 1, caption "Fig. 1. The flat outputs and the reference frames.", sits on the right of the abstract. It is a drawing of a quadrotor (a photograph of a four-rotor drone seen from slightly above, arms in an X layout) overlaid with coloured arrows and labels:
+Fig. 1, caption "Fig. 1. The flat outputs and the reference frames.", sits on the right of the abstract. It is a photograph of a four-rotor drone seen from slightly above, arms in an X layout, overlaid with coloured arrows and labels (not a line drawing):
 
 - The rotors are numbered in black: "1" at the lower right (near the front right of the drone), "2" at the upper right, "3" at the top left of centre, "4" at the left.
-- World frame, in grey, drawn from a point at the lower left of the figure that is not labelled: a vertical arrow pointing up labelled $z_W$; an arrow pointing right (slightly upward) labelled $y_W$; and a short arrow pointing down and slightly left labelled $x_W$ (the label overlaps the arrowhead of the blue $x_C$ arrow at the bottom left).
+- World frame, in grey, drawn from a point at the lower left of the figure that is not labelled: a vertical arrow pointing up labelled $z_W$; an arrow pointing right (slightly downward) labelled $y_W$; and a short arrow pointing down and slightly right labelled $x_W$ (the label overlaps the grey $x_W$ arrowhead and the lower $\psi$; the blue $x_C$ arrow ends to its right).
 - Body frame, in purple, drawn from the drone's centre, labelled $O_B$: an arrow pointing up and slightly to the right labelled $z_B$; an arrow pointing to the right and slightly up labelled $y_B$; and an arrow pointing down and to the right labelled $x_B$.
 - A dark red arrow labelled $\mathbf{r}$ (bold, printed as "r") runs from the world-frame origin at the lower left to the drone's centre $O_B$.
-- Intermediate yaw frame, in blue: at the drone's centre, an arrow pointing straight up labelled $z_C$, an arrow pointing right labelled $y_C$ (beside the purple $y_B$ arrow, slightly lower), and an arrow pointing down and to the right labelled $x_C$ (close to $x_B$ but longer and steeper). A second, shorter set of blue arrows $y_C$ and $x_C$ is drawn at the world origin: $y_C$ pointing right (slightly above the grey $y_W$) and $x_C$ pointing down and to the right.
-- Angle: at the world origin, a small blue arc marked with the Greek letter $\psi$ between $y_W$ and $y_C$, and a second arc marked $\psi$ between $x_W$ and $x_C$. This shows the yaw angle $\psi$ as the rotation about the vertical from the world axes to the C axes.
+- Intermediate yaw frame, in blue: at the drone's centre, an arrow pointing straight up labelled $z_C$, an arrow pointing right labelled $y_C$ (beside the purple $y_B$ arrow, slightly lower), and an arrow pointing down and to the right labelled $x_C$ (close to $x_B$ but longer and steeper). A second, shorter set of blue arrows $y_C$ and $x_C$ is drawn from the world origin: $y_C$ pointing right (just above the grey $y_W$) and $x_C$ pointing down and to the right.
+- Angle: two small blue arcs marked with the Greek letter $\psi$. One spans $y_W$ and $y_C$ about three-quarters of the way along them, towards their right-hand ends; the other spans $x_W$ and $x_C$ near the world origin. This shows the yaw angle $\psi$ as the rotation about the vertical from the world axes to the C axes.
 
 Every label above is legible. The arrow directions are as read from the picture; the figure carries no further text.
 
@@ -67,7 +67,7 @@ The frame is a full-width still from an indoor flight video, tinted pink-red. A 
 
 Plain grey header bar with no title text. Printed number 4. Video slide: the PDF holds a single frame and the video does not play. Below the frame, a link: "https://www.youtube.com/watch?v=XpuRpKHp_Bk".
 
-The frame is a high-angle view of a large indoor hall with a pale grey floor and corrugated metal walls. Four square racing gates stand on the floor: a black-and-white checkered frame with blue side panels and the letters "UZH" on it at the left, a gate at the bottom centre also marked "UZH", and two thinner gates further back at the centre and right. Two black foam mats lie in the middle of the floor. A very small drone is visible near the bottom centre (just right of the lower gate) and its shadow can be seen at the bottom right. White subtitle text overlaid at the bottom reads: "We also further improve both methods to track a racing trajectory at up to 20m/s with centimeter-level tracking accuracy." No people are visible.
+The frame is a high-angle view of a large indoor hall with a pale grey floor and corrugated metal walls. Five racing gates stand on the floor. Two are black-and-white checkered square frames marked with the letters "UZH": one at the left, with blue side panels, and one at the bottom centre. Three more stand further back: a thin white gate seen edge-on at centre-left, a gate at centre-right, and one at the far right. Two black foam mats lie in the middle of the floor. A very small drone is visible near the bottom centre (just right of the lower gate) and its shadow can be seen at the bottom right. White subtitle text overlaid at the bottom reads: "We also further improve both methods to track a racing trajectory at up to 20m/s with centimeter-level tracking accuracy." No people are visible.
 
 ## Slide 5 — Video (not rendered)
 
