@@ -102,5 +102,8 @@ upgrade comes with a caveat: "There's always some uncertainty anytime you upgrad
   the three kinds of uncertainty motion planning has not yet dealt with (an imperfect dynamics model,
   external disturbances, imperfect knowledge of the state or map; slide 4). Feedback control takes on
   the first two; see [feedback control](feedback-control.md).
+- [Lecture 8 — The Linear Quadratic Regulator](08-lqr.md#tuning-q-and-r-in-the-lab): why an LQR
+  controller that is stable in theory still has to be tuned: the system is nonlinear, the model is
+  imperfect, and the state is not sensed perfectly (notes p. 3).
 - The state-estimation lectures (10–12: nondeterministic filter, Bayes filtering, Kalman and
   particle filtering) are scheduled next in this thread. They are not yet in this knowledge base.

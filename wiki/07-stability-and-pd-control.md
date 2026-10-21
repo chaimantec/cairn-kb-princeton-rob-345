@@ -463,8 +463,8 @@ How should $K$ be chosen in general, perhaps to ensure asymptotic stability whil
 performance metric? That is the next lecture, Lecture 8, on the linear quadratic regulator (notes
 p. 5; slide 7), which will also say a little more about the general structure of PD controllers
 (≈1:16:04) and about checking stabilizability (notes p. 4). The lab that goes out the following
-Wednesday has students implement an LQR controller on the real drone (≈10:06). See the
-[course map](course-map.md); Lecture 8 is not yet in this knowledge base.
+Wednesday has students implement an LQR controller on the real drone (≈10:06). See
+[Lecture 8](08-lqr.md) and [the linear quadratic regulator](lqr.md).
 
 ## Gaps in the record
 

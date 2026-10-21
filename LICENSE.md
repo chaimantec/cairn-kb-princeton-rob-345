@@ -202,3 +202,18 @@ Rendered: 2 slides and the notes' 3 drawings (cropped; the notes print no captio
 | Slide 3 | A screenshot of a planar quadrotor simulation (planned path, obstacles, legend), the trajectory-optimization demo of Lecture 6 replayed. Not credited; apparently the course's own. |
 | Slide 6 | Five copies of a drawing of the planar quadrotor with thrust arrows. Not credited; apparently the course's own (the same drone drawing appears in Lecture 6's deck). |
 | Notes drawings 1–3 | Two hand-drawn phase portraits, and a drawing of the planar quadrotor with thrusts F1, F2 and the X and Y axes. Not credited. |
+
+### Lecture 8 — The Linear Quadratic Regulator
+
+Deck: [Lecture8_slides.pdf](https://www.dropbox.com/scl/fi/vg2cumj4cs2kuqb3942fg/Lecture8_slides.pdf?rlkey=uthhn11zguqubxdgo0zrv5viv&dl=0).
+Notes: [Lecture8_notes.pdf](https://www.dropbox.com/scl/fi/j89tx4kp1skacdhuz918r/Lecture8_notes.pdf?rlkey=4gyqm6qumqutg1lzx83uuac4d&dl=0).
+Rendered: 4 slides and the notes' 2 drawings (cropped; the notes print no captions), in
+`raw/images/08-lqr/`.
+
+| Image | Third-party content (as identifiable from the page) |
+| --- | --- |
+| Slide 6 | A vector diagram of the sense–think–act loop. Not credited; apparently the course's own. |
+| Slide 7 | A drawn phase portrait (a spiral into the origin). Not credited; apparently the course's own. |
+| Slide 11 | A frame of a YouTube video (<https://www.youtube.com/watch?v=8OVsJNgNfa0>) of a quadrotor in a University of Zurich lab, whose sign is in the frame. Not credited on the slide beyond the link. |
+| Slide 12 | A frame of a YouTube video (<https://www.youtube.com/watch?v=wBhS77cAJ0s>) of a fixed-wing airplane in a prop hang, work the lecturer was involved in during his PhD (≈1:12:49). Not credited on the slide beyond the link. |
+| Notes drawings 1–2 | A hand-drawn quadrotor on a vertical line with the height marked, and a typeset sketch of a diagonal matrix Q. Not credited; apparently the course's own. |

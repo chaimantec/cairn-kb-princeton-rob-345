@@ -189,4 +189,8 @@ the other way (≈57:51–58:37).
   [feedback control](feedback-control.md): the hover point is its first example of a fixed point, and
   PD control is worked out for the planar quadrotor constrained to move only up and down,
   $\ddot{y} = u_1/m - g$.
-- Lecture 8 (LQR) is not yet in this knowledge base; see the [course map](course-map.md).
+- [Lecture 8 — The Linear Quadratic Regulator](08-lqr.md) stabilizes the 3D quadrotor at hover with
+  [LQR](lqr.md): a $12 \times 12$ cost matrix $Q$ over the state
+  $[x, y, z, \phi, \theta, \psi, \dot{x}, \dot{y}, \dot{z}, p, q, r]$ and a $4 \times 4$ matrix $R$ over the total
+  thrust and the three moments, with physical parameters for the course's new drones measured by a TA
+  (≈1:03:34, ≈1:05:54–1:07:27).

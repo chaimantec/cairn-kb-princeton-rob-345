@@ -4,12 +4,13 @@
 applying a planned sequence of inputs blindly. It is how a robot corrects for an imperfect dynamics
 model and for external disturbances such as wind. ROB 345 introduces it in
 [Lecture 7](07-stability-and-pd-control.md), which defines what a controller should achieve
-([stability](stability.md)) and gives a first design, PD control; Lecture 8 continues with the linear
-quadratic regulator.
+([stability](stability.md)) and gives a first design, PD control; [Lecture 8](08-lqr.md) chooses the
+controller's gains optimally with the [linear quadratic regulator](lqr.md).
 
 Notation follows the course. The state is $\bar{x}$, the control input $\bar{u}$, and the dynamics are
 $\dot{\bar{x}} = f(\bar{x}, \bar{u})$ (see [state and dynamics](state-and-dynamics.md)). Citations are
-to Lecture 7: "slide N", "notes eq. (N)" and "notes p. N", and (≈M:SS) for its video.
+to Lecture 7 unless they name Lecture 8: "slide N", "notes eq. (N)" and "notes p. N", and (≈M:SS) for
+its video.
 
 ## Why a plan needs feedback
 
@@ -44,6 +45,11 @@ input to apply. That map is a **feedback control law**, or **controller**, $\bar
 5–6, ≈8:36–9:21). Plugged into the dynamics, it gives the **closed-loop dynamics**
 $\dot{\bar{x}} = f(\bar{x}, \bar{u}(\bar{x})) \triangleq f_{\text{cl}}(\bar{x})$ (notes eq. (4)), and what we
 want of them is [stability](stability.md): a fixed point, such as hover, to which the system returns.
+
+A controller runs as a loop, Lecture 8's slide 6: sense the state $\bar{x}(t)$ at time $t$, compare it
+with the desired state $\bar{x}_ 0$, choose the control input from both, and repeat. For a hovering
+quadrotor the cycle runs at about 500 hertz (Lecture 8, ≈2:31–3:17; see
+[sense–think–act](sense-think-act.md)).
 
 ## Replanning as feedback: model predictive control
 
@@ -82,13 +88,24 @@ In matrix form, $\bar{u}(\bar{x}) = \bar{u}_ 0 + K(\bar{x} - \bar{x}_ 0)$, where
 $[k_p, k_d]$, is the **gain matrix** (notes eqs. (18)–(19)). PD control does not consider obstacles: it
 tracks a planned trajectory as tightly as it can (≈11:40–12:25).
 
-## Choosing the gains
+## Choosing the gains: LQR
 
 For the one-dimensional example any negative gains work, but "in general, things will not be so easy!"
-How to choose $K$ in general, ensuring asymptotic stability while optimizing a performance metric, is
-the subject of Lecture 8, the **linear quadratic regulator (LQR)**, optimal feedback control for linear
-dynamics (notes p. 5; slide 7). A lab has students implement an LQR controller on the real drone
-(≈10:06). Lecture 8 is not yet in this knowledge base; see the [course map](course-map.md).
+(notes p. 5). And among the gains that work, some are better than others: more energy-efficient, or
+quicker to the goal (Lecture 8, ≈9:30). The **linear quadratic regulator (LQR)** of
+[Lecture 8](08-lqr.md) chooses $K$ for a linear (or linearized) system so that the closed loop is
+globally asymptotically stable and the controller minimizes a cost, the integral over all time of
+$\tilde{x}^T Q \tilde{x} + \tilde{u}^T R \tilde{u}$, where $\tilde{x} = \bar{x} - \bar{x}_ 0$ and
+$\tilde{u} = \bar{u} - \bar{u}_ 0$ are the deviations from the fixed point and the user-chosen matrices
+$Q$ and $R$ weigh them. The optimal controller turns out to be a PD controller,
+$\bar{u}(\bar{x}) = \bar{u}_ 0 + K^\ast(\bar{x} - \bar{x}_ 0)$, with $K^\ast = -R^{-1}B^TS^\ast$ and
+$S^\ast$ the solution of the algebraic Riccati equation (Lecture 8 notes pp. 2–3). In practice $Q$ and $R$
+are tuned by hand, which is the lab that implements LQR on the real drone (Lecture 7, ≈10:06; Lecture 8,
+≈1:02:49–1:11:17). See [the linear quadratic regulator](lqr.md).
+
+Feedback and planning are combined in practice by planning a nominal trajectory, with an RRT or
+trajectory optimization, and using a feedback controller, such as a time-varying version of LQR, to
+track it (Lecture 8, ≈1:16:38).
 
 ## Lectures
 
@@ -98,4 +115,6 @@ dynamics (notes p. 5; slide 7). A lab has students implement an LQR controller o
   execution motivates feedback, and the hover point of the planar quadrotor, used there for
   [linearization](linearization.md).
 - [Lecture 4 — Quadrotor Dynamics](04-quadrotor-dynamics.md): the equations of motion being controlled.
-- Lecture 8 (the linear quadratic regulator) is not yet in this knowledge base.
+- [Lecture 8 — The Linear Quadratic Regulator](08-lqr.md): the control loop at 500 hertz, the cost
+  function, the Riccati equation and the optimal gain, stability, tuning $Q$ and $R$ for the lab, and LQR
+  on a quadrotor, an airplane and a humanoid. See [the linear quadratic regulator](lqr.md).

@@ -146,3 +146,7 @@ control** (Lecture 7, ≈10:06–11:40; see [feedback control](feedback-control.
   motion that are linearized.
 - [Lecture 7 — Stability and PD Control](07-stability-and-pd-control.md): why an optimized plan
   executed open loop drifts, and replanning (model predictive control) as a form of feedback.
+- [Lecture 8 — The Linear Quadratic Regulator](08-lqr.md#planning-plus-feedback): how planning and
+  feedback are typically combined. A planner (an RRT, trajectory optimization) supplies a nominal
+  trajectory and control inputs, and a feedback controller, such as time-varying LQR, corrects for
+  deviations from it (≈1:16:38).

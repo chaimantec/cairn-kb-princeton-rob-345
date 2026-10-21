@@ -90,4 +90,7 @@ the full 3D quadrotor, a few lines of Python compute $A$ and $B$, and the assign
   $\dot{\bar{x}} = A(\bar{x} - \bar{x}_ 0) + B(\bar{u} - \bar{u}_ 0)$ local and global asymptotic
   stability coincide and stabilizability can be checked by eigenvalue conditions on $A$ and $B$ (see
   [stability](stability.md)).
-- Lecture 8 (LQR) is not yet in this knowledge base; see the [course map](course-map.md).
+- [Lecture 8 — The Linear Quadratic Regulator](08-lqr.md) designs a controller for the linearized system
+  and applies it to the nonlinear one, in the hope that it is also a good controller there (Lecture 8
+  notes p. 1). For the lab, Python linearizes the 3D quadrotor's equations about hover and hands over
+  $A$ and $B$ (≈1:03:34–1:04:21). See [the linear quadratic regulator](lqr.md).

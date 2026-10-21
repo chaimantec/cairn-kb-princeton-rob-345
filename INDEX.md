@@ -9,16 +9,16 @@ work hands-on with the Crazyflie quadrotor, and the final project trains a visio
 navigation policy with imitation learning. ROB 345 is the undergraduate course; ROB 549 is the
 graduate track.
 
-> **Coverage: Lectures 1–7, of the 9 recorded lectures in the catalog.** The course site
+> **Coverage: Lectures 1–8, of the 9 recorded lectures in the catalog.** The course site
 > schedules 24 lectures, of which lectures 1–9 had videos and slides when this was built
 > (2026-10-20). This knowledge base holds the introduction (Lecture 1), discrete motion planning
 > (Lecture 2), randomized motion planning with RRTs (Lecture 3), quadrotor dynamics (Lecture 4),
-> differential flatness (Lecture 5), trajectory optimization (Lecture 6) and stability and PD
-> control (Lecture 7): their edited transcripts, their full slide decks as text, the written notes of
-> Lectures 4–7 as text, 88 images (78 slides, the 3 figures of Lecture 4's notes and the drawings of
-> Lecture 5's notes (4) and Lecture 7's (3)), and the course and concept pages they start. **It
-> cannot answer questions about the technical content of lectures 8 onward** (LQR, optical flow and
-> later). For those, point the
+> differential flatness (Lecture 5), trajectory optimization (Lecture 6), stability and PD
+> control (Lecture 7) and the linear quadratic regulator (Lecture 8): their edited transcripts, their
+> full slide decks as text, the written notes of Lectures 4–8 as text, 94 images (82 slides, the 3
+> figures of Lecture 4's notes and the drawings of Lecture 5's notes (4), Lecture 7's (3) and Lecture
+> 8's (2)), and the course and concept pages they start. **It cannot answer questions about the
+> technical content of lectures 9 onward** (optical flow and later). For those, point the
 > learner to the lecture's slides and notes in [`sources.md`](sources.md). Build progress is in [TODO.md](TODO.md).
 
 ## Lecture pages
@@ -89,6 +89,18 @@ graduate track.
   down (proportional feedback oscillates like a spring-mass, adding damping with $k_p, k_d \lt 0$
   makes it asymptotically stable; gains and the gain matrix). The definitions follow the lecture
   notes, cited by equation number, with the board's naming where it differs.
+- [Lecture 8 — The Linear Quadratic Regulator (LQR)](wiki/08-lqr.md): a recap of feedback control
+  (the sense–think–act loop at 500 Hz, stability, PD control and its general form with a gain
+  matrix $K$); why some gains are better than others; linearizing and
+  shifting to deviations $\tilde{x}$, $\tilde{u}$; the cost function (integrated squared deviations of
+  state and input), why it integrates and why it penalizes the input; the cost matrices $Q$ and $R$
+  (symmetric positive definite, diagonal in practice, the quadrotor's $R$ and $Q$); the result that the
+  optimal controller is linear; the algebraic Riccati equation and $K^\ast = -R^{-1}B^TS^\ast$; the
+  assumptions and trajectory-tracking LQR; solving it in Python and the sign-convention warning; the
+  optimal cost $\tilde{x}(0)^T S^\ast \tilde{x}(0)$; global asymptotic stability; tuning $Q$ and $R$ for
+  the lab (height drift, oscillation, roll, a drone that falls); three videos (a Zurich quadrotor, a
+  prop-hanging airplane, a humanoid); and combining planning with feedback. The formulation follows
+  the lecture notes.
 
 ## Course pages
 
@@ -153,8 +165,13 @@ graduate track.
   systems), and stabilizability, with an example of a system no controller can stabilize.
 - [Feedback control](wiki/feedback-control.md): why a planned trajectory needs feedback, the
   controller as a vector field $\bar{u}(\bar{x})$, model predictive control as repeated replanning,
-  PD control with proportional and derivative gains and the gain matrix $K$, and what LQR (Lecture 8,
-  not yet covered) adds.
+  PD control with proportional and derivative gains and the gain matrix $K$, the control loop, and
+  choosing the gains optimally with LQR.
+- [The linear quadratic regulator (LQR)](wiki/lqr.md): the method in one place. Linear dynamics about a
+  fixed point, the quadratic cost with $Q$ and $R$, the optimal linear controller from the algebraic
+  Riccati equation, the optimal cost, stability, the library sign convention, the assumptions and the
+  trajectory-tracking version, tuning $Q$ and $R$ for a quadrotor, and how planning and feedback
+  combine.
 
 ## Raw materials
 
@@ -167,22 +184,25 @@ graduate track.
 - [`raw/slides/`](raw/slides/): every slide of each deck as text, headed `## Slide N` with
   the number printed on the slide, and every figure described in prose. **Lecture 1's deck has
   no slide 2**: a slide was hidden before export, so slide *N* is PDF page *N*−1 from slide 3
-  on. The decks of Lectures 2–7 are numbered one-to-one: slide *N* is PDF page *N*. Each
+  on. The decks of Lectures 2–8 are numbered one-to-one: slide *N* is PDF page *N*. Each
   file's header says how its numbers map to PDF pages. Lecture 4's deck has only 13 slides and
   Lecture 5's only 6 (a paper's first page and four videos); their technical content is in the
   notes. Lecture 6's 18 slides carry the ideas and pictures, and its derivation is in the notes.
   Lecture 7's 7 slides motivate feedback control; its definitions and PD control are in the notes.
+  Lecture 8's 13 slides recap Lecture 7 (four are its slides again) and hold frames of three videos;
+  the LQR formulation is in the notes.
 - [`raw/notes/`](raw/notes/): the full text of the course's written lecture notes, headed
   `## Page N`, with every equation in LaTeX under the notes' own number and every figure
-  described in prose. **Only Lectures 4–7 have notes here** so far. Each file lists the printed
+  described in prose. **Only Lectures 4–8 have notes here** so far. Each file lists the printed
   slips in its notes.
 - [`raw/images/`](raw/images/): whole-slide images of figure slides, embedded under the
   matching `## Slide N` heading and in the wiki passage that cites that slide. **Only Lectures
-  1–7 have images**, and only some of their slides: 24 of Lecture 1's 57, 22 of Lecture 2's 79,
-  17 of Lecture 3's 62, 4 of Lecture 4's 13, 3 of Lecture 5's 6, 6 of Lecture 6's 18 and 2 of
-  Lecture 7's 7. Lecture 4 also has the three figures of its notes, cropped with their captions,
-  and Lectures 5 and 7 the drawings of their notes (four and three), which have no captions; they
-  are shown in `raw/notes/` and in the wiki. Lecture 6's notes have no figures.
+  1–8 have images**, and only some of their slides: 24 of Lecture 1's 57, 22 of Lecture 2's 79,
+  17 of Lecture 3's 62, 4 of Lecture 4's 13, 3 of Lecture 5's 6, 6 of Lecture 6's 18, 2 of
+  Lecture 7's 7 and 4 of Lecture 8's 13. Lecture 4 also has the three figures of its notes, cropped
+  with their captions, and Lectures 5, 7 and 8 the drawings of their notes (four, three and two),
+  which have no captions; they are shown in `raw/notes/` and in the wiki. Lecture 6's notes have no
+  figures.
   Title and divider slides, text-only slides, pseudocode, news-headline screenshots, decorative stock photographs, blank video frames, video title cards whose text is transcribed, repeats
   (including slides repeated from an earlier lecture's deck) and build steps, and photographs of
   course staff were deliberately not rendered. Each slide or notes file's header lists which of
@@ -209,5 +229,5 @@ Cite slides as "Lecture 1, slide N" using the printed number, and spoken materia
 timestamp, e.g. "Lecture 1, ≈24:01". Cite the written notes as "Lecture 4 notes, eq. (N)" or
 "notes p. N"; each lecture's notes number their equations from (1). Prefer a slide or notes
 citation for anything written down, and a timestamp for what was said aloud. The derivations of
-Lectures 4–7 were done on a blackboard that is not in the record, so their equations are
+Lectures 4–8 were done on a blackboard that is not in the record, so their equations are
 cited to the notes.

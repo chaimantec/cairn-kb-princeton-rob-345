@@ -556,7 +556,7 @@ not step on the drones."
 This lecture and the next two concern dynamic feasibility (≈4:04). The [course map](course-map.md)
 lists them as differential flatness (Lecture 5) and trajectory optimization (Lecture 6), under
 planning with dynamics. Then come stability and PD control
-([Lecture 7](07-stability-and-pd-control.md)) and the linear quadratic regulator, under feedback control. The Lecture 3 RRT drone video was already planned with "some
+([Lecture 7](07-stability-and-pd-control.md)) and the linear quadratic regulator ([Lecture 8](08-lqr.md)), under feedback control. The Lecture 3 RRT drone video was already planned with "some
 modifications" for dynamics (see [Lecture 3](03-rrts.md#what-comes-next)). The first-order form
 $\dot{\bar{x}} = f(\bar{x}, \bar{u})$ is what those lectures build on.
 [Lecture 5](05-differential-flatness.md) returns to the planar quadrotor's equations of motion and

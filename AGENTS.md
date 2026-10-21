@@ -105,7 +105,7 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
   A Sonnet audit of six figure-heavy pages follows, returning discrepancies as text.
   Step-by-step worked examples (search grids, growing trees) are where errors concentrate:
   which point is in collision, how many nodes, which edge is drawn. Audit every step of one. In drawn phase portraits and trajectories, audit the direction of every arrow:
-  whether a curve runs towards or away from the fixed point is the content, and it is where readings go wrong.
+  whether a curve runs towards or away from the fixed point is the content, and it is where readings go wrong. When a drawing marks one entry of a matrix or list, have the audit count which entry it is.
 - A slide that plays a video or animation, or a screenshot of a demo run live, holds a single frame in the PDF. The transcript
   shows it ("let me play it again"); say so in the slide entry, so that a counter or partial
   search state in that frame is not read as the result. The deck agent cannot see the lecture,
@@ -156,6 +156,7 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
 | 5 Differential Flatness | 7 | 3 of the deck's 6 slides (a paper's first page, two video frames) and the notes' 4 drawings |
 | 6 Trajectory Optimization | 6 of 18 pages | a plot, two diagrams, a QP contour plot, a demo frame, a video still; the notes have no drawings |
 | 7 Stability and PD Control | 5 | 2 of the deck's 7 slides (a simulation frame, the hover vector field) and the notes' 3 drawings |
+| 8 LQR | 6 | 4 of the deck's 13 slides (the control loop, a phase portrait, two video frames) and the notes' 2 drawings |
 
 ## Rebuilding
 

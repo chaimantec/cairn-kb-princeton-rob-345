@@ -115,6 +115,6 @@ pp. 3–4).
 - [Lecture 6 — Trajectory Optimization](06-trajectory-optimization.md): the hover point of the planar
   quadrotor as a nominal point for [linearization](linearization.md), the first fixed point the course
   meets.
-- Lecture 8 (the linear quadratic regulator) designs controllers that achieve asymptotic stability while
-  optimizing a performance metric (Lecture 7 notes p. 5). It is not yet in this knowledge base; see the
-  [course map](course-map.md).
+- [Lecture 8 — The Linear Quadratic Regulator](08-lqr.md) designs a controller that makes a linear
+  system globally asymptotically stable while minimizing a cost; its slide 7 recaps these definitions.
+  See [the linear quadratic regulator](lqr.md).

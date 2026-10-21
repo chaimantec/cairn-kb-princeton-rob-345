@@ -141,5 +141,9 @@ students to report problems early and to be patient with the new fleet (≈34:21
   following week, implementing an LQR controller that makes the real drone stabilize itself
   (≈10:06), and the sources of model error on the real drone (unmodeled aerodynamics, inertia
   estimated with a pendulum setup, thrust that changes with the battery level; ≈5:34).
+- [Lecture 8 — The Linear Quadratic Regulator](08-lqr.md#tuning-q-and-r-in-the-lab): the LQR lab, going
+  out the day after the lecture. A TA measured the new drones' physical parameters (inertia values,
+  thrust and moment coefficients); Python linearizes the dynamics about hover; students tune the cost
+  matrices $Q$ and $R$ and upload the resulting controller to the drone (≈11:49, ≈1:03:34–1:06:41).
 - Lecture 9 (Optical flow) covers the drone's optical flow sensing. It is not yet in this
   knowledge base; see the [course map](course-map.md).

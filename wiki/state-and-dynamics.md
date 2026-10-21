@@ -108,4 +108,7 @@ this form, and uses them (notes p. 3, ≈25:48–26:34).
 - [Lecture 7 — Stability and PD Control](07-stability-and-pd-control.md) plugs a feedback controller
   $\bar{u}(\bar{x})$ into $\dot{\bar{x}} = f(\bar{x}, \bar{u})$ to get the closed-loop dynamics
   $\dot{\bar{x}} = f_{\text{cl}}(\bar{x})$, and defines fixed points and [stability](stability.md) for them.
-- Lecture 8 (LQR) is not yet in this knowledge base; see the [course map](course-map.md).
+- [Lecture 8 — The Linear Quadratic Regulator](08-lqr.md) shifts the linearized dynamics to the
+  deviations $\tilde{x} = \bar{x} - \bar{x}_ 0$, $\tilde{u} = \bar{u} - \bar{u}_ 0$, giving
+  $\dot{\tilde{x}} = A\tilde{x} + B\tilde{u}$, and designs an optimal feedback controller for it
+  ([LQR](lqr.md)).
