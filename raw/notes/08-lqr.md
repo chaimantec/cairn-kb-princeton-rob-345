@@ -5,7 +5,7 @@ pages: 4
 source_pdf: https://www.dropbox.com/scl/fi/j89tx4kp1skacdhuz918r/Lecture8_notes.pdf?rlkey=4gyqm6qumqutg1lzx83uuac4d&dl=0
 numbering: PDF page N = page N; page 1 prints no number (pages 2–4 print 2–4). Only one equation carries a printed number: the first cost function on page 2, printed (1).
 images: The two drawings are rendered as crops of the page and shown just above their descriptions (`notes-figure-1.jpg` and `notes-figure-2.jpg` in this lecture's image folder, numbered in order of appearance; the notes print no figure numbers or captions).
-figure_audit: An independent reader checked both drawings, the page-1 pipeline and annotations, and the page-2 equations against the PDF; every display was also compared with the PDF's text layer in the parent. Fixed: in the page-3 sketch the circled entry is the third on the diagonal (the one for $z$), not the first, and the arrow points from it to the words "Crank this up"; in the page-1 sketch the dashed vertical line runs above, through and below the quadrotor.
+figure_audit: An independent reader checked both drawings, the page-1 pipeline and annotations, and the page-2 equations against the PDF; every display was also compared with the PDF's text layer in the parent. Fixed: in the page-3 sketch the circled entry is the third on the diagonal (the one for the height z), not the first, and the arrow points from it to the words "Crank this up"; in the page-1 sketch the dashed vertical line runs above, through and below the quadrotor.
 ---
 
 # Lecture 8 — The Linear Quadratic Regulator: lecture notes
