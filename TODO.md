@@ -18,7 +18,7 @@ Ticks the "Lectures 8–9" line for Lecture 8 (split above, Lecture 9 stays open
 
 ### Transcripts
 - [x] 08 Lecture 8: The Linear Quadratic Regulator (LQR) — video zqi9QhUio8s — verbatim captions in raw/transcripts/original/ (99 paragraphs, 11,635 words)
-- [ ] 08 copy-edit (Sonnet), checked in the parent: timestamps, numbers, ratios, proper nouns
+- [x] 08 copy-edit (Sonnet), checked in the parent: 99/99 timestamps identical; numbers identical paragraph by paragraph; every ratio in 0.72–1.10 with [Ed:] notes and student tags excluded (11,495 → 9,886 words); 38 restoration rows, 7 [Ed: unclear], 8 notation notes; Riccati, Lyapunov, Zurich, MATLAB printed in the material; in the parent, Kian confirmed as Kian Orr (Lecture 1, slide 45) and "Jang" left unclear (no TA of that name)
 
 ### Slides and notes
 - [x] Download Lecture8_slides.pdf (13 pages, 7.6MB, Keynote, 2026-09-29) and Lecture8_notes.pdf (4 pages, pdfTeX, two pasted drawings) into raw/pdfs/ (gitignored)

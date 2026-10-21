@@ -30,6 +30,7 @@ These are in the PDF as printed; the body below keeps them as printed.
 - Page 1, the fixed-point line is printed with the second subscript as an italic letter o, in the expression $f(\bar{x}_ 0, \bar{u}_ o)$, where the first subscript is a zero (the same $\bar{u}_ 0$ elsewhere in the notes is a zero).
 - Page 1: "(e.g.; hover)" has a stray semicolon after "e.g.".
 - Page 2: "Maybe we want to minimize derivations of the state from the desired state" reads "derivations" where "deviations" is meant (the next bullet says "deviations").
+- Page 2: "A symmetric matrix $Q$ is positive definite if $\bar{x}^T Q \bar{x} \gt 0$, for all $\bar{x}$": at $\bar{x} = \bar{0}$ the quantity is zero, so the condition can only hold for all non-zero $\bar{x}$. The lecture states it that way, correcting itself: "for all z, or for all z not equal to zero. If you take z equal to 0, then this quantity is zero" (≈29:09).
 - Pages 2 and 3: "Algebraic Riccatti Equation" and "Riccatti equation" (page 2, page 3) spell the name with a double t; the name is Riccati.
 
 ---
