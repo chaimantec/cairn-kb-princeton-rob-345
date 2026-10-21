@@ -13,7 +13,7 @@ Ticks the "Later runs — lecture 9" line.
 
 ### Transcripts
 - [x] 09 Lecture 9: Optical Flow — video wvuVX9L7v4Y — verbatim captions in raw/transcripts/original/ (89 paragraphs, 9,954 words)
-- [ ] 09 copy-edit (Sonnet), checked in the parent: timestamps, numbers, ratios, proper nouns
+- [x] 09 copy-edit (Sonnet), checked in the parent: 89/89 timestamps identical; numbers identical paragraph by paragraph except two "2"s spoken as "squared" at 1:01:28 (listed); every ratio in 0.72–1.10 with [Ed:] notes and student tags excluded (9,830 → 8,601 words; lowest 0.727 at 1:06:04); 24 restoration rows, 7 [Ed: unclear], 8 notation notes; Lucas-Kanade, Taylor, RRT printed in the material; Queensland Brain Institute, Australian National University and "Partha" confirmed in the raw captions (the bird video's narration), the surname left unclear
 
 ### Slides and notes
 - [x] Download Lecture9_slides.pdf (21 pages, 32MB, Keynote, 2026-10-01) and Lecture9_notes.pdf (5 pages, pdfTeX, four pasted drawings) into raw/pdfs/ (gitignored)
