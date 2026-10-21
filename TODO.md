@@ -17,7 +17,7 @@ chaimantec <nantapon@chaimantec.com>. Catalog re-fetched 2026-10-21: still 9 lec
 
 ### Transcripts
 - [x] 04 Lecture 4: Quadrotor Dynamics — video upI4KaGawyE — verbatim captions in raw/transcripts/original/ (88 paragraphs)
-- [ ] 04 copy-edit (Sonnet), three checks, proper nouns grepped
+- [x] 04 copy-edit (Sonnet): 88/88 timestamps identical; ratios all in 0.72–1.10 (lowest 0.73 at 42:11, highest 1.06 at 41:23; 10,655 → 9,245 words); number diffs all deliberate ("5 theta s" → phi, theta, psi twice; 123 → 1-2-3; 111 → 1-1-1); 38 restorations, 2 inline unclear + 7 noted; "John Po" → Jon Prevost in the parent (Lecture 1 slide 46); proper nouns grepped against the slides, notes and Lecture 1's deck, the rest are spoken asides (quaternions, MATLAB, prop wash)
 
 ### Slides and notes
 - [x] Download Lecture4_slides.pdf (13 pages, 30MB) and Lecture4_notes.pdf (7 pages, LaTeX) into raw/pdfs/ (gitignored)
