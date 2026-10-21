@@ -404,7 +404,8 @@ Planning for Quadrotor Flight" (Robust Robotics Group, MIT).
 ## What comes next
 
 Lecture 6 is trajectory optimization, the last of the lectures on planning with dynamics (see the
-[course map](course-map.md)). Model predictive control is to be touched on there (≈1:04:36). The
+[course map](course-map.md)); see [Lecture 6](06-trajectory-optimization.md). Model predictive control
+was to be touched on there (≈1:04:36), but Lecture 6 as recorded does not mention it. The
 next assignment is to point to a paper listing systems shown to be differentially flat (≈48:41).
 The [differential flatness](differential-flatness.md) page collects this lecture's results in one
 place.

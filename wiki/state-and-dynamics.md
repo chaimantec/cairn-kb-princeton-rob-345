@@ -101,5 +101,9 @@ this form, and uses them (notes p. 3, ≈25:48–26:34).
 - [Lecture 5 — Differential Flatness](05-differential-flatness.md) builds on this form: a
   [differentially flat](differential-flatness.md) system's state and control input can be computed
   from a few flat outputs and their time derivatives.
-- Lectures 6–8 (trajectory optimization, stability and PD control, LQR) build on it too. They are
-  not yet in this knowledge base; see the [course map](course-map.md).
+- [Lecture 6 — Trajectory Optimization](06-trajectory-optimization.md) grows an RRT in state space,
+  then [linearizes](linearization.md) $\dot{\bar{x}} = f(\bar{x}, \bar{u})$ about a nominal state and
+  input to $\dot{\bar{x}} = A(\bar{x} - \bar{x}_ 0) + B(\bar{u} - \bar{u}_ 0)$ for
+  [trajectory optimization](trajectory-optimization.md).
+- Lectures 7 and 8 (stability and PD control, LQR) build on it too. They are not yet in this
+  knowledge base; see the [course map](course-map.md).

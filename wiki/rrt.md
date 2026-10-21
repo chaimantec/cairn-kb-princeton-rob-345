@@ -127,6 +127,13 @@ in the classical sense (slides 60 and 61).
   configuration space. The straight-line extension a dynamic robot cannot follow is then replaced
   by a smooth flat output trajectory, often a polynomial in time, that it can (Lecture 5,
   ≈58:57–1:01:16 and ≈1:06:07–1:06:53).
+  [Lecture 6](06-trajectory-optimization.md) gives the general version. Growing the tree in state
+  space by applying random control inputs to states sampled from the tree is probabilistically
+  complete but never explores, "a completely useless algorithm" in practice (Lecture 6, ≈8:38–9:25).
+  What works is to keep the RRT and make each extension a boundary value problem: find control inputs
+  that take the robot from the nearest vertex to the new state, by
+  [trajectory optimization](trajectory-optimization.md) (Lecture 6, ≈9:25–11:44 and
+  ≈1:04:07–1:04:52).
 
 ## RRTs and graph search compared
 
@@ -154,3 +161,5 @@ grid, which grows exponentially with the dimension (≈49:03–50:36).
 - [Lecture 5 — Differential Flatness](05-differential-flatness.md): the extension step under
   dynamics, and the RRT run in the flat output space; the MIT drone video is shown again with that
   explanation.
+- [Lecture 6 — Trajectory Optimization](06-trajectory-optimization.md): the RRT in state space (and
+  why it fails), and the RRT whose extension step is solved by trajectory optimization.

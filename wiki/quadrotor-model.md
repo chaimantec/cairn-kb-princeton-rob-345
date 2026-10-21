@@ -182,6 +182,8 @@ the other way (≈57:51–58:37).
   quadrotor as a configuration-space example, without its dynamics.
 - [Lecture 5 — Differential Flatness](05-differential-flatness.md) plans with this model: it proves
   the planar quadrotor flat and states the 3D quadrotor's flat outputs.
-- Lecture 6 (trajectory optimization) also plans with this model, and Lectures 7 and 8 (stability
-  and PD control, LQR) turn to feedback control. They are not yet in this knowledge base; see the
-  [course map](course-map.md).
+- [Lecture 6 — Trajectory Optimization](06-trajectory-optimization.md) plans with this model: it
+  [linearizes](linearization.md) the planar quadrotor about hover (total thrust $mg$, no moment) and
+  computes the matrices $A$ and $B$ entry by entry.
+- Lectures 7 and 8 (stability and PD control, LQR) turn to feedback control. They are not yet in
+  this knowledge base; see the [course map](course-map.md).

@@ -125,5 +125,7 @@ See [Lecture 5](05-differential-flatness.md#flatness-in-practice-the-videos).
 - [Lecture 4 — Quadrotor Dynamics](04-quadrotor-dynamics.md): the equations of motion this rests on.
 - [Lecture 3 — RRTs](03-rrts.md#rrts-in-action): the MIT drone video, first shown as an RRT and
   revisited in Lecture 5 as an RRT in flat output space.
-- Lecture 6 (trajectory optimization) continues planning with dynamics. It is not yet in this
-  knowledge base; see the [course map](course-map.md).
+- [Lecture 6 — Trajectory Optimization](06-trajectory-optimization.md#where-this-lecture-sits-the-limits-of-differential-flatness):
+  recaps flatness and names its two limits, that states beyond the flat outputs (such as the planar
+  quadrotor's orientation) cannot be controlled and that a system may not be flat, then plans with
+  dynamics by [trajectory optimization](trajectory-optimization.md) instead.

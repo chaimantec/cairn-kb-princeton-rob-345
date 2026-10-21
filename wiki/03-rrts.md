@@ -528,7 +528,8 @@ in the dynamics, feedback and state estimation come later still (≈54:29–55:1
 [Lecture 4](04-quadrotor-dynamics.md) begins with quadrotor dynamics, and
 [Lecture 5](05-differential-flatness.md#planning-with-an-rrt-in-the-flat-output-space) names the
 modification in the drone example: the RRT is built in the space of differential flatness's flat
-outputs.
+outputs. [Lecture 6](06-trajectory-optimization.md#idea-2-keep-the-rrt-change-the-extension) gives the
+general version, in which each extension is solved by trajectory optimization.
 
 The assignment asks students to implement the vanilla RRT (≈35:03). The next assignment also shows
 an efficient way to check a whole segment for collision (≈47:31) and an example in which

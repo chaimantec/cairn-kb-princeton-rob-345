@@ -560,7 +560,9 @@ under feedback control. The Lecture 3 RRT drone video was already planned with "
 modifications" for dynamics (see [Lecture 3](03-rrts.md#what-comes-next)). The first-order form
 $\dot{\bar{x}} = f(\bar{x}, \bar{u})$ is what those lectures build on.
 [Lecture 5](05-differential-flatness.md) returns to the planar quadrotor's equations of motion and
-shows that its center of mass can follow any sufficiently smooth trajectory.
+shows that its center of mass can follow any sufficiently smooth trajectory, and
+[Lecture 6](06-trajectory-optimization.md#linearizing-the-planar-quadrotors-dynamics) linearizes these
+equations about hover for trajectory optimization.
 
 ## Gaps in the record
 

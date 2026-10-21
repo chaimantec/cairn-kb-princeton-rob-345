@@ -56,8 +56,8 @@ course staff (Princeton University, Fall 2026). They are published through the c
 the lecture videos on YouTube (recorded by the Princeton Broadcast Center).
 
 As checked on 2026-10-20, no licence, copyright or reuse statement appears on the course
-website, and none is printed on any page of the Lecture 1, 2, 3, 4 or 5 deck or of the Lecture 4
-or 5 notes (checked 2026-10-21). Publicly downloadable is not the
+website, and none is printed on any page of the Lecture 1, 2, 3, 4, 5 or 6 deck or of the Lecture 4,
+5 or 6 notes (checked 2026-10-21). Publicly downloadable is not the
 same as licensed. Absent an express grant the default applies: copyright arises automatically,
 and no reuse rights pass to anyone.
 
@@ -174,3 +174,18 @@ Rendered: 3 slides and the notes' 4 drawings (cropped; the notes print no captio
 | Slide 3 | Frame of a quadrotor video (youtube.com/watch?v=geqip_0Vjec), presented in the lecture as Mellinger and Kumar's. No person is visible. |
 | Slide 4 | Frame of a drone-racing video (youtube.com/watch?v=XpuRpKHp_Bk); the gates are lettered "UZH", and the lecture attributes it to a group at the University of Zurich. No person is visible. |
 | Notes drawings 1–4 | Drawings of an RRT, a car seen from above, the flatness pipeline, and the planar quadrotor. Not credited. |
+
+### Lecture 6 — Trajectory Optimization
+
+Deck: [Lecture6_slides.pdf](https://www.dropbox.com/scl/fi/9wnsc9wkmxmvwbugm7rps/Lecture6_slides.pdf?rlkey=9dsf9cbn7sjy9b5m6dieznycs&dl=0).
+Notes: [Lecture6_notes.pdf](https://www.dropbox.com/scl/fi/ctybyh0a1gdrvaywbcylu/Lecture6_notes.pdf?rlkey=i9tmfyhkjiws7gboip2a8fkvl&dl=0)
+(no figures). Rendered: 6 slides, in `raw/images/06-trajectory-optimization/`.
+
+| Image | Third-party content (as identifiable from the page) |
+| --- | --- |
+| Slide 3 | A drawing of the planar quadrotor and an all-black video frame. Not credited; apparently the course's own. |
+| Slide 6 | A plot of an RRT grown in state space that fails to reach a goal, credited on the slide to "Underactuated Robotics", Russ Tedrake. |
+| Slide 8 | A diagram of the extension step (three points, a straight dotted line and a curve). Not credited; apparently the course's own. |
+| Slide 12 | A contour plot of a two-variable quadratic program with its feasible region. Not credited. |
+| Slide 14 | A screenshot of an interactive sequential-QP demo for the planar quadrotor; the lecture says it was made with Claude (≈1:01:02). Not credited on the slide. |
+| Slide 16 | Frame of an acrobot video (youtube.com/watch?v=FeCwtvrD76I), which the lecture presents as from the lecturer's own PhD work. No person is visible. |
