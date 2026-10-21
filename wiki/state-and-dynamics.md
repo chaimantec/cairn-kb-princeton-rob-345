@@ -98,5 +98,8 @@ this form, and uses them (notes p. 3, ≈25:48–26:34).
   and first-order form on the planar quadrotor, and extends them to the 3D quadrotor.
 - [Lecture 2](02-discrete-motion-planning.md) and [Lecture 3](03-rrts.md): configuration space,
   whose coordinates become the configuration variables of the state.
-- Lectures 5–8 (differential flatness, trajectory optimization, stability and PD control, LQR)
-  build on this form. They are not yet in this knowledge base; see the [course map](course-map.md).
+- [Lecture 5 — Differential Flatness](05-differential-flatness.md) builds on this form: a
+  [differentially flat](differential-flatness.md) system's state and control input can be computed
+  from a few flat outputs and their time derivatives.
+- Lectures 6–8 (trajectory optimization, stability and PD control, LQR) build on it too. They are
+  not yet in this knowledge base; see the [course map](course-map.md).

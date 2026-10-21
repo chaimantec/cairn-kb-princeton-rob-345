@@ -102,14 +102,17 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
   which point is in collision, how many nodes, which edge is drawn. Audit every step of one.
 - A slide that plays a video or animation holds a single frame in the PDF. The transcript
   shows it ("let me play it again"); say so in the slide entry, so that a counter or partial
-  search state in that frame is not read as the result.
+  search state in that frame is not read as the result. The deck agent cannot see the lecture,
+  so it describes only the frame; whether and how the video played comes from the transcript,
+  written in by the parent.
 
 ## Images
 
 - Notes figures are cropped from the page with their printed caption, 1400px wide, saved as
   `raw/images/NN-<slug>/notes-figure-N.jpg`, and placed by hand under the caption in `raw/notes/`
   and in the wiki: `embed_slide_images.py` handles only `slide-N` files. Count them in the table
-  below as images, not as deck pages.
+  below as images, not as deck pages. Notes whose drawings have no printed number or caption are
+  numbered `notes-figure-N` in order of appearance, and the notes file's header says so.
 - One image per rendered slide at `raw/images/NN-<slug>/slide-N.jpg` (or `.png`),
   1400px wide, rendered by `extract_slide_images.py` and placed by
   `embed_slide_images.py`. The script puts each image under `## Slide N` in the slide file
@@ -121,7 +124,9 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
   vector-drawn figures such as graphs and worked-example grids.
 - Decks repeat slides from earlier lectures. Find them by a low-resolution greyscale pixel
   diff against the earlier deck (a mean difference near 0 is the same slide), not by opening
-  pages, and do not render them again.
+  pages, and do not render them again. Two blank (black) video frames also diff at 0, so check a
+  match's brightness before calling it a repeat. A repeated video under a new title bar escapes
+  the diff: compare the video URLs printed on video slides with the earlier slide files too.
 - `embed_slide_images.py` matches "slide N" whatever lecture it belongs to. On a topic page that
   cites several lectures' slides, cite the other lecture's slides by section link or run
   `--dry-run` first, or one lecture's image lands on another lecture's citation.
@@ -142,6 +147,7 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
 | 2 Discrete Motion Planning | 22 of 79 pages | video stills, C-space diagrams, worked-example grids |
 | 3 RRTs | 17 of 62 pages | geometry diagrams, video stills, steps of the RRT worked example |
 | 4 Quadrotor Dynamics | 7 | 4 of the deck's 13 slides (lab photographs) and the notes' 3 figures |
+| 5 Differential Flatness | 7 | 3 of the deck's 6 slides (a paper's first page, two video frames) and the notes' 4 drawings |
 
 ## Rebuilding
 

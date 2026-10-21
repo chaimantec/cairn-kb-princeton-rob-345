@@ -43,9 +43,9 @@ Let's consider the RRT algorithm. We have some current tree at iteration $k$ of 
 
 ![Notes drawing, p. 1 — an RRT at iteration k: the extension toward q rand](../images/05-differential-flatness/notes-figure-1.jpg)
 
-**Figure (p. 1, drawing):** a 2D picture of an RRT in the plane. A tree of small black dots joined by black line segments sits in the lower left and centre, its root being the larger black dot near the middle left; branches fan out from it up, left, right and down, with two branches reaching the upper left. Three circular obstacles drawn with grey diagonal hatching lie in the upper half and the right half: one at the top centre-left, one at the top right, and one lower right of centre. In the upper right of the tree is a short red dashed segment from a tree vertex (black dot) to a red dot labelled $\bar{q}_s$; from the red dot $\bar{q}_s$ a thin dotted grey line continues up and to the right to a second red dot labelled $\bar{q}_{\text{rand}}$. No other labels are present.
+**Figure (p. 1, drawing):** a 2D picture of an RRT in the plane. A tree of small black dots joined by black line segments sits in the lower left and centre, its root being the larger black dot near the middle left; branches fan out from it up, left, right and down, with two branches reaching the upper left. Three circular obstacles drawn with grey diagonal hatching lie in the upper half and the right half: one at the top centre-left, one at the top right, and one lower right of centre. In the upper right of the tree is a short red dashed segment from a tree vertex (black dot) to a red dot labelled $\bar{q}_ s$; from the red dot $\bar{q}_ s$ a thin dotted grey line continues up and to the right to a second red dot labelled $\bar{q}_ {\text{rand}}$. No other labels are present.
 
-We sample a random configuration $\bar{q}_{\text{rand}}$, find the closest vertex in the tree, and then perform an *extension* operation. Our extension operation from the last lecture was very simple. We just move in the direction of $\bar{q}_{\text{rand}}$ (by some distance $d$). For a system that has dynamics, it may not be possible to just follow a straight line in the configuration space to get from one configuration to another.
+We sample a random configuration $\bar{q}_ {\text{rand}}$, find the closest vertex in the tree, and then perform an *extension* operation. Our extension operation from the last lecture was very simple. We just move in the direction of $\bar{q}_ {\text{rand}}$ (by some distance $d$). For a system that has dynamics, it may not be possible to just follow a straight line in the configuration space to get from one configuration to another.
 
 **Example:** Wheeled robot/Car
 
@@ -74,10 +74,10 @@ $$
 The system is said to be *differentially flat* if there exists a function $\alpha$ such that:
 
 $$
-\underbrace{\bar{z}}_{\text{Flat outputs}} = \alpha(\bar{x}, \bar{u}, \dot{\bar{u}}, \ddot{\bar{u}}, \ldots, \underbrace{\bar{u}^{(p)}}_{p\text{th time derivative}})
+\underbrace{\bar{z}}_ {\text{Flat outputs}} = \alpha(\bar{x}, \bar{u}, \dot{\bar{u}}, \ddot{\bar{u}}, \ldots, \underbrace{\bar{u}^{(p)}}_ {p\text{th time derivative}})
 $$
 
-(In the notes the two annotations sit under the formula with small upward arrows: "Flat outputs" under $\bar{z}$ and "$p^{\text{th}}$ time derivative" under $\bar{u}^{(p)}$.)
+(In the notes the two annotations sit under the formula with small upward arrows: "Flat outputs" under $\bar{z}$ and "pth time derivative" (with a superscript "th") under $\bar{u}^{(p)}$.)
 
 and we can write the solution of the nonlinear system as:
 
@@ -139,7 +139,7 @@ $$
 
 ![Notes drawing, p. 3 — the planar quadrotor tilted by θ, with configuration (x, y, θ)](../images/05-differential-flatness/notes-figure-4.jpg)
 
-**Figure (p. 3, drawing):** to the right of the equations, a side view of the planar quadrotor, tilted: a light-grey arm outlined in black running up to the right, with a black motor block and a grey propeller disc at each end (the left one lower, the right one higher), and a red dome on the black central body (with a tiny red dot on it). A horizontal dashed line runs to the right from the central body; a second dashed line, an extension of the arm, rises from the body to the right; the angle between them is marked $\theta$ near their right-hand ends. Below the drawing, the label "$(x, y, \theta)$" in bold. No force arrows, $L$ or frame axes are drawn in this figure.
+**Figure (p. 3, drawing):** to the right of the equations, a side view of the planar quadrotor, tilted: a light-grey arm outlined in black running up to the right, with a black motor block and a grey propeller disc at each end (the left one lower, the right one higher), and a red dome on the black central body (with a tiny red dot on it). A horizontal dashed line runs to the right from the central body; a second dashed line, an extension of the arm, rises from the body to the right; the angle between them is marked $\theta$ near their right-hand ends. Below the drawing, the label $(x, y, \theta)$ in bold. No force arrows, $L$ or frame axes are drawn in this figure.
 
 Under the figure: States: $[x, y, \theta, \dot{x}, \dot{y}, \dot{\theta}]^T$
 

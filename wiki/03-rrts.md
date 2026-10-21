@@ -525,7 +525,10 @@ The drone example uses an RRT "with some modifications that I'll talk about in a
 account for dynamics (≈52:57). The [course map](course-map.md) puts quadrotor dynamics,
 differential flatness and trajectory optimization next, under planning with dynamics. Uncertainty
 in the dynamics, feedback and state estimation come later still (≈54:29–55:15).
-[Lecture 4](04-quadrotor-dynamics.md) begins with quadrotor dynamics.
+[Lecture 4](04-quadrotor-dynamics.md) begins with quadrotor dynamics, and
+[Lecture 5](05-differential-flatness.md#planning-with-an-rrt-in-the-flat-output-space) names the
+modification in the drone example: the RRT is built in the space of differential flatness's flat
+outputs.
 
 The assignment asks students to implement the vanilla RRT (≈35:03). The next assignment also shows
 an efficient way to check a whole segment for collision (≈47:31) and an example in which

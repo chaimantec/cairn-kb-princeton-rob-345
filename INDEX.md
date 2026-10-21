@@ -9,15 +9,15 @@ work hands-on with the Crazyflie quadrotor, and the final project trains a visio
 navigation policy with imitation learning. ROB 345 is the undergraduate course; ROB 549 is the
 graduate track.
 
-> **Coverage: Lectures 1–4, of the 9 recorded lectures in the catalog.** The course site
+> **Coverage: Lectures 1–5, of the 9 recorded lectures in the catalog.** The course site
 > schedules 24 lectures, of which lectures 1–9 had videos and slides when this was built
 > (2026-10-20). This knowledge base holds the introduction (Lecture 1), discrete motion planning
-> (Lecture 2), randomized motion planning with RRTs (Lecture 3) and quadrotor dynamics
-> (Lecture 4): their edited transcripts, their full slide decks as text, Lecture 4's written notes
-> as text, 70 images (67 slides and the 3 figures of Lecture 4's notes), and the course and
-> concept pages they start. **It cannot answer questions about the technical content of lectures
-> 5 onward** (differential flatness, trajectory optimization, PD control, LQR, optical flow and
-> later). For those, point the learner to the lecture's slides and notes in
+> (Lecture 2), randomized motion planning with RRTs (Lecture 3), quadrotor dynamics (Lecture 4)
+> and differential flatness (Lecture 5): their edited transcripts, their full slide decks as
+> text, the written notes of Lectures 4 and 5 as text, 77 images (70 slides, the 3 figures of
+> Lecture 4's notes and the 4 drawings of Lecture 5's), and the course and concept pages they
+> start. **It cannot answer questions about the technical content of lectures 6 onward**
+> (trajectory optimization, PD control, LQR, optical flow and later). For those, point the learner to the lecture's slides and notes in
 > [`sources.md`](sources.md). Build progress is in [TODO.md](TODO.md).
 
 ## Lecture pages
@@ -55,6 +55,17 @@ graduate track.
   measured the thrust coefficient; how a quadrotor yaws; and the lab spaces, lab rules and the
   first hardware lab (an RRT on the drone). The derivation follows the lecture notes, cited by
   equation number.
+- [Lecture 5 — Differential Flatness](wiki/05-differential-flatness.md): why the RRT's
+  straight-line extension fails for a robot with dynamics (a drone or a car cannot slide
+  sideways); the planar quadrotor's equations in thrusts $F_1$, $F_2$ (with the sign of the moment
+  equation corrected in class); the two-part claim that any smooth center of mass trajectory can
+  be flown, and its proof via $\theta = \arctan(-\ddot{x}/(\ddot{y} + g))$ and two linear
+  equations for the thrusts; why the fourth derivative is needed ($q = 4$); the general definition
+  with flat outputs $\bar{z}$ and functions $\alpha$, $\beta$, $\gamma$; the theorem that there
+  are as many flat outputs as control inputs; the 3D quadrotor's flat outputs $x$, $y$, $z$,
+  $\psi$; running the RRT in the flat output space with polynomial segments; and the videos
+  (Mellinger and Kumar's minimum snap work, drone racing, a tail-sitter, RRT\* with flatness).
+  The derivation follows the lecture notes, cited by equation number.
 
 ## Course pages
 
@@ -99,6 +110,11 @@ graduate track.
   configuration variables, control input and physical parameters; converting $n$ second-order
   equations of motion into $2n$ first-order ones; and the general form
   $\dot{\bar{x}} = f(\bar{x}, \bar{u})$ and what it is used for (prediction).
+- [Differential flatness](wiki/differential-flatness.md): the problem it answers (planning that
+  respects the dynamics), the definition with flat outputs and the functions $\alpha$, $\beta$,
+  $\gamma$, what it does and does not give (smoothness, only the flat outputs are chosen, no
+  general test), the planar quadrotor worked through, the 3D quadrotor's flat outputs, and
+  planning an RRT in the flat output space.
 
 ## Raw materials
 
@@ -111,19 +127,21 @@ graduate track.
 - [`raw/slides/`](raw/slides/): every slide of each deck as text, headed `## Slide N` with
   the number printed on the slide, and every figure described in prose. **Lecture 1's deck has
   no slide 2**: a slide was hidden before export, so slide *N* is PDF page *N*−1 from slide 3
-  on. The decks of Lectures 2, 3 and 4 are numbered one-to-one: slide *N* is PDF page *N*. Each
-  file's header says how its numbers map to PDF pages. Lecture 4's deck has only 13 slides; its
-  technical content is in the notes.
+  on. The decks of Lectures 2–5 are numbered one-to-one: slide *N* is PDF page *N*. Each
+  file's header says how its numbers map to PDF pages. Lecture 4's deck has only 13 slides and
+  Lecture 5's only 6 (a paper's first page and four videos); their technical content is in the
+  notes.
 - [`raw/notes/`](raw/notes/): the full text of the course's written lecture notes, headed
   `## Page N`, with every equation in LaTeX under the notes' own number and every figure
-  described in prose. **Only Lecture 4's notes are here** so far. Each file lists the printed
+  described in prose. **Only Lectures 4 and 5 have notes here** so far. Each file lists the printed
   slips in its notes.
 - [`raw/images/`](raw/images/): whole-slide images of figure slides, embedded under the
   matching `## Slide N` heading and in the wiki passage that cites that slide. **Only Lectures
-  1–4 have images**, and only some of their slides: 24 of Lecture 1's 57, 22 of Lecture 2's 79,
-  17 of Lecture 3's 62 and 4 of Lecture 4's 13. Lecture 4 also has the three figures of its
-  notes, cropped with their captions and shown under the caption in `raw/notes/` and in the wiki.
-  Title and divider slides, text-only slides, pseudocode, news-headline screenshots, repeats
+  1–5 have images**, and only some of their slides: 24 of Lecture 1's 57, 22 of Lecture 2's 79,
+  17 of Lecture 3's 62, 4 of Lecture 4's 13 and 3 of Lecture 5's 6. Lecture 4 also has the three
+  figures of its notes, cropped with their captions, and Lecture 5 the four drawings of its notes,
+  which have no captions; they are shown in `raw/notes/` and in the wiki.
+  Title and divider slides, text-only slides, pseudocode, news-headline screenshots, blank video frames, repeats
   (including slides repeated from an earlier lecture's deck) and build steps, and photographs of
   course staff were deliberately not rendered. Each slide or notes file's header lists which of
   its slides or figures have images.
@@ -147,6 +165,7 @@ graduate track.
 
 Cite slides as "Lecture 1, slide N" using the printed number, and spoken material by
 timestamp, e.g. "Lecture 1, ≈24:01". Cite the written notes as "Lecture 4 notes, eq. (N)" or
-"notes p. N". Prefer a slide or notes citation for anything written down, and a timestamp for
-what was said aloud. Lecture 4's derivation was done on a blackboard that is not in the record,
-so its equations are cited to the notes.
+"notes p. N"; each lecture's notes number their equations from (1). Prefer a slide or notes
+citation for anything written down, and a timestamp for what was said aloud. The derivations of
+Lectures 4 and 5 were done on a blackboard that is not in the record, so their equations are
+cited to the notes.

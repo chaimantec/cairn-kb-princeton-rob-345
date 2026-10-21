@@ -28,17 +28,17 @@ chaimantec <nantapon@chaimantec.com>. Catalog re-fetched 2026-10-21: still 9 lec
 - [x] Figure audit (Sonnet) at 600 dpi: slide 2's paper figure (a photograph with arrows, not a drawing; $x_W$ and $y_W$ directions and the $\psi$ arc fixed), slide 4 (five gates, not four), notes p. 2 pipeline (three plots, not four); slides 1, 3, 5, 6, the other notes drawings and the definition and eqs. (1)–(4) agree. Renders of notes figures 3 and 4 viewed in the parent: agree (arm colour fixed)
 
 ### Wiki
-- [ ] wiki/05-differential-flatness.md
-- [ ] Topic pages: new wiki/differential-flatness.md; rrt (extension under dynamics), quadrotor-model, state-and-dynamics, course-map row, Lecture 4 forward link
-- [ ] INDEX.md table of contents, coverage paragraph
+- [x] wiki/05-differential-flatness.md (derivation cited to the notes; 7 images, all with hand-written captions)
+- [x] Topic pages: new wiki/differential-flatness.md; rrt (extension under dynamics, Where it appears), quadrotor-model (flat outputs, Lectures), state-and-dynamics, course-map row, Lecture 3 and 4 forward links
+- [x] INDEX.md table of contents, coverage paragraph, raw/slides and raw/notes entries, citation rule for notes
 
 ### Images
-- [ ] raw/images/05-differential-flatness/ — figure slides and notes figures, embedded
-- [ ] INDEX.md image sentence; AGENTS.md table row; LICENSE.md attribution
+- [x] raw/images/05-differential-flatness/ — slides 2, 3, 4 and the notes' 4 drawings (0.5MB), embedded in the slide file, the notes file, the lecture page (7) and differential-flatness.md (notes drawing 3); every caption hand-written
+- [x] INDEX.md image sentence; AGENTS.md table row and three lessons (video slides, uncaptioned notes drawings, black-frame and retitled-video repeats); LICENSE.md attribution
 
 ### Publish
-- [ ] kb.json — coverage, byLecture, notes, images, figureAudit, caveats
-- [ ] sources.md "In this KB" column
-- [ ] verify_kb.py clean, and its review section read
+- [x] kb.json — coverage, byLecture, notes, images, figureAudit, caveats
+- [x] sources.md "In this KB" column
+- [x] verify_kb.py clean (all hard checks; 1,380 formulas in the chat and on github.com after fixing 11 GitHub-only breaks: `$p$th`, `_` after `}`, `$` after a quote, a display block inside a list), and its review section read: no ranking claims, every numeric claim checked against the image table
 - [ ] Commit and push
 - [ ] Move this run's section to BUILD_LOG.md; TODO.md keeps only open work

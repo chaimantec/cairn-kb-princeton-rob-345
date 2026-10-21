@@ -56,8 +56,8 @@ course staff (Princeton University, Fall 2026). They are published through the c
 the lecture videos on YouTube (recorded by the Princeton Broadcast Center).
 
 As checked on 2026-10-20, no licence, copyright or reuse statement appears on the course
-website, and none is printed on any page of the Lecture 1, 2, 3 or 4 deck or of the Lecture 4
-notes (checked 2026-10-21). Publicly downloadable is not the
+website, and none is printed on any page of the Lecture 1, 2, 3, 4 or 5 deck or of the Lecture 4
+or 5 notes (checked 2026-10-21). Publicly downloadable is not the
 same as licensed. Absent an express grant the default applies: copyright arises automatically,
 and no reuse rights pass to anyone.
 
@@ -160,3 +160,17 @@ Rendered: 4 slides and the notes' 3 figures (cropped with their captions), in
 | Notes Figure 1 | Drawings of the planar quadrotor. Not credited. |
 | Notes Figure 2 | Rendering of a Crazyflie with its axes, credited in the notes' caption to Bitcraze.io. |
 | Notes Figure 3 | Hand drawings of a rotor and of the rotors' spin directions. No third-party content identified. |
+
+### Lecture 5 — Differential Flatness
+
+Deck: [Lecture5_slides.pdf](https://www.dropbox.com/scl/fi/e90rrmg0036wqix2xmv0f/Lecture5_slides.pdf?rlkey=qonzpbom400u3wozymjv3fga3&dl=0).
+Notes: [Lecture5_notes.pdf](https://www.dropbox.com/scl/fi/d0g09pk1opfkwdw7udmsi/Lecture5_notes.pdf?rlkey=l1sriwzrnb499bsbcyo3cylm9&dl=0).
+Rendered: 3 slides and the notes' 4 drawings (cropped; the notes print no captions), in
+`raw/images/05-differential-flatness/`.
+
+| Image | Third-party content (as identifiable from the page) |
+| --- | --- |
+| Slide 2 | The first page of a research paper, "Minimum Snap Trajectory Generation and Control for Quadrotors" by Daniel Mellinger and Vijay Kumar, with its abstract and its Fig. 1, a photograph of a quadrotor overlaid with reference frames. The slide names no venue or publisher; the copyright is the paper's. |
+| Slide 3 | Frame of a quadrotor video (youtube.com/watch?v=geqip_0Vjec), presented in the lecture as Mellinger and Kumar's. No person is visible. |
+| Slide 4 | Frame of a drone-racing video (youtube.com/watch?v=XpuRpKHp_Bk); the gates are lettered "UZH", and the lecture attributes it to a group at the University of Zurich. No person is visible. |
+| Notes drawings 1–4 | Drawings of an RRT, a car seen from above, the flatness pipeline, and the planar quadrotor. Not credited. |

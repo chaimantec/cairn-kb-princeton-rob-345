@@ -238,12 +238,12 @@ $$\dot{\bar{x}} = f(\bar{x}, \bar{u}), \qquad \bar{x} \in \mathbb{R}^n, \qquad \
 
 where $\bar{x}$ is the state with $n$ components and $\bar{u}$ the control input with $m$. The system
 is **differentially flat** if there exist **flat outputs** $\bar{z}$, given by some function $\alpha$
-of the state, the control input and its time derivatives up to the $p$th,
+of the state, the control input and its time derivatives up to the $p\text{th}$,
 
 $$\bar{z} = \alpha(\bar{x}, \bar{u}, \dot{\bar{u}}, \ddot{\bar{u}}, \ldots, \bar{u}^{(p)}),$$
 
 such that the state and the control input can both be written as functions, $\beta$ and $\gamma$,
-of the flat outputs and their time derivatives up to the $q$th:
+of the flat outputs and their time derivatives up to the $q\text{th}$:
 
 $$\bar{x} = \beta(\bar{z}, \dot{\bar{z}}, \ddot{\bar{z}}, \ldots, \bar{z}^{(q)}), \qquad \bar{u} = \gamma(\bar{z}, \dot{\bar{z}}, \ddot{\bar{z}}, \ldots, \bar{z}^{(q)}).$$
 
@@ -255,7 +255,7 @@ it picks out the first two components, the center of mass position. The function
 of the proof, which built the full state from the flat outputs and their derivatives, and $\gamma$ is
 part one, which built the control inputs. A student identified $q$: $\theta$ involves $\ddot{x}$ and
 $\ddot{y}$, which are differentiated twice more to get $\ddot{\theta}$, so **$q = 4$ for the planar
-quadrotor**. In general, the smoothness condition is that the $q$th time derivative of the
+quadrotor**. In general, the smoothness condition is that the $q\text{th}$ time derivative of the
 specified flat output trajectory must exist, and $q$ depends on the system.
 
 The general definition allows the flat outputs to depend on the control input and its derivatives.

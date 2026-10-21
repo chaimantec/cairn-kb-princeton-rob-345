@@ -559,6 +559,8 @@ planning with dynamics. Then come stability and PD control, and the linear quadr
 under feedback control. The Lecture 3 RRT drone video was already planned with "some
 modifications" for dynamics (see [Lecture 3](03-rrts.md#what-comes-next)). The first-order form
 $\dot{\bar{x}} = f(\bar{x}, \bar{u})$ is what those lectures build on.
+[Lecture 5](05-differential-flatness.md) returns to the planar quadrotor's equations of motion and
+shows that its center of mass can follow any sufficiently smooth trajectory.
 
 ## Gaps in the record
 

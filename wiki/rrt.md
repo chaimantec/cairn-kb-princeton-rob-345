@@ -121,7 +121,12 @@ in the classical sense (slides 60 and 61).
 - **Bi-directional RRT** is named on slide 57 and not discussed.
 - **RRTs with dynamics.** The drone flights from Nick Roy's group use an RRT "with some
   modifications that I'll talk about in a few lectures" to account for the drone's dynamics
-  (≈52:57).
+  (≈52:57). [Lecture 5](05-differential-flatness.md#planning-with-an-rrt-in-the-flat-output-space)
+  names the modification: for a [differentially flat](differential-flatness.md) robot, the RRT is
+  built in the flat output space, for a quadrotor $x$, $y$, $z$ and yaw, instead of the
+  configuration space. The straight-line extension a dynamic robot cannot follow is then replaced
+  by a smooth flat output trajectory, often a polynomial in time, that it can (Lecture 5,
+  ≈58:57–1:01:16 and ≈1:06:07–1:06:53).
 
 ## RRTs and graph search compared
 
@@ -146,3 +151,6 @@ grid, which grows exponentially with the dimension (≈49:03–50:36).
   the first hardware lab runs an RRT on the Crazyflie, planning from a taped start marker to a
   landing box around foam-pole obstacles whose positions students measure by hand. It assumes the
   drone's built-in controller can follow whatever path the RRT returns, so the dynamics are ignored.
+- [Lecture 5 — Differential Flatness](05-differential-flatness.md): the extension step under
+  dynamics, and the RRT run in the flat output space; the MIT drone video is shown again with that
+  explanation.

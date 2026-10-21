@@ -131,6 +131,13 @@ with the diagonal inertia matrix $\mathbb{I}$, whose entries are $I_{xx}$, $I_{y
 (eq. (32)). The notes print eq. (28) with $\triangleq$, a printed slip, and elide most of
 eq. (30). All of this has the form $\dot{\bar{x}} = f(\bar{x}, \bar{u})$.
 
+**Flat outputs.** [Lecture 5](05-differential-flatness.md#the-3d-quadrotors-flat-outputs) states,
+without proof, that the 3D quadrotor is [differentially flat](differential-flatness.md) with flat
+outputs $x$, $y$, $z$ and the yaw $\psi$. Any sufficiently smooth trajectory of those four can be
+flown, and the control inputs, the roll and the pitch follow from it. The planar quadrotor is flat
+with flat outputs $x$ and $y$, and Lecture 5 proves it from eqs. (9)–(11), written there in $F_1$
+and $F_2$ (Lecture 5 notes eqs. (1)–(4)).
+
 ## The motor model
 
 What the drone really controls is the current to each motor, which sets the rotational speed
@@ -173,6 +180,8 @@ the other way (≈57:51–58:37).
   planar quadrotor and sketched for the 3D quadrotor, with the motor model and the lab.
 - [Lecture 2](02-discrete-motion-planning.md) and [Lecture 3](03-rrts.md) use the planar
   quadrotor as a configuration-space example, without its dynamics.
-- Lectures 5 and 6 (differential flatness, trajectory optimization) plan with this model, and
-  Lectures 7 and 8 (stability and PD control, LQR) turn to feedback control. They are not yet in this knowledge base; see the
+- [Lecture 5 — Differential Flatness](05-differential-flatness.md) plans with this model: it proves
+  the planar quadrotor flat and states the 3D quadrotor's flat outputs.
+- Lecture 6 (trajectory optimization) also plans with this model, and Lectures 7 and 8 (stability
+  and PD control, LQR) turn to feedback control. They are not yet in this knowledge base; see the
   [course map](course-map.md).
