@@ -4,7 +4,8 @@ lecture: 5
 slides: 6
 source_pdf: https://www.dropbox.com/scl/fi/e90rrmg0036wqix2xmv0f/Lecture5_slides.pdf?rlkey=qonzpbom400u3wozymjv3fga3&dl=0
 numbering: PDF page N = Slide N for all 6 pages (1:1). Page 1 prints no number; its label (1) is inferred from position. Pages 2–6 print 2–6.
-images: to be filled in by the parent
+images: 3 slides are rendered and shown under their headings (2, 3, 4). Not rendered — the title page (1); slide 5, whose video frame is entirely black; and slide 6, a title card whose text is transcribed and which repeats the video of Lecture 3's slide 54. The lecture's drawings are in the notes, whose four figures are rendered in the notes file.
+figure_audit: An independent reader checked every slide against the PDF at 600 dpi, cropping slide 2's Fig. 1. Fixed: Fig. 1 is a photograph with overlaid arrows, not a line drawing; the directions of $x_W$ and $y_W$ and the position of the $y$ arc of $\psi$; slide 4's five gates (not four). No person is visible in any frame. The "video does not play" wording was replaced in the parent with what the lecture shows (each video was played).
 ---
 
 # Lecture 5 — Differential Flatness: slide-by-slide
@@ -36,6 +37,8 @@ Title page. Title in blue in a rounded box: "Lecture 5: Differential Flatness". 
 
 ## Slide 2 — Real-time planning using differential flatness
 
+![Slide 2 — Real-time planning using differential flatness](../images/05-differential-flatness/slide-2.jpg)
+
 Title bar: "Real-time planning using differential flatness" (blue). Printed number 2. The slide is the first page of a paper, shown as an image under the title. Verbatim text of that page:
 
 Title: "Minimum Snap Trajectory Generation and Control for Quadrotors"
@@ -59,11 +62,15 @@ Every label above is legible. The arrow directions are as read from the picture;
 
 ## Slide 3 — Real-time planning using differential flatness (video)
 
+![Slide 3 — Real-time planning using differential flatness (video)](../images/05-differential-flatness/slide-3.jpg)
+
 Title bar: "Real-time planning using differential flatness" (blue). Printed number 3. Video slide: the PDF holds a single frame. In the lecture this is the video released with Mellinger and Kumar's work, played with its audio (≈1:01:16–1:04:36). Below the frame, a link: "https://www.youtube.com/watch?v=geqip_0Vjec".
 
 The frame is a full-width still from an indoor flight video, tinted pink-red. A single quadrotor with a dark X-shaped frame and red parts is in the lower right of the picture, close to the floor with blurred spinning propellers (hovering or just above the floor). The floor is dark tiled. The room is a cluttered lab: black netting hangs in front of the walls, a white board covered in illegible handwriting on the back wall, cardboard boxes, a round white table and a fan, a vacuum cleaner and coiled orange and green cables on the left, a desk with equipment at the right edge, and small white tape markers on the floor. No people are visible. The frame shows no trajectory or overlay text.
 
 ## Slide 4 — Video (drone racing)
+
+![Slide 4 — Video (drone racing)](../images/05-differential-flatness/slide-4.jpg)
 
 Plain grey header bar with no title text. Printed number 4. Video slide: the PDF holds a single frame. In the lecture this is drone racing from a group at the University of Zurich (≈1:04:36–1:05:22). Below the frame, a link: "https://www.youtube.com/watch?v=XpuRpKHp_Bk".
 

@@ -4,12 +4,13 @@ lecture: 5
 pages: 4
 source_pdf: https://www.dropbox.com/scl/fi/d0g09pk1opfkwdw7udmsi/Lecture5_notes.pdf?rlkey=l1sriwzrnb499bsbcyo3cylm9&dl=0
 numbering: PDF page N = page N; page 1 prints no number. Equations keep the notes' own numbers (1)–(4), which are on page 3 only.
-images: to be filled in by the parent
+images: The four drawings are rendered as crops of the page and shown just above their descriptions (`notes-figure-1.jpg` to `notes-figure-4.jpg` in this lecture's image folder, numbered in order of appearance; the notes print no figure numbers or captions).
+figure_audit: An independent reader checked the four drawings, the definition on p. 2 and eqs. (1)–(4) against the PDF at 600 dpi; every equation was also compared with the PDF's text layer. Fixed: the p. 2 pipeline has three plots, not four, and the state curve dips below the t axis; the arm colour in the p. 3 drawing (seen on the committed render).
 ---
 
 # Lecture 5 — Differential Flatness: lecture notes
 
-Full text of the course's written notes for Lecture 5 (A. Majumdar), transcribed from the PDF. Cite as "notes p. N" or "notes eq. (N)". The four pasted hand-drawn figures carry no printed captions and are described in prose, since the descriptions are the only representation of them here. Two displayed equations on page 2 (the definition) are unnumbered, as is the flat-output vector on page 3.
+Full text of the course's written notes for Lecture 5 (A. Majumdar), transcribed from the PDF. Cite as "notes p. N" or "notes eq. (N)". The four pasted drawings carry no printed captions and are described in prose, since the descriptions are the only representation of them here. Two displayed equations on page 2 (the definition) are unnumbered, as is the flat-output vector on page 3.
 
 [wiki page for this lecture](../../wiki/05-differential-flatness.md) · [slides](../slides/05-differential-flatness.md) · [transcript](../transcripts/05-differential-flatness.md)
 
@@ -40,11 +41,15 @@ Intro to Robotics — Lecture #5 — Instructor: A. Majumdar
 
 Let's consider the RRT algorithm. We have some current tree at iteration $k$ of the algorithm:
 
+![Notes drawing, p. 1 — an RRT at iteration k: the extension toward q rand](../images/05-differential-flatness/notes-figure-1.jpg)
+
 **Figure (p. 1, drawing):** a 2D picture of an RRT in the plane. A tree of small black dots joined by black line segments sits in the lower left and centre, its root being the larger black dot near the middle left; branches fan out from it up, left, right and down, with two branches reaching the upper left. Three circular obstacles drawn with grey diagonal hatching lie in the upper half and the right half: one at the top centre-left, one at the top right, and one lower right of centre. In the upper right of the tree is a short red dashed segment from a tree vertex (black dot) to a red dot labelled $\bar{q}_s$; from the red dot $\bar{q}_s$ a thin dotted grey line continues up and to the right to a second red dot labelled $\bar{q}_{\text{rand}}$. No other labels are present.
 
 We sample a random configuration $\bar{q}_{\text{rand}}$, find the closest vertex in the tree, and then perform an *extension* operation. Our extension operation from the last lecture was very simple. We just move in the direction of $\bar{q}_{\text{rand}}$ (by some distance $d$). For a system that has dynamics, it may not be possible to just follow a straight line in the configuration space to get from one configuration to another.
 
 **Example:** Wheeled robot/Car
+
+![Notes drawing, p. 1 — top view of a car at configuration A and the same car at B, beside it](../images/05-differential-flatness/notes-figure-2.jpg)
 
 **Figure (p. 1, drawing):** the label "Top view" at the top centre. Below it, two identical rectangles side by side, each a car seen from above: an outlined rectangle with two short black wheel blocks on each of its left and right sides (four wheels). A black arrow above each car points straight up. The left car is labelled $A$ underneath and the right car is labelled $B$ underneath. The two cars are at the same height with the same orientation, $B$ being displaced sideways to the right of $A$.
 
@@ -90,6 +95,8 @@ Why is this useful?
 
 So, here is how things work in practice:
 
+![Notes drawing, p. 2 — specify z̄(t); differential flatness (via β, γ) gives the inputs ū(t) and the state x̄(t)](../images/05-differential-flatness/notes-figure-3.jpg)
+
 **Figure (p. 2, drawing):** a pipeline of three plots and one labelled arrow, left to right, each plot an orange curve ending in an orange dot.
 
 1. Left plot: axes with the vertical axis labelled $\bar{z}$ and the horizontal axis labelled $t$. A smooth S-shaped orange curve rises from a low starting value, steepens, then flattens near the top, ending in an orange dot. Beneath the plot is a brace and the caption "We specify this desired trajectory of flat outputs: i.e., we specify $\bar{z}(t)$".
@@ -129,6 +136,8 @@ $$
 \ddot{\theta} = \frac{(F_2 - F_1)L}{I}
 \tag{3}
 $$
+
+![Notes drawing, p. 3 — the planar quadrotor tilted by θ, with configuration (x, y, θ)](../images/05-differential-flatness/notes-figure-4.jpg)
 
 **Figure (p. 3, drawing):** to the right of the equations, a side view of the planar quadrotor, tilted: a light-grey arm outlined in black running up to the right, with a black motor block and a grey propeller disc at each end (the left one lower, the right one higher), and a red dome on the black central body (with a tiny red dot on it). A horizontal dashed line runs to the right from the central body; a second dashed line, an extension of the arm, rises from the body to the right; the angle between them is marked $\theta$ near their right-hand ends. Below the drawing, the label "$(x, y, \theta)$" in bold. No force arrows, $L$ or frame axes are drawn in this figure.
 
