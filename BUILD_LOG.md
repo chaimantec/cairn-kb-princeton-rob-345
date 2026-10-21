@@ -20,6 +20,7 @@ every build follows, and each lesson in general form, are in
 | 1 Intro to Robotics | Run 1 |
 | 2 Discrete Motion Planning | Run 2 |
 | 3 Rapidly Exploring Randomized Trees (RRTs) | Run 3 |
+| 4 Quadrotor Dynamics | Run 4 |
 
 ## Runs
 
@@ -269,3 +270,101 @@ chaimantec <nantapon@chaimantec.com>. Catalog re-fetched 2026-10-21: still 9 lec
   pairing). It was rewritten as `\bar{q}_ s`, with `\lbrace`, `\Vert` and `\lt` in the pseudocode,
   and the wiki uses the same form.
 - **kb.json.** `materials.images.format` said "one PNG" since run 2. Lectures 1–3 have six; fixed.
+
+## Run 4 — Lecture 4 (Quadrotor Dynamics), 2026-10-21
+
+Scope: lecture 4 only. Settings carried from runs 1–3: images on, PDFs link-only, commit as
+chaimantec <nantapon@chaimantec.com>. Catalog re-fetched 2026-10-21: still 9 lectures.
+
+### Transcripts
+- [x] 04 Lecture 4: Quadrotor Dynamics — video upI4KaGawyE — verbatim captions in raw/transcripts/original/ (88 paragraphs)
+- [x] 04 copy-edit (Sonnet): 88/88 timestamps identical; ratios all in 0.72–1.10 (lowest 0.73 at 42:11, highest 1.06 at 41:23; 10,655 → 9,245 words); number diffs all deliberate ("5 theta s" → phi, theta, psi twice; 123 → 1-2-3; 111 → 1-1-1); 38 restorations, 2 inline unclear + 7 noted; "John Po" → Jon Prevost in the parent (Lecture 1 slide 46); proper nouns grepped against the slides, notes and Lecture 1's deck, the rest are spoken asides (quaternions, MATLAB, prop wash)
+
+### Slides and notes
+- [x] Download Lecture4_slides.pdf (13 pages, 30MB) and Lecture4_notes.pdf (7 pages, LaTeX) into raw/pdfs/ (gitignored)
+- [x] Slide number map: 1:1 (13 pages); pages 1–3 print no number
+- [x] Pixel diff against Lectures 1–3: slides 2–3 are the topic map (0.32 and 0.88 against Lecture 3's slide 2); nothing else repeats
+- [x] raw/slides/04-quadrotor-dynamics.md (Sonnet), --verify clean (13 headings); slide 13's dollar sign written out
+- [x] raw/notes/04-quadrotor-dynamics.md (Sonnet): the notes carry the lecture's derivation (slide 5 says "See notes"), so they are transcribed; equations (1)–(32) checked against the text layer in the parent (the inertia matrix is blackboard-bold MSBM10, so $\mathbb{I}$ is right); thrust law on p.4 rewritten as a formula
+- [x] Figure audit (Sonnet) of the deck's photographs and the notes' three figures, at 600 dpi: notes Figure 3(b) spin directions legible (re-checked in the parent), Figure 1(b) Y arrow, small fixes to 1(a), 2, 3(a); pole counts on slides 7 and 9, pipe lettering on 10; no person in any photograph; eqs. (7), (8), (28)–(31) agree
+
+### Wiki
+- [x] wiki/04-quadrotor-dynamics.md (derivation cited to the notes, since the board is not in the record; 7 images, all with hand-written captions)
+- [x] Topic pages: new wiki/quadrotor-model.md and wiki/state-and-dynamics.md; configuration-space (configuration and state), crazyflie (model facts, the labs from Lecture 4, Ed thread), rrt (the RRT lab), course-map row, Lecture 2 and 3 forward links
+- [x] INDEX.md table of contents, coverage paragraph, raw/notes/ entry, citation rule for notes
+
+### Images
+- [x] raw/images/04-quadrotor-dynamics/ — 4 slides (7–10) and 3 notes figures (1.5MB), embedded in the slide file, the notes file, the lecture page (7), quadrotor-model.md (3 notes figures) and crazyflie.md (slides 7, 8); every caption hand-written
+- [x] INDEX.md image sentence; AGENTS.md table row, raw/notes/ layout row and notes conventions; BUILD_LOG.md record (at the move); LICENSE.md attribution and raw/notes/ in Layer 1
+
+### Publish
+- [x] kb.json — coverage, byLecture, notes, images, figureAudit, caveats
+- [x] sources.md "In this KB" column
+- [x] verify_kb.py clean (all hard checks; 1,027 formulas in the chat and on github.com), and its review section read: no ranking claims, every numeric claim checked against the image table
+- [x] Commit and push — 02e7e72; published pages re-checked: 1,027 formulas render on github.com
+- [x] Move this run's section to BUILD_LOG.md; TODO.md keeps only open work
+
+### Lecture 4 record
+
+- **Deck and notes.** `Lecture4_slides.pdf` from Dropbox, 13 pages, 30MB, and `Lecture4_notes.pdf`,
+  7 pages, pdfTeX output dated 2026-09-15. Neither text layer has a licence or copyright notice.
+  The only credit in either is the notes' Figure 2 caption, "source: Bitcraze.io". The deck has only
+  title, topic-map, framing and lab-logistics slides. Slide 5 says "See notes", and the lecture says
+  the derivation is done on the blackboard (≈4:51), which the video does not show. So the notes were
+  transcribed, and the wiki cites the equations to them.
+- **Numbering.** One-to-one. Pages 1–3 (title and the two topic maps) print no number.
+- **Repeats of earlier decks.** The pixel diff against Lectures 1–3 put slides 2 and 3 at 0.32 and
+  0.88 from Lecture 3's slide 2: the same topic map, with "Geometric planning" bold on 2 and "Robot
+  dynamics" bold on 3. Nothing else came under 2. Slide 13's background is a faded copy of slide 7's
+  photograph.
+- **Slide transcription.** Sonnet, under a minute, `--verify` clean first time (13 headings). One
+  fix in the parent: the dollar sign before slide 13's "600 / drone" would have opened a math span, so
+  it is written out.
+- **Notes transcription.** Sonnet, about 1.5 minutes, written to the new `raw/notes/` with
+  `## Page N` headings and the notes' equation numbers as one `\tag{N}` per block. In the parent,
+  every equation (1)–(32) was compared with the text layer, which agreed. The inertia matrix in
+  eqs. (31)–(32) is set in `MSBM10`, so $\mathbb{I}$ is right, while the planar $I$ on p. 2 is
+  italic `CMMI12`. The thrust law on p. 4, transcribed as "squared" in words, was rewritten as a
+  formula. Printed slips: "Insturctor"; "Figure 3(b)" for Figure 1(b) on p. 1; "time derivates";
+  $\triangleq$ in eq. (28); a stray parenthesis in "R(ϕ, θ), ψ)"; $F_{tot}$ italic in eq. (28).
+  Eq. (30) prints only its first row, and the notes elide the other entries.
+- **Figure audit.** Sonnet, one pass, rendering at 600 dpi and cropping each figure. It checked
+  notes Figures 1–3, eqs. (7), (8) and (28)–(31), and slides 2, 3, 7–10 and 13. Findings:
+  - notes Figure 3(b): the transcriber had called the rotor spin directions "not reliably
+    legible", but they are legible. Top-left and bottom-right spin clockwise, the other two
+    counter-clockwise. The parent viewed the 600 dpi crop and agrees;
+  - notes Figure 1(b): the file missed the solid $Y$ arrow rising from $O$. The auditor called the
+    file's "faint vertical line at the far right" invented. The committed render shows it is the
+    right edge of a faint rectangle around the pasted drawing, so the description now says that;
+  - small corrections to the $L$ arrow in Figure 1(a), the arrowhead of Figure 3(a), and the
+    "right-angle guides" in Figure 2, which are three empty outlined boxes;
+  - pole counts on slides 7 (about eight, not six) and 9 (four, not three), and slide 10's pipe
+    lettering;
+  - no person visible in any photograph. Equations agree.
+  The parent also viewed the renders of notes Figure 1 and slide 9, which agree.
+- **Transcript edit.** Sonnet, about 3 minutes. 88/88 timestamps identical. Every paragraph ratio
+  is in 0.72–1.10 (lowest 0.73 at 42:11, highest 1.06 at 41:23; 10,655 → 9,245 words). The 42:11
+  paragraph first came out at 0.66 and was raised by keeping the captions' own repetitions. The
+  number diffs are all deliberate: "5 theta s" → phi, theta, psi (twice), "space 123" → 1-2-3,
+  "111" → 1-1-1. The captions write "x dot" where the lecturer means the second derivative ("x dot.
+  So the second time derivative of x", 7:14). The agent restored "double dot" from that wording
+  and the notes, and the header says so. In the parent, "John Po" → Jon Prevost (Lecture 1 slide
+  46, restored the same way in Lecture 1's transcript). "Kian" is kept as captioned, noted as
+  presumably the TA Kian Orr. Proper nouns not in any deck are spoken asides: quaternions, MATLAB,
+  prop wash.
+- **Images rendered (7):** slides 7, 8, 9 and 10 (the two lab spaces, the RRT lab arena, and the
+  one still of the lab video, which did not play in the lecture), and the notes' Figures 1, 2 and 3
+  as `notes-figure-N.jpg`. The notes figures are cropped with their captions to 1400px. JPEG
+  beat PNG on all three: 47, 79 and 85 KB, against 88, 112 and 100 KB. Not rendered: slide 1
+  (title), slides 2–3 (topic maps that repeat Lecture 3's slide 2 apart from the bold line), slides
+  4, 5, 6, 11 and 12 (text), and slide 13 (a faded repeat of 7 under transcribed text). 1.5MB in
+  all.
+- **Embedding.** The lecture page carries all 7 images. `quadrotor-model.md` carries the three
+  notes figures, and `crazyflie.md` slides 7 and 8. The notes figures were placed by hand, because
+  `embed_slide_images.py` handles only `slide-N` files. Both the lecture page and `crazyflie.md`
+  first cited "slides 6–13" for the lab section. Embedding would have stacked slides 7–10 under
+  that one citation (`crazyflie.md` dry run: +2 for 9 and 10), so both citations were narrowed.
+- **Math.** Two inline formulas wrapped across a line break, `$[x, y,` / `\theta]$` and an
+  Euler-rate vector. Both passed the offline check and rendered as raw text on github.com, which
+  `verify_kb.py --github` caught. They were rewrapped, and the lesson is in AGENTS.md. Formulas
+  inside the italic image captions were rewritten as plain text.

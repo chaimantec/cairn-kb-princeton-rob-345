@@ -50,7 +50,9 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
 - **Math in LaTeX**: `$...$` inline, `$$...$$` displayed, never inside a code
   fence. Define each symbol on first use, and follow the course's own notation.
   A literal dollar sign in prose opens a math span: write "20,000 dollars".
-  Run `check_math.mjs` (the `cairn-kb` skill) before pushing.
+  Keep each inline formula on one line: one wrapped across a line break passes the offline
+  check and renders as raw text on github.com. Run `check_math.mjs` (the `cairn-kb` skill),
+  with `--github`, before pushing.
 
 ## Course materials
 

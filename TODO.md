@@ -5,40 +5,7 @@ only unchecked work. Tick a box the moment its artifact is written, and commit
 this file with it. When a run is committed and pushed, move its section verbatim
 to [`BUILD_LOG.md`](BUILD_LOG.md): nothing ticked stays here.
 
-## Later runs — lectures 4–9
+## Later runs — lectures 5–9
 
 - [ ] Lectures 5–9, one per run: transcript, deck (Dropbox, `dl=1`), notes, copy-edit, figure audit,
-      wiki page, images. Lectures 5–9 also post notes PDFs; decide whether to transcribe them.
-
-## Run 4 — Lecture 4 (Quadrotor Dynamics), 2026-10-21
-
-Scope: lecture 4 only. Settings carried from runs 1–3: images on, PDFs link-only, commit as
-chaimantec <nantapon@chaimantec.com>. Catalog re-fetched 2026-10-21: still 9 lectures.
-
-### Transcripts
-- [x] 04 Lecture 4: Quadrotor Dynamics — video upI4KaGawyE — verbatim captions in raw/transcripts/original/ (88 paragraphs)
-- [x] 04 copy-edit (Sonnet): 88/88 timestamps identical; ratios all in 0.72–1.10 (lowest 0.73 at 42:11, highest 1.06 at 41:23; 10,655 → 9,245 words); number diffs all deliberate ("5 theta s" → phi, theta, psi twice; 123 → 1-2-3; 111 → 1-1-1); 38 restorations, 2 inline unclear + 7 noted; "John Po" → Jon Prevost in the parent (Lecture 1 slide 46); proper nouns grepped against the slides, notes and Lecture 1's deck, the rest are spoken asides (quaternions, MATLAB, prop wash)
-
-### Slides and notes
-- [x] Download Lecture4_slides.pdf (13 pages, 30MB) and Lecture4_notes.pdf (7 pages, LaTeX) into raw/pdfs/ (gitignored)
-- [x] Slide number map: 1:1 (13 pages); pages 1–3 print no number
-- [x] Pixel diff against Lectures 1–3: slides 2–3 are the topic map (0.32 and 0.88 against Lecture 3's slide 2); nothing else repeats
-- [x] raw/slides/04-quadrotor-dynamics.md (Sonnet), --verify clean (13 headings); slide 13's dollar sign written out
-- [x] raw/notes/04-quadrotor-dynamics.md (Sonnet): the notes carry the lecture's derivation (slide 5 says "See notes"), so they are transcribed; equations (1)–(32) checked against the text layer in the parent (the inertia matrix is blackboard-bold MSBM10, so $\mathbb{I}$ is right); thrust law on p.4 rewritten as a formula
-- [x] Figure audit (Sonnet) of the deck's photographs and the notes' three figures, at 600 dpi: notes Figure 3(b) spin directions legible (re-checked in the parent), Figure 1(b) Y arrow, small fixes to 1(a), 2, 3(a); pole counts on slides 7 and 9, pipe lettering on 10; no person in any photograph; eqs. (7), (8), (28)–(31) agree
-
-### Wiki
-- [x] wiki/04-quadrotor-dynamics.md (derivation cited to the notes, since the board is not in the record; 7 images, all with hand-written captions)
-- [x] Topic pages: new wiki/quadrotor-model.md and wiki/state-and-dynamics.md; configuration-space (configuration and state), crazyflie (model facts, the labs from Lecture 4, Ed thread), rrt (the RRT lab), course-map row, Lecture 2 and 3 forward links
-- [x] INDEX.md table of contents, coverage paragraph, raw/notes/ entry, citation rule for notes
-
-### Images
-- [x] raw/images/04-quadrotor-dynamics/ — 4 slides (7–10) and 3 notes figures (1.5MB), embedded in the slide file, the notes file, the lecture page (7), quadrotor-model.md (3 notes figures) and crazyflie.md (slides 7, 8); every caption hand-written
-- [x] INDEX.md image sentence; AGENTS.md table row, raw/notes/ layout row and notes conventions; BUILD_LOG.md record (at the move); LICENSE.md attribution and raw/notes/ in Layer 1
-
-### Publish
-- [x] kb.json — coverage, byLecture, notes, images, figureAudit, caveats
-- [x] sources.md "In this KB" column
-- [x] verify_kb.py clean (all hard checks; 1,027 formulas in the chat and on github.com), and its review section read: no ranking claims, every numeric claim checked against the image table
-- [ ] Commit and push
-- [ ] Move this run's section to BUILD_LOG.md; TODO.md keeps only open work
+      wiki page, images. Lectures 5–9 also post notes PDFs; transcribe them to raw/notes/ (AGENTS.md, Course materials).
