@@ -18,8 +18,9 @@ robot keeps a *set* of states it might be in. At each time step it pushes that s
 (the dynamics update), computes the preimage of the new measurement (the measurement update), and
 intersects the two. The set need not shrink: unstable dynamics with a poor sensor make it grow. The
 filter extends to uncertain dynamics and sensors, but it is conservative and hard to compute, so it is
-not used directly in practice. It is the conceptual basis for the **Bayes filter** of the next lecture,
-which has the same structure with probability distributions in place of sets.
+not used directly in practice. It is the conceptual basis for the **Bayes filter** of the
+[next lecture](11-bayes-filter.md), which has the same structure with probability distributions in place of
+sets.
 
 **Where to find what.** The course posts no slide deck for this lecture: it was given entirely at the
 blackboard, which the video does not show. The course's **lecture notes** (6 pages) are its written
@@ -401,7 +402,7 @@ then a sensor measurement narrows it down (≈1:03:15–1:04:00).
 The notes say the same in one line ("Next Lecture: Probabilistic methods for state estimation") and ask
 students to review basic probability, pointing to the quick review in Chapter 2.2 of *Probabilistic
 Robotics*: Bayes' rule will be of fundamental importance (notes p. 6). The course site lists the next
-lecture as "Bayes filtering"; see the [course map](course-map.md).
+lecture as "Bayes filtering"; see [Lecture 11 — Bayes Filter](11-bayes-filter.md).
 
 ## Gaps in the record
 

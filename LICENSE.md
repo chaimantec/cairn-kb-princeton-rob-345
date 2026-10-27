@@ -56,8 +56,8 @@ course staff (Princeton University, Fall 2026). They are published through the c
 the lecture videos on YouTube (recorded by the Princeton Broadcast Center).
 
 As checked on 2026-10-20, no licence, copyright or reuse statement appears on the course
-website, and none is printed on any page of the Lecture 1–9 decks or of the Lecture 4–10
-notes (checked 2026-10-21 and, for Lecture 10, 2026-10-28). Publicly downloadable is not the
+website, and none is printed on any page of the Lecture 1–9 decks or of the Lecture 4–11
+notes (checked 2026-10-21 and, for Lectures 10 and 11, 2026-10-28). Publicly downloadable is not the
 same as licensed. Absent an express grant the default applies: copyright arises automatically,
 and no reuse rights pass to anyone.
 
@@ -247,3 +247,15 @@ Rendered: the notes' 9 drawings (cropped; the notes print no captions), in
 | Image | Third-party content (as identifiable from the page) |
 | --- | --- |
 | Notes drawings 1–9 | Hand-drawn sketches: circles of distance measurements about sensor points, sets of states carried forward by the dynamics and intersected with measurement preimages, a state with the set it may lead to, and a ring of states for an imperfect distance sensor, some with handwritten notes. Not credited; apparently the course's own. |
+
+### Lecture 11 — Bayes Filter
+
+No deck was posted for this lecture.
+Notes: [Lecture11.pdf](https://www.dropbox.com/scl/fi/tfn61o04v3oxhxmnko2ui/Lecture11.pdf?rlkey=lidlhw6muo5zz4d2ifoxbny50&dl=0).
+Rendered: the notes' 2 drawings (cropped; the notes print no captions), in
+`raw/images/11-bayes-filter/`. The door example is "based on section 2.4.2" of Thrun, Burgard and
+Fox, *Probabilistic Robotics*, as the notes say; the drawings themselves are not reproduced from it.
+
+| Image | Third-party content (as identifiable from the page) |
+| --- | --- |
+| Notes drawings 1–2 | Hand-drawn sketches: a set of states carried forward by the dynamics and intersected with a measurement preimage, with a handwritten recall of the dynamics and sensor equations; a stick-figure robot facing a building with a door, with a handwritten definition of the state. Not credited; apparently the course's own. |

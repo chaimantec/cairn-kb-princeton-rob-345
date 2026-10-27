@@ -9,19 +9,19 @@ work hands-on with the Crazyflie quadrotor, and the final project trains a visio
 navigation policy with imitation learning. ROB 345 is the undergraduate course; ROB 549 is the
 graduate track.
 
-> **Coverage: Lectures 1–10, of the 11 recorded lectures in the catalog.** The course site
+> **Coverage: Lectures 1–11, all 11 recorded lectures in the catalog.** The course site
 > schedules 24 lectures. On 2026-10-28 lectures 1–9 had videos and slides, and lectures 10 and 11
 > videos and notes but no slides. This knowledge base holds the introduction (Lecture 1), discrete
 > motion planning (Lecture 2), randomized motion planning with RRTs (Lecture 3), quadrotor dynamics
 > (Lecture 4), differential flatness (Lecture 5), trajectory optimization (Lecture 6), stability and PD
-> control (Lecture 7), the linear quadratic regulator (Lecture 8), optical flow (Lecture 9) and the
-> nondeterministic filter (Lecture 10): their edited transcripts, the slide decks of Lectures 1–9 as
-> text, the written notes of Lectures 4–10 as text, 116 images (91 slides, the 3 figures of Lecture 4's
-> notes and the drawings of Lecture 5's notes (4), Lecture 7's (3), Lecture 8's (2), Lecture 9's (4)
-> and Lecture 10's (9)), and the course and concept pages they start. **It cannot answer questions
-> about the technical content of lectures 11 onward** (the Bayes filter and later): Lecture 11 is
-> recorded but not yet built into this knowledge base, and later lectures had not been posted. For
-> those, point the learner to the [course map](wiki/course-map.md) and [`sources.md`](sources.md).
+> control (Lecture 7), the linear quadratic regulator (Lecture 8), optical flow (Lecture 9), the
+> nondeterministic filter (Lecture 10) and the Bayes filter (Lecture 11): their edited transcripts, the
+> slide decks of Lectures 1–9 as text, the written notes of Lectures 4–11 as text, 118 images (91 slides,
+> the 3 figures of Lecture 4's notes and the drawings of Lecture 5's notes (4), Lecture 7's (3), Lecture
+> 8's (2), Lecture 9's (4), Lecture 10's (9) and Lecture 11's (2)), and the course and concept pages they
+> start. **It cannot answer questions about the technical content of lectures 12 onward** (Kalman and
+> particle filtering and later), which had not been recorded or posted. For those, point the learner to
+> the [course map](wiki/course-map.md) and [`sources.md`](sources.md).
 > Build progress is in [TODO.md](TODO.md).
 
 ## Lecture pages
@@ -125,6 +125,17 @@ graduate track.
   measurements (a ring instead of a circle); the filter's limitations; and a preview of the Bayes filter.
   There is no deck: the lecture was given at the board, and the page follows the notes, cited by page,
   with all nine of their drawings.
+- [Lecture 11 — Bayes Filter](wiki/11-bayes-filter.md): from sets to beliefs (the nondeterministic
+  filter's problems, including what an LQR controller should do with a set); a probability refresher
+  (random variables and the $p(x)$ shorthand, sums to one, joint distributions and independence,
+  conditional probability, the theorem of total probability and marginalization, Bayes rule and its proof,
+  eqs. (1)–(3)); the door example worked by hand: a sensor model, where sensor models come from, the
+  prior, the belief $\mathrm{bel}$ and the first measurement update (0.5 to 0.75, eqs. (4)–(5)), questions
+  on the update, Bayes rule as the probabilistic preimage, a probabilistic dynamics model for pushing the
+  door, the dynamics update and the belief bar (0.95), the second measurement update (about 0.983); the
+  general Bayes filter's two steps; why the belief can grow less confident; and why the filter is
+  intractable in general, with the Kalman and particle filters ahead. There is no deck: the page follows the
+  notes, cited by equation and page, with both of their drawings.
 
 ## Course pages
 
@@ -203,8 +214,13 @@ graduate track.
 - [State estimation](wiki/state-estimation.md): why a robot must estimate its state from imperfect
   sensing; measurements and the sensor model; the preimage; combining measurements over time with the
   nondeterministic filter (dynamics update, measurement update, intersection); how uncertainty can grow;
-  non-deterministic versus probabilistic models of uncertainty; and why the filter gives way to the Bayes
-  filter.
+  non-deterministic versus probabilistic models of uncertainty; why the filter gives way to the Bayes
+  filter; and the Bayes filter's belief, its two updates, a worked example and its computational cost.
+- [Probability](wiki/probability.md): the probability the course uses, in its notation. Random variables
+  and the $p(x)$ shorthand, sums to one, joint and conditional distributions, independence, the theorem of
+  total probability and marginalization, Bayes rule with its proof and why it "inverts" a sensor model, and
+  where the course uses them (priors and beliefs, probabilistic dynamics and sensor models, the Bayes
+  filter).
 
 ## Raw materials
 
@@ -224,22 +240,22 @@ graduate track.
   Lecture 7's 7 slides motivate feedback control; its definitions and PD control are in the notes.
   Lecture 8's 13 slides recap Lecture 7 (four are its slides again) and hold frames of three videos;
   the LQR formulation is in the notes. Lecture 9's 21 slides motivate optical flow and show the aperture
-  problem and the Lucas-Kanade failure cases; its derivation is in the notes. **Lecture 10 has no
-  deck** (the course posted none; the lecture was given at the board), so it has no file here; its
-  written record is its notes.
+  problem and the Lucas-Kanade failure cases; its derivation is in the notes. **Lectures 10 and 11 have no
+  deck** (the course posted none; the lectures were given at the board), so they have no file here; their
+  written record is their notes.
 - [`raw/notes/`](raw/notes/): the full text of the course's written lecture notes, headed
   `## Page N`, with every equation in LaTeX under the notes' own number and every figure
-  described in prose. **Only Lectures 4–10 have notes here** so far. Lecture 10's notes number no
-  equations and are cited by page. Each file lists the printed slips in its notes.
+  described in prose. **Only Lectures 4–11 have notes here** so far. Lecture 10's notes number no
+  equations and are cited by page; Lecture 11's number five. Each file lists the printed slips in its notes.
 - [`raw/images/`](raw/images/): whole-slide images of figure slides, embedded under the
-  matching `## Slide N` heading and in the wiki passage that cites that slide. **Lectures 1–10
-  have images** (lectures 11 onward are not in this knowledge base), and only some of their slides:
+  matching `## Slide N` heading and in the wiki passage that cites that slide. **Lectures 1–11
+  have images** (lectures 12 onward are not in this knowledge base), and only some of their slides:
   24 of Lecture 1's 57, 22 of Lecture 2's 79, 17 of Lecture 3's 62, 4 of Lecture 4's 13, 3 of
   Lecture 5's 6, 6 of Lecture 6's 18, 2 of Lecture 7's 7, 4 of Lecture 8's 13 and 9 of Lecture 9's 21.
   Lecture 4 also has the three figures of its notes, cropped with their captions, and Lectures 5, 7, 8,
-  9 and 10 the drawings of their notes (four, three, two, four and nine), which have no captions; they
-  are shown in `raw/notes/` and in the wiki. Lecture 10's nine drawings are its only images, since it
-  has no deck. Lecture 6's notes have no figures.
+  9, 10 and 11 the drawings of their notes (four, three, two, four, nine and two), which have no captions;
+  they are shown in `raw/notes/` and in the wiki. The drawings of Lectures 10 and 11 are their only images,
+  since they have no deck. Lecture 6's notes have no figures.
   Title and divider slides, text-only slides, pseudocode, news-headline and news-article screenshots, decorative stock photographs, blank video frames, video title cards whose text is transcribed, repeats
   (including slides repeated from an earlier lecture's deck) and build steps, and photographs of
   course staff were deliberately not rendered. Each slide or notes file's header lists which of
@@ -266,5 +282,5 @@ Cite slides as "Lecture 1, slide N" using the printed number, and spoken materia
 timestamp, e.g. "Lecture 1, ≈24:01". Cite the written notes as "Lecture 4 notes, eq. (N)" or
 "notes p. N"; each lecture's notes number their equations from (1), except Lecture 10's, which
 number none and are cited by page. Prefer a slide or notes citation for anything written down, and a
-timestamp for what was said aloud. The derivations of Lectures 4–10 were done on a blackboard that is
+timestamp for what was said aloud. The derivations of Lectures 4–11 were done on a blackboard that is
 not in the record, so their equations are cited to the notes.

@@ -79,3 +79,6 @@ geometry and semantics of the world (slide 39).
   abstract. A sensor model maps each state to the measurement it produces, and the robot combines its
   measurements with its knowledge of the dynamics, step after step, to narrow down its state. See
   [state estimation](state-estimation.md).
+- [Lecture 11 — Bayes Filter](11-bayes-filter.md): the same loop with probabilities. The robot keeps a
+  belief over its state, updates it through the dynamics after each action and with Bayes rule after each
+  measurement; the action is its own, so it is always assumed to know it (≈1:09:33).

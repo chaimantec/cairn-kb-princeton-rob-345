@@ -122,3 +122,6 @@ pp. 3–4).
   instability matters for estimation. Unstable dynamics, for example from a bad feedback controller,
   push states apart, so a small uncertainty about the state grows from step to step unless a good
   sensor counteracts it.
+- [Lecture 11 — Bayes Filter](11-bayes-filter.md#can-the-belief-get-worse): the same for a probability
+  distribution over the state. With unstable dynamics and a useless sensor, a robot that starts out
+  confident about its state becomes less and less so (≈1:12:37–1:13:24).

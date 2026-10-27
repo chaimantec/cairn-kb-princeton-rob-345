@@ -72,7 +72,9 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
   every figure described in prose. Delegate the reading to Sonnet like a deck. The prose may be
   copied from the text layer, which is clean for pdfTeX output; equations never. Check every
   equation number against the text layer in the parent, and read the font (`MSBM10` is
-  blackboard bold) where a symbol's style matters. Cite as "notes eq. (N)", "notes p. N". Where the
+  blackboard bold) where a symbol's style matters. An `\overline` over a word (a predicted $\overline{\mathrm{bel}}$)
+  and a `\_` are drawn rules, not characters, so the text layer silently drops them: find them among
+  `page.get_drawings()` as thin rules sitting over or under the glyphs, and hand the agent their positions. Cite as "notes eq. (N)", "notes p. N". Where the
   board and the notes differ (a symbol's name, a matrix's size, how a definition is built up), the wiki follows the notes and gives
   the board's version with its timestamp; the lecture never speaks the notes' equation numbers unless
   the transcript shows it.
@@ -96,6 +98,9 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
   **not committed**. The course has no licence, and a full caption copy is the
   weakest thing to publish on every fair-use factor. Each edited file says how to
   regenerate them.
+- Captions drop decimal points ("is 6" for 0.6, "75.25" for 0.75, 0.25). Have the edit restore them where the
+  notes or the lecture's own arithmetic fix the value; the number check then flags each one, and each must be
+  a restored decimal and nothing else.
 - Notation stays spoken in transcripts ("x equals f of x"). Reconstructing it, e.g.
   $\dot{x} = f(x)$, belongs in `wiki/`, with a note when the captions dropped a symbol.
 
@@ -165,6 +170,7 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
 | 8 LQR | 6 | 4 of the deck's 13 slides (the control loop, a phase portrait, two video frames) and the notes' 2 drawings |
 | 9 Optical Flow | 13 | 9 of the deck's 21 slides (a path diagram, a drone photograph, two flow fields, two diagrams, an illusion frame, two marked-up photographs) and the notes' 4 drawings |
 | 10 Nondeterministic Filter | 9 | no deck was posted; the notes' 9 drawings (sensor circles, sets and their intersections) |
+| 11 Bayes Filter | 2 | no deck was posted; the notes' 2 drawings (the filter step recalled, the robot and the door) |
 
 ## Rebuilding
 

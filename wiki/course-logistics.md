@@ -27,7 +27,8 @@ Majumdar calls the list "overly conservative", and says which parts matter:
 - **Multivariable calculus** and **linear algebra** are the critical ones. Linear algebra
   matters especially for feedback control.
 - **Probability**: backgrounds vary widely, so he will cover the basics the course needs.
-  About 70–80% of the room said they could write down Bayes' rule.
+  About 70–80% of the room said they could write down Bayes' rule. The refresher opens
+  [Lecture 11](11-bayes-filter.md#probability-basics); see [probability](probability.md).
 - **Differential equations**: you will not solve any analytically, since apart from linear
   ones none in the course can be solved that way. You need to know what one means, say
   $\dot{x} = f(x)$ for a state $x$. You also need the idea that, from an initial state, it

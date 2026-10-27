@@ -117,3 +117,6 @@ this form, and uses them (notes p. 3, ≈25:48–26:34).
   $\bar{x}_ {t+1} = f(\bar{x}_ t)$ for a closed-loop system, obtained by discretizing a continuous-time
   model or given in discrete time from the start, and uses it to predict the set of states a robot can
   reach. See [state estimation](state-estimation.md).
+- [Lecture 11 — Bayes Filter](11-bayes-filter.md#adding-dynamics-pushing-the-door) makes the dynamics
+  probabilistic: a model $p(X_ t \mid X_ {t-1}, U_ {t-1})$ gives the probability of each next state given the
+  current one and the action, as for a robot that pushes a door open with probability 0.8 (notes p. 3).

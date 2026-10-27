@@ -123,3 +123,6 @@ a feedback controller, such as time-varying LQR, corrects for deviations from it
   about hover, which gives the $A$ and $B$ that LQR needs.
 - [Lecture 4 — Quadrotor Dynamics](04-quadrotor-dynamics.md): the 3D quadrotor's 12 states and four
   control inputs.
+- [Lecture 11 — Bayes Filter](11-bayes-filter.md#from-sets-to-beliefs): LQR assumes the state is known.
+  The notes ask how to apply $\bar{u} = K\bar{x}$ when the estimate is a set of possible states, which is
+  one reason to estimate the state probabilistically (notes p. 1).

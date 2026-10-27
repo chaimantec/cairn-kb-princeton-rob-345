@@ -116,5 +116,11 @@ upgrade comes with a caveat: "There's always some uncertainty anytime you upgrad
   of uncertainty in the dynamics and the sensor give sets of outcomes with no probabilities (notes p. 5).
   The filter is conservative, reasoning about the worst case, which motivates probabilistic models
   (notes p. 6). See [state estimation](state-estimation.md).
-- The probabilistic state-estimation lectures (11–12: Bayes filtering, Kalman and particle filtering)
-  are scheduled next in this thread. They are not yet in this knowledge base.
+- [Lecture 11 — Bayes Filter](11-bayes-filter.md): the probabilistic way. Uncertainty in the sensor and
+  the dynamics is modelled by probabilities, $p(Z_ t \mid X_ t)$ and $p(X_ t \mid X_ {t-1}, U_ {t-1})$, and
+  the robot keeps a belief, a probability distribution over its state, updated by the theorem of total
+  probability and Bayes rule (notes pp. 2–4). The belief can still grow less confident, with unstable
+  dynamics and a useless sensor (≈1:12:37–1:13:24). See [state estimation](state-estimation.md) and
+  [probability](probability.md).
+- Lecture 12 (Kalman and particle filtering) is scheduled next in this thread. It is not yet in this
+  knowledge base.

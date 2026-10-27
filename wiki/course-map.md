@@ -47,7 +47,7 @@ exists.
 | 8 | Linear Quadratic Regulator (LQR) | Feedback control | [wiki](08-lqr.md) |
 | 9 | Optical flow | State estimation, localization, mapping | [wiki](09-optical-flow.md) |
 | 10 | Nondeterministic filter | State estimation, localization, mapping | [wiki](10-nondeterministic-filter.md) |
-| 11 | Bayes filtering | State estimation, localization, mapping | posted, not yet in this KB |
+| 11 | Bayes filtering | State estimation, localization, mapping | [wiki](11-bayes-filter.md) |
 | 12 | Kalman filtering and particle filtering | State estimation, localization, mapping | not posted yet |
 | 13 | Localization | State estimation, localization, mapping | not posted yet |
 | 14 | Mapping | State estimation, localization, mapping | not posted yet |

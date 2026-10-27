@@ -306,8 +306,9 @@ The course falls roughly into three areas (slide 33, ≈20:56–22:29):
    the drone estimates its own state (position, velocity) and the state of the world: where the
    obstacles are, what their geometry is, and perhaps the semantic categories of the agents and
    objects around it. In this knowledge base the module so far is
-   [Lecture 9 — Optical Flow](09-optical-flow.md) and
-   [Lecture 10 — Nondeterministic Filter](10-nondeterministic-filter.md); see
+   [Lecture 9 — Optical Flow](09-optical-flow.md),
+   [Lecture 10 — Nondeterministic Filter](10-nondeterministic-filter.md) and
+   [Lecture 11 — Bayes Filter](11-bayes-filter.md); see
    [state estimation](state-estimation.md).
 3. **Robot learning**: imitation learning, generative architectures, reinforcement learning,
    world models. How robots learn their own dynamics, the world's dynamics, or how to act. The
@@ -452,7 +453,8 @@ The logistics run from about 36:40 to the end and are collected on
 - **Prerequisites**: multivariable calculus, linear algebra, basic probability, basic
   differential equations, and some programming in Python (slide 47, ≈38:58–42:04). He calls
   the list "overly conservative". What matters most is multivariable calculus and linear
-  algebra, the latter especially for feedback control. He will refresh probability: about
+  algebra, the latter especially for feedback control. He will refresh probability (he does, in
+  [Lecture 11](11-bayes-filter.md#probability-basics)): about
   70–80% of the room said they could write down Bayes' rule. For differential equations,
   nothing is solved analytically except the linear ones. You only need the idea that a
   differential equation in a state, here $\dot{x} = f(x)$, predicts the state at any future
