@@ -9,8 +9,9 @@ committed to this repo. The KB is read by an agent that navigates markdown, so t
 useful part, and the Lecture 1 deck alone is 75MB. Cite these URLs directly. A KB column entry
 means that lecture's material has been transcribed into this repo.
 
-Inventory taken 2026-10-20. The site lists 24 lectures. Materials were posted for lectures 1–9;
-lectures 10–24 had only a title.
+Inventory taken 2026-10-20 and checked again on 2026-10-28. The site lists 24 lectures. On
+2026-10-28 materials were posted for lectures 1–11 (lectures 10 and 11 with a video and notes and no
+slides); lectures 12–24 had only a title.
 
 ## Lectures
 
@@ -25,6 +26,8 @@ lectures 10–24 had only a title.
 | 7: Stability, PD control | <https://youtu.be/nn022Copybg> | [Lecture7_slides.pdf](https://www.dropbox.com/scl/fi/6jzh0fey1mnfs8drq3905/Lecture7_slides.pdf?rlkey=nqo1qiqzhktzpy5klid7hyvgs&dl=0) | [Lecture7_notes.pdf](https://www.dropbox.com/scl/fi/70lppdz21xpgitd1ohhuo/Lecture7_notes.pdf?rlkey=bkk76zdh9ep0cvryzmpr34y7x&dl=0) | [slides](raw/slides/07-stability-and-pd-control.md), [notes](raw/notes/07-stability-and-pd-control.md), [transcript](raw/transcripts/07-stability-and-pd-control.md) |
 | 8: Linear Quadratic Regulator (LQR) | <https://youtu.be/zqi9QhUio8s> | [Lecture8_slides.pdf](https://www.dropbox.com/scl/fi/vg2cumj4cs2kuqb3942fg/Lecture8_slides.pdf?rlkey=uthhn11zguqubxdgo0zrv5viv&dl=0) | [Lecture8_notes.pdf](https://www.dropbox.com/scl/fi/j89tx4kp1skacdhuz918r/Lecture8_notes.pdf?rlkey=4gyqm6qumqutg1lzx83uuac4d&dl=0) | [slides](raw/slides/08-lqr.md), [notes](raw/notes/08-lqr.md), [transcript](raw/transcripts/08-lqr.md) |
 | 9: Optical flow | <https://youtu.be/wvuVX9L7v4Y> | [Lecture9_slides.pdf](https://www.dropbox.com/scl/fi/yjkah2nhv83fdbnf6ea5a/Lecture9_slides.pdf?rlkey=d83o8wcmk8oczkogd2tpuogq3&dl=0) | [Lecture9_notes.pdf](https://www.dropbox.com/scl/fi/az52bpcoly0ophkzc7sqj/Lecture9_notes.pdf?rlkey=ijs39xouvybcpqcv3cluaapvu&dl=0) | [slides](raw/slides/09-optical-flow.md), [notes](raw/notes/09-optical-flow.md), [transcript](raw/transcripts/09-optical-flow.md) |
+| 10: Nondeterministic filter | <https://youtu.be/T7Uf2u3VVZ8> | — (none posted) | [Lecture10_notes.pdf](https://www.dropbox.com/scl/fi/ccgwqi9i2wr1fzcc690dd/Lecture10_notes.pdf?rlkey=cffu8ofmveu1jaokpqdl0zhzg&dl=0) | [notes](raw/notes/10-nondeterministic-filter.md), [transcript](raw/transcripts/10-nondeterministic-filter.md) |
+| 11: Bayes filtering | <https://youtu.be/mno8-hG7tJc> | — (none posted) | [Lecture11.pdf](https://www.dropbox.com/scl/fi/tfn61o04v3oxhxmnko2ui/Lecture11.pdf?rlkey=lidlhw6muo5zz4d2ifoxbny50&dl=0) (linked as "Notes") | — |
 
 ## Assignments
 

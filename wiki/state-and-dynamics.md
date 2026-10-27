@@ -112,3 +112,8 @@ this form, and uses them (notes p. 3, ≈25:48–26:34).
   deviations $\tilde{x} = \bar{x} - \bar{x}_ 0$, $\tilde{u} = \bar{u} - \bar{u}_ 0$, giving
   $\dot{\tilde{x}} = A\tilde{x} + B\tilde{u}$, and designs an optimal feedback controller for it
   ([LQR](lqr.md)).
+- [Lecture 10 — Nondeterministic Filter](10-nondeterministic-filter.md#adding-dynamics-in-discrete-time)
+  switches to discrete time for state estimation, $\bar{x}_ {t+1} = f(\bar{x}_ t, \bar{u}_ t)$, or
+  $\bar{x}_ {t+1} = f(\bar{x}_ t)$ for a closed-loop system, obtained by discretizing a continuous-time
+  model or given in discrete time from the start, and uses it to predict the set of states a robot can
+  reach. See [state estimation](state-estimation.md).

@@ -80,6 +80,10 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
   one equation into the next before listing it, since agents flag correctly derived factors as slips. A slip
   in a handwritten label is settled in the parent from a crop of that label (about 1k tokens), comparing the
   glyph with the same letter elsewhere in the drawing: audits misread handwriting in both directions.
+- A lecture may post notes and no deck (Lecture 10 on). Then the notes are the whole written record:
+  there is no slide file or number map, the copy-edit takes its terminology from the notes, and the
+  notes' drawings are the lecture's only images. A "(1)" in notes prose may number a list, not an
+  equation: check the text layer before tagging anything.
 - No licence is stated anywhere on the site or in the decks. See `LICENSE.md`.
 
 ## Transcripts
@@ -160,6 +164,7 @@ attribution goes in [`LICENSE.md`](LICENSE.md).
 | 7 Stability and PD Control | 5 | 2 of the deck's 7 slides (a simulation frame, the hover vector field) and the notes' 3 drawings |
 | 8 LQR | 6 | 4 of the deck's 13 slides (the control loop, a phase portrait, two video frames) and the notes' 2 drawings |
 | 9 Optical Flow | 13 | 9 of the deck's 21 slides (a path diagram, a drone photograph, two flow fields, two diagrams, an illusion frame, two marked-up photographs) and the notes' 4 drawings |
+| 10 Nondeterministic Filter | 9 | no deck was posted; the notes' 9 drawings (sensor circles, sets and their intersections) |
 
 ## Rebuilding
 

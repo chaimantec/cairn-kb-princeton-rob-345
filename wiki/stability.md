@@ -118,3 +118,7 @@ pp. 3–4).
 - [Lecture 8 — The Linear Quadratic Regulator](08-lqr.md) designs a controller that makes a linear
   system globally asymptotically stable while minimizing a cost; its slide 7 recaps these definitions.
   See [the linear quadratic regulator](lqr.md).
+- [Lecture 10 — Nondeterministic Filter](10-nondeterministic-filter.md#does-the-set-always-shrink): why
+  instability matters for estimation. Unstable dynamics, for example from a bad feedback controller,
+  push states apart, so a small uncertainty about the state grows from step to step unless a good
+  sensor counteracts it.

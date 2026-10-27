@@ -75,3 +75,7 @@ geometry and semantics of the world (slide 39).
 - [Lecture 9 — Optical Flow](09-optical-flow.md): the drone's optical-flow sensing in depth, as Lecture 1
   promises (≈19:25): how the downward-facing camera's apparent motion, with the drone's height, gives its
   velocity, and why that estimate is imperfect. See [optical flow](optical-flow.md).
+- [Lecture 10 — Nondeterministic Filter](10-nondeterministic-filter.md): the sensing side in the
+  abstract. A sensor model maps each state to the measurement it produces, and the robot combines its
+  measurements with its knowledge of the dynamics, step after step, to narrow down its state. See
+  [state estimation](state-estimation.md).

@@ -305,7 +305,10 @@ The course falls roughly into three areas (slide 33, ≈20:56–22:29):
 2. **Localization and mapping**: Bayes filtering, Kalman filters, particle filters, SLAM. How
    the drone estimates its own state (position, velocity) and the state of the world: where the
    obstacles are, what their geometry is, and perhaps the semantic categories of the agents and
-   objects around it.
+   objects around it. In this knowledge base the module so far is
+   [Lecture 9 — Optical Flow](09-optical-flow.md) and
+   [Lecture 10 — Nondeterministic Filter](10-nondeterministic-filter.md); see
+   [state estimation](state-estimation.md).
 3. **Robot learning**: imitation learning, generative architectures, reinforcement learning,
    world models. How robots learn their own dynamics, the world's dynamics, or how to act. The
    course covers imitation learning (learning from humans) and architectures such as flow

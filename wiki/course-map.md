@@ -2,9 +2,9 @@
 
 How the course is organized, lecture by lecture, and which lectures this knowledge base covers.
 The schedule is the one on the public course website
-(<https://irom-lab.princeton.edu/intro-to-robotics/>), taken on 2026-10-20. The course was
-still in progress at that point. Lectures 1–9 had videos and slides, and lectures 10–24 had
-only a title.
+(<https://irom-lab.princeton.edu/intro-to-robotics/>), taken on 2026-10-20 and checked again on
+2026-10-28. The course was still in progress. On 2026-10-28 lectures 1–9 had videos and slides,
+lectures 10 and 11 had videos and notes but no slides, and lectures 12–24 had only a title.
 
 ## The three technical areas
 
@@ -46,8 +46,8 @@ exists.
 | 7 | Stability, PD control | Feedback control | [wiki](07-stability-and-pd-control.md) |
 | 8 | Linear Quadratic Regulator (LQR) | Feedback control | [wiki](08-lqr.md) |
 | 9 | Optical flow | State estimation, localization, mapping | [wiki](09-optical-flow.md) |
-| 10 | Nondeterministic filter | State estimation, localization, mapping | not posted yet |
-| 11 | Bayes filtering | State estimation, localization, mapping | not posted yet |
+| 10 | Nondeterministic filter | State estimation, localization, mapping | [wiki](10-nondeterministic-filter.md) |
+| 11 | Bayes filtering | State estimation, localization, mapping | posted, not yet in this KB |
 | 12 | Kalman filtering and particle filtering | State estimation, localization, mapping | not posted yet |
 | 13 | Localization | State estimation, localization, mapping | not posted yet |
 | 14 | Mapping | State estimation, localization, mapping | not posted yet |

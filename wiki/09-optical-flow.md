@@ -416,7 +416,8 @@ integrating it to get the drone's position amplifies the errors (slide 20, which
 field again, ≈1:08:22). The next question is how to account for imperfect sensing: if the sensors are not
 perfectly accurate, how to correct for that, perhaps over time, by combining measurements from many
 sensors, or from the same sensor at different times. That starts in the next lecture (slide 21,
-≈1:08:22–1:09:08). The notes end the same way: thinking about optical flow shows how challenging sensing is
+≈1:08:22–1:09:08): see [Lecture 10 — Nondeterministic Filter](10-nondeterministic-filter.md) and
+[state estimation](state-estimation.md). The notes end the same way: thinking about optical flow shows how challenging sensing is
 and the need to account for imperfect sensing (notes p. 5). See [uncertainty](uncertainty.md).
 
 ## Gaps in the record

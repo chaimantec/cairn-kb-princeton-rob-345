@@ -56,8 +56,8 @@ course staff (Princeton University, Fall 2026). They are published through the c
 the lecture videos on YouTube (recorded by the Princeton Broadcast Center).
 
 As checked on 2026-10-20, no licence, copyright or reuse statement appears on the course
-website, and none is printed on any page of the Lecture 1–9 decks or of the Lecture 4–9
-notes (checked 2026-10-21). Publicly downloadable is not the
+website, and none is printed on any page of the Lecture 1–9 decks or of the Lecture 4–10
+notes (checked 2026-10-21 and, for Lecture 10, 2026-10-28). Publicly downloadable is not the
 same as licensed. Absent an express grant the default applies: copyright arises automatically,
 and no reuse rights pass to anyone.
 
@@ -236,3 +236,14 @@ Rendered: 9 slides and the notes' 4 drawings (cropped; the notes print no captio
 | Slide 15 | A frame of the barber pole illusion, printed "Source: https://www.opticalillusion.net/optical-illusions/the-barber-pole-illusion/". |
 | Slides 17–18 | A photograph of a stone building with a tower, among bare trees, marked up with boxes, arrows and magnified insets. Not credited. |
 | Notes drawings 1–4 | Hand-drawn sketches: moving objects in a frame, a displaced point, the gradient and two flow vectors, an edge with its gradients. Not credited; apparently the course's own. |
+
+### Lecture 10 — Nondeterministic Filter
+
+No deck was posted for this lecture.
+Notes: [Lecture10_notes.pdf](https://www.dropbox.com/scl/fi/ccgwqi9i2wr1fzcc690dd/Lecture10_notes.pdf?rlkey=cffu8ofmveu1jaokpqdl0zhzg&dl=0).
+Rendered: the notes' 9 drawings (cropped; the notes print no captions), in
+`raw/images/10-nondeterministic-filter/`.
+
+| Image | Third-party content (as identifiable from the page) |
+| --- | --- |
+| Notes drawings 1–9 | Hand-drawn sketches: circles of distance measurements about sensor points, sets of states carried forward by the dynamics and intersected with measurement preimages, a state with the set it may lead to, and a ring of states for an imperfect distance sensor, some with handwritten notes. Not credited; apparently the course's own. |

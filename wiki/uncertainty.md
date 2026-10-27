@@ -110,5 +110,11 @@ upgrade comes with a caveat: "There's always some uncertainty anytime you upgrad
   can differ from the real motion (slide 9); and every method of computing it is imperfect, so the
   velocity it gives is too, and integrating that amplifies the errors. How to account for imperfect
   sensing is the next lecture's question (slides 20–21, ≈1:08:22).
-- The state-estimation lectures (10–12: nondeterministic filter, Bayes filtering, Kalman and
-  particle filtering) are scheduled next in this thread. They are not yet in this knowledge base.
+- [Lecture 10 — Nondeterministic Filter](10-nondeterministic-filter.md): the first way to handle
+  imperfect sensing. The robot keeps the set of states consistent with its dynamics and its
+  measurements; unstable dynamics can make that set grow (≈43:47–50:48); and non-deterministic models
+  of uncertainty in the dynamics and the sensor give sets of outcomes with no probabilities (notes p. 5).
+  The filter is conservative, reasoning about the worst case, which motivates probabilistic models
+  (notes p. 6). See [state estimation](state-estimation.md).
+- The probabilistic state-estimation lectures (11–12: Bayes filtering, Kalman and particle filtering)
+  are scheduled next in this thread. They are not yet in this knowledge base.

@@ -119,6 +119,11 @@ or over time, is where the course goes next (≈1:08:22; see [uncertainty](uncer
 - [Lecture 9 — Optical Flow](09-optical-flow.md): the localization question, the flow camera, apparent
   motion, birds and bees, the derivation, the aperture problem, Lucas-Kanade and its failure cases, and
   imperfect sensing.
+- [Lecture 10 — Nondeterministic Filter](10-nondeterministic-filter.md#a-poll-and-the-plan-for-the-module):
+  looks back at Lucas-Kanade as an old-school algorithm, worth seeing once for how painful it is to
+  implement and how often its assumptions break, and promises a return to much better, learned ways of
+  computing optical flow later in the module (≈1:41–2:27). Its question, how to combine imperfect
+  estimates over time, is [state estimation](state-estimation.md).
 - [Lecture 1 — Introduction to Robotics](01-intro-to-robotics.md#anatomy-of-a-robotic-system-sensethinkact):
   the drone's optical flow camera among its sensors, combined with a height sensor to estimate velocity.
 - [Lecture 4 — Quadrotor Dynamics](04-quadrotor-dynamics.md#the-labs-and-the-first-hardware-assignment):
